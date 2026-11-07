@@ -1,0 +1,53 @@
+CONTRATO DE LICENÇA DE USUÁRIO FINAL - CONCRETE MIX DESIGNER
+Versão 2026.11.6.0, 6 de novembro de 2026
+Copyright (c) 2025–2026 Fernando Nillsson Cidade. Todos os direitos reservados.
+
+IMPORTANTE — LEIA COM ATENÇÃO: Este Contrato de Licença de Usuário Final (“EULA”) é um acordo legal entre você (pessoa física ou jurídica, doravante “USUÁRIO”) e Fernando Nillsson Cidade (“LICENCIANTE”) para o uso da edição comercial pré-compilada do software CONCRETE MIX DESIGNER distribuída via Microsoft Store ou contrato direto, incluindo seus executáveis binários, módulos analíticos experimentais de dosagem de concreto (Método IPT/EPUSP), verificadores de conformidade normativa, arquivos de recursos e documentação eletrônica associada (“SOFTWARE”). Ao instalar, copiar ou usar o SOFTWARE pré-compilado, você concorda em ficar vinculado aos termos deste EULA. O código-fonte público disponibilizado no GitHub permanece regido pela licença GNU Affero General Public License v3 (AGPLv3).
+
+1. DEFINIÇÕES
+1.1. “SOFTWARE”: significa a distribuição binária pré-compilada oficial do aplicativo CONCRETE MIX DESIGNER disponibilizada pelo LICENCIANTE na Microsoft Store ou sob contrato comercial corporativo, juntamente com suas atualizações e documentação oficial.
+1.2. “USUÁRIO”: a pessoa física ou jurídica que instala ou opera legitimamente a edição binária do SOFTWARE.
+1.3. “USO PERMITIDO”: o uso do SOFTWARE para estudos de dosagem experimental de concreto, ensino, pesquisa, controle de qualidade em laboratório ou projetos de engenharia civil, dentro do escopo da licença comercial adquirida.
+
+2. CONCESSÃO DE LICENÇA
+Sujeito ao cumprimento integral deste EULA, o LICENCIANTE concede ao USUÁRIO uma licença pessoal, não exclusiva, intransferível, não sublicenciável e revogável para instalar e executar o SOFTWARE em dispositivos Windows sob o controle direto do USUÁRIO. Quando adquirido através da Microsoft Store oficial, esta licença fornece direitos de download, streaming e uso que não são mais restritivos do que aqueles estabelecidos nas Regras de Uso da Microsoft (http://go.microsoft.com/fwlink/p/?LinkId=723143).
+
+3. RESTRIÇÕES DE USO
+O USUÁRIO não deverá, direta ou indiretamente:
+a) Distribuir, revender, alugar, arrendar ou sublicenciar o SOFTWARE a terceiros fora das condições expressamente autorizadas;
+b) Modificar, descompilar, desmontar ou fazer engenharia reversa do código proprietário do SOFTWARE, exceto e apenas na medida em que tal atividade seja expressamente permitida pela lei aplicável ou pelos termos da GNU LGPLv3 no que diz respeito à revinculação de bibliotecas Qt 6 vinculadas dinamicamente;
+c) Remover ou alterar quaisquer avisos de direitos autorais, marcas registradas ou créditos técnicos exibidos na interface ou nos arquivos do SOFTWARE;
+d) Usar relatórios de cálculo ou traços gerados pelo SOFTWARE para a execução de obras sem a devida verificação experimental em laboratório e sem a supervisão e assinatura de responsabilidade técnica de um engenheiro civil devidamente habilitado.
+
+4. PROPRIEDADE INTELECTUAL
+O SOFTWARE é licenciado, não vendido. Todos os direitos autorais e direitos de propriedade intelectual no e sobre o SOFTWARE permanecem como propriedade exclusiva de Fernando Nillsson Cidade, protegidos pelas Leis Federais do Brasil nº 9.609/1998 e nº 9.610/1998 e por tratados internacionais de direitos autorais.
+
+5. PRIVACIDADE E OPERAÇÃO LOCAL
+O SOFTWARE foi projetado sob os princípios de Privacidade desde a Concepção (Privacy by Design) e opera 100% localmente (offline-first). O SOFTWARE não coleta, não armazena na nuvem e não transmite dados pessoais, parâmetros de projeto ou custos de materiais ao LICENCIANTE ou a terceiros. Todos os detalhes estão estabelecidos na Política de Privacidade que acompanha esta distribuição e que está disponível na página de descrição do produto do SOFTWARE na Microsoft Store.
+
+6. COMPONENTES DE TERCEIROS (QT 6 — LGPLv3)
+O SOFTWARE utiliza bibliotecas vinculadas dinamicamente do framework Qt 6 (The Qt Company Ltd.), licenciadas sob a GNU Lesser General Public License v3.0 (LGPLv3). Em conformidade com a LGPLv3, as bibliotecas Qt são distribuídas como bibliotecas de vínculo dinâmico (.dll) no diretório do aplicativo, preservando o direito do USUÁRIO de inspecionar ou substituir essas bibliotecas dinâmicas por versões compatíveis. As atribuições completas estão disponíveis na guia “Avisos” do SOFTWARE.
+
+7. ATUALIZAÇÕES E SUPORTE
+O LICENCIANTE poderá fornecer atualizações, melhorias ou correções de bugs para o SOFTWARE por meio da Microsoft Store ou canais oficiais do projeto. Tais atualizações serão regidas por este EULA, a menos que acompanhadas por termos de licença separados. As atualizações preservam estritamente os dados e as configurações locais do USUÁRIO.
+
+8. ISENÇÃO DE GARANTIAS E RESPONSABILIDADE DE ENGENHARIA
+Exceto pelas garantias estatutárias obrigatórias sob as leis aplicáveis de proteção ao consumidor, o SOFTWARE é fornecido “NO ESTADO EM QUE SE ENCONTRA” (AS IS) e "COM TODAS AS FALHAS". O LICENCIANTE adverte expressamente que o concreto é um material heterogêneo cujo desempenho depende das matérias-primas locais, da umidade real em campo, temperatura, energia de mistura, condições de cura e ensaios de resistência à compressão de corpos de prova moldados (ABNT NBR 5738 e NBR 5739). O SOFTWARE NÃO substitui os testes laboratoriais ou o julgamento de engenharia independente do Engenheiro Civil habilitado responsável.
+
+9. LIMITAÇÃO DE RESPONSABILIDADE
+Na extensão máxima permitida por lei, o LICENCIANTE não será responsável por quaisquer danos diretos, indiretos, incidentais, especiais ou consequenciais (incluindo defeitos estruturais, falha em atingir o fck alvo na obra, perdas financeiras ou interrupção de negócios) decorrentes do uso ou da incapacidade de usar o SOFTWARE. Em qualquer caso, a responsabilidade total agregada do LICENCIANTE não excederá o valor pago pelo USUÁRIO pelo licenciamento do SOFTWARE ou USD $ 1,00, o que for maior.
+
+10. CONFORMIDADE COM A MICROSOFT STORE
+Quando o SOFTWARE for adquirido através da Microsoft Store, este EULA atua em substituição aos Termos Padrão de Licença de Aplicativo (Standard Application License Terms). A Microsoft Corporation, o fabricante do seu hardware e a sua operadora de rede sem fio não têm a obrigação de fornecer suporte técnico, manutenção ou serviços de garantia para o SOFTWARE. Todas essas responsabilidades permanecem exclusivamente com o LICENCIANTE, de acordo com este EULA.
+
+11. RESCISÃO
+Este EULA é efetivo até que seja rescindido. Seus direitos sob esta licença terminarão automaticamente se você não cumprir qualquer termo aqui estabelecido. Após a rescisão, o USUÁRIO deverá cessar todo o uso do SOFTWARE e desinstalar todas as cópias de todos os dispositivos.
+
+12. LEI APLICÁVEL E FORO
+Este EULA é regido pelas leis da República Federativa do Brasil. Os tribunais da Comarca de Fazenda Rio Grande, Estado do Paraná, Brasil, terão jurisdição sobre quaisquer litígios decorrentes deste EULA, sem prejuízo das regras de foro obrigatórias de proteção ao consumidor, quando aplicáveis.
+
+13. ACORDO INTEGRAL E CONTATO
+Este EULA, juntamente com a Política de Privacidade e os Avisos de Terceiros, constitui o acordo integral entre o USUÁRIO e o LICENCIANTE em relação ao SOFTWARE.
+Contato oficial:
+Fernando Nillsson Cidade — E-mail: linceu_lighthouse@outlook.com
+Brasil, Paraná, Fazenda Rio Grande, 6 de novembro de 2026.

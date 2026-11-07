@@ -1,0 +1,48 @@
+Versão 2026.11.6.0, 6 de novembro de 2026
+Aviso de Licenças e Atribuições de Software de Terceiros
+=====================================================
+
+O aplicativo CONCRETE MIX DESIGNER utiliza bibliotecas e ferramentas de tempo de execução (runtime) de terceiros, cujas licenças e atribuições são reconhecidas e declaradas abaixo, em estrita conformidade com os requisitos de código aberto, políticas da Microsoft Store (incluindo o Contrato de Desenvolvedor de Aplicativos) e legislação de propriedade intelectual.
+
+------------------------------------------------------------------------
+1. Framework Qt 6 (Versão 6.11.1)
+------------------------------------------------------------------------
+Módulos vinculados dinamicamente (.dll):
+- Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll, Qt6Charts.dll, Qt6Sql.dll, Qt6OpenGL.dll, Qt6OpenGLWidgets.dll e plugins de plataforma do Windows (ex: qwindows.dll, qsqlite.dll).
+Copyright (C) 2026 The Qt Company Ltd. e outros colaboradores.
+Site oficial: https://www.qt.io/
+Licença: GNU Lesser General Public License v3.0 (LGPLv3) — https://www.gnu.org/licenses/lgpl-3.0.html
+
+Declaração de Conformidade com a LGPLv3 e a Microsoft Store:
+O CONCRETE MIX DESIGNER vincula-se dinamicamente às bibliotecas Qt 6 por meio de arquivos .dll independentes, distribuídos junto com o executável. Nenhuma modificação foi feita no código-fonte original do Qt 6. Os usuários finais mantêm a liberdade garantida pela LGPLv3 de substituir as bibliotecas Qt 6 vinculadas dinamicamente por versões compatíveis e de obter o código-fonte oficial do Qt diretamente em https://code.qt.io/ ou https://www.qt.io/download-open-source. 
+De acordo com a Seção 4.c do Contrato de Desenvolvedor de Aplicativos da Microsoft Store (App Developer Agreement), esta distribuição concede à Microsoft os direitos necessários para hospedar, instalar, executar e distribuir o aplicativo como um agente, garantindo que essas ações não violem as licenças FOSS aplicáveis dos componentes supracitados.
+
+------------------------------------------------------------------------
+2. Tempos de Execução (Runtimes) de Compilador C++20 (MinGW-w64 / MSVC)
+------------------------------------------------------------------------
+2.1. Distribuição MinGW 64-bit (Bibliotecas de Tempo de Execução do GCC):
+- libgcc_s_seh-1.dll, libstdc++-6.dll, libwinpthread-1.dll
+Licença: Exceção de Biblioteca de Tempo de Execução do GCC v3.1 (GCC Runtime Library Exception v3.1 - GPLv3 com exceção de vinculação para executáveis compilados com GCC) e Licença MIT/BSD para winpthreads (Projeto MinGW-w64).
+Site oficial: https://www.mingw-w64.org/ | https://gcc.gnu.org/
+
+2.2. Distribuição MSVC 64-bit (Microsoft Visual C++ Redistributable):
+- vcruntime140.dll, vcruntime140_1.dll, msvcp140.dll
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+Distribuído sob os termos de redistribuição do Microsoft Visual Studio / Visual C++ Runtime.
+
+------------------------------------------------------------------------
+3. Referências Científicas, Acadêmicas e Normativas
+------------------------------------------------------------------------
+Os modelos matemáticos e os critérios de verificação implementados no código-fonte proprietário do CONCRETE MIX DESIGNER fundamentam-se na literatura científica clássica e nas normas técnicas brasileiras em vigor (todos os algoritmos de código do software foram originalmente programados do zero pelo desenvolvedor):
+- HELENE, Paulo Roberto do Lago; TERZIAN, Paulo. Manual de Dosagem e Controle do Concreto. São Paulo: PINI / Brasília: SENAI, 1992. (Método IPT/EPUSP).
+- MEHTA, P. Kumar; MONTEIRO, Paulo J. M. Concrete: Microstructure, Properties, and Materials. 4th ed. McGraw-Hill Education, 2014.
+- ABNT NBR 12655:2022 — Concreto de cimento Portland — Preparo, controle, recebimento e aceitação — Procedimento.
+- ABNT NBR 6118:2023 — Projeto de estruturas de concreto — Procedimento.
+- ABNT NBR 7211:2022 — Agregados para concreto — Requisitos.
+- ABNT NBR 7212:2025 — Concreto dosado em central — Preparo, fornecimento e controle.
+- ABNT NBR 8953:2015 — Concreto para fins estruturais — Classificação pela massa específica, por grupos de resistência e consistência.
+
+------------------------------------------------------------------------
+4. Isenção de Garantias para Componentes de Terceiros
+------------------------------------------------------------------------
+Os componentes de terceiros listados acima são fornecidos por seus respectivos detentores de direitos autorais "NO ESTADO EM QUE SE ENCONTRAM" (AS IS), sem garantias de qualquer tipo, expressas ou implícitas, nos termos de suas respectivas licenças.

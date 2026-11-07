@@ -1,0 +1,25 @@
+História e Justificativa do Desenvolvimento
+
+Motivação:
+O MÓDULO DE DOSAGEM DE CONCRETO nasceu da necessidade prática de substituir planilhas eletrônicas acadêmicas e laboratoriais sujeitas a erros de fórmulas, referências circulares e perdas acidentais de células por uma plataforma nativa de engenharia civil altamente confiável, auditável e em conformidade estrita com as normas técnicas brasileiras vigentes (ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025 e NBR 8953:2015). A inspiração direta originou-se dos estudos experimentais de dosagem de concreto estrutural conduzidos no Departamento de Construção Civil da Universidade Federal do Paraná (UFPR — disciplina TC031 Materiais de Construção Civil II), fundamentados no método clássico IPT/EPUSP proposto por Paulo Roberto do Lago Helene e Paulo Terzian (1992).
+
+Objetivos de design:
+- Exatidão Matemática e Normativa: unificar o modelo analítico exponencial da Lei de Abrams, o modelo polinomial quadrático das planilhas laboratoriais, a Lei Linear de Lyse e a Lei Hiperbólica de Molinari em um motor de cálculo C++20 determinístico e livre de ambiguidades.
+- Clareza Didática e Operacional: organizar a jornada de dosagem exatamente na sequência física de laboratório — desde a especificação estrutural e caracterização de agregados até a determinação do teor de argamassa na betoneira, traçado do Diagrama de 4 Quadrantes, correção de umidade para o canteiro e análise econômica.
+- Experiência Visual Nativa e Acessível: integrar controles nativos do Windows 11 com suporte automático aos temas Claro e Escuro, janelas auxiliares Modeless com Ordem no Eixo Z (Z-Order) independente e internacionalização instantânea em tempo de execução (Português BR e Inglês US).
+- Privacidade e Autonomia Local: garantir que engenheiros, pesquisadores e estudantes possam projetar e exportar memoriais técnicos (PDF, HTML, Markdown e PNG) de maneira 100% offline, sem dependência de nuvem ou coleta de telemetria.
+
+Desenvolvimento e evolução:
+1. Concepção e Auditoria Algorítmica: mapeamento integral das dependências entre células de entrada e fórmulas da planilha experimental aperfeiçoada da UFPR, eliminando discrepâncias de arredondamento e validando cada equação frente às normas da ABNT.
+2. Arquitetura em C++20 e Qt 6.11.1: construção de um núcleo desacoplado (`source/core`) para cálculos reológicos, otimização granulométrica, regressão por mínimos quadrados e validação normativa, integrado a uma interface gráfica modular (`source/gui`) com gráficos vetoriais interativos via Qt Charts.
+3. Refinamento de Interface e Usabilidade: migração da seleção de cenários para o menu Configurações, personalização completa dos metadados do cabeçalho técnico, aprimoramento da edição fluida em campos numéricos, correção de contraste em modo escuro no Manual do Usuário e adoção de Janelas Modeless com controle independente no eixo Z.
+4. Qualidade de Distribuição Dual (MinGW e MSVC): padronização de scripts de compilação e implantação automatizada de DLLs de runtime para distribuição comercial na Microsoft Store e publicação aberta no GitHub.
+
+Impacto esperado:
+Oferecer à comunidade de engenharia civil, laboratórios de tecnologia do concreto e instituições de ensino superior uma ferramenta de referência que reduza erros de dosagem, otimize o consumo de cimento Portland por metro cúbico e eleve a segurança e a durabilidade das estruturas de concreto.
+
+Visão futura:
+Expansão contínua do banco de dados de adições minerais (sílica ativa, metacaulim, cinza volante e escória de alto-forno), curvas granulométricas contínuas de empacotamento (modelos de Fuller-Thompson, Andreasen e Funk-Dinger) e integração com controle estatístico de resistência de lotes em obra.
+
+Autor:
+Fernando Nillsson Cidade

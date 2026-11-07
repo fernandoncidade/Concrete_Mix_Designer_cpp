@@ -1,0 +1,54 @@
+COPYRIGHT AND TRADEMARK NOTICE - CONCRETE MIX DESIGNER
+Application / Binary Target: ConcreteMixDesign (ConcreteMixDesign.exe)
+Version: 2026.11.6.0
+======================================================================
+Copyright (C) 2025-2026 Fernando Nillsson Cidade. All rights reserved.
+
+1. OWNERSHIP AND COPYRIGHT PROTECTION
+The CONCRETE MIX DESIGNER software application (executable binary target: ConcreteMixDesign), Version 2026.10.26.0 (wherein the fourth version segment ".0" is reserved for Microsoft Store MSIX package management), is the proprietary work of Fernando Nillsson Cidade ("Application Publisher" and "Copyright Holder").
+
+Protected elements include, without limitation:
+a) Original C++20 source code and modular software architecture (ConcreteStandards, AggregateOptimizer, MortarContentOptimizer, RegressionEngine, MixDesignCalculator, ProjectData, and NormativeDatabase modules);
+b) Analytical and experimental concrete mix design algorithms (IPT/EPUSP Method implementation), aggregate grading and mortar content optimization routines, statistical regression engines, and cost calculation models;
+c) Graphical User Interface (GUI) design, custom widgets (including the 4-Quadrant Dosage Diagram renderer / QuadChartWidget), dialogs, and technical report generation templates;
+d) Compiled localization and translation files (concrete_mix_design_pt_BR.qm and concrete_mix_design_en_US.qm), user manuals, and technical documentation;
+e) All "App Assets" as defined in the Microsoft Store App Developer Agreement, including application titles, icons (concrete_mix_design.ico), logos, trade dress, screenshots, promotional images, video trailers, and Store metadata.
+
+The Software and its App Assets are protected by the copyright and intellectual property laws of the Federative Republic of Brazil (Federal Law No. 9,609/1998 - Software Protection Law; and Federal Law No. 9,610/1998 - Copyright Law), United States copyright laws, and applicable international treaties (including the Berne Convention for the Protection of Literary and Artistic Works, the WIPO Copyright Treaty [WCT], and the WTO TRIPS Agreement). Submitting or distributing the Software through the Microsoft Store does not transfer any ownership of the Software or its App Assets to Microsoft Corporation or any third party.
+
+2. TRADEMARKS, TRADE NAMES, AND REFERENTIAL USE DISCLAIMERS
+a) Publisher Identifiers: "CONCRETE MIX DESIGNER", "ConcreteMixDesign", "Linceu Lighthouse", and the application's distinctive visual icons, logos, and trade dress are trademarks or trade identifiers owned exclusively by Fernando Nillsson Cidade.
+b) Microsoft Trademarks and Microsoft Marks: Microsoft, Windows, Windows 10, Windows 11, Visual Studio, Visual C++ (MSVC), Win32, MSIX, Xbox, and Microsoft Store (as well as any "Microsoft Marks", including the Microsoft Store logo, icon, and download badges described at http://go.microsoft.com/fwlink/p/?linkid=254841) are registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries. Microsoft Corporation is the sole owner of the Microsoft Marks and associated goodwill. Use of Microsoft Marks in connection with the distribution or promotion of this Software is subject to Microsoft's logo use specifications and does not grant the Application Publisher or any end user any right, title, or interest in the Microsoft Marks.
+c) Qt Trademarks: Qt and the Qt logo are registered trademarks of The Qt Company Ltd. and/or its subsidiaries in Finland and other countries.
+d) Technical Standards and Institutional References (Nominal / Referential Use):
+   - "ABNT" and "NBR" (including references to ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, and NBR 8953:2015) refer to Brazilian Technical Standards published by the Associacao Brasileira de Normas Tecnicas (ABNT).
+   - "IPT/EPUSP" refers to the classical experimental concrete mix design methodology developed at the Instituto de Pesquisas Tecnologicas (IPT) and the Escola Politecnica da Universidade de Sao Paulo (EPUSP).
+   All technical standards and academic methodologies are cited strictly under fair/referential use principles for civil engineering normative compliance verification and educational/professional calculation purposes. This Software is an independent computational tool and is not affiliated with, sponsored by, or officially endorsed by ABNT, IPT, EPUSP, or Microsoft Corporation. Microsoft's certification of the Software for the Microsoft Store does not constitute an endorsement or representation of normative compliance by Microsoft.
+e) Other Marks: All other trademarks, service marks, trade names, and product names referenced in the Software or its documentation are the property of their respective owners.
+
+3. THIRD-PARTY AND FREE AND OPEN-SOURCE SOFTWARE (FOSS) COMPONENTS
+This product incorporates and dynamically links against third-party Free and Open Source Software ("FOSS") libraries and system runtime components. Copyrights for these third-party components belong to their respective authors and rightsholders and remain governed by their applicable open-source or redistributable licenses:
+a) Qt 6 Framework (The Qt Company Ltd. - version 6.11.x): Dynamically linked modules including Qt6Core, Qt6Gui, Qt6Widgets, Qt6Sql, Qt6OpenGL, Qt6OpenGLWidgets, Qt6Charts, and associated platform/image/SQL plugins deployed via windeployqt. Licensed under the GNU Lesser General Public License v3.0 (LGPLv3), the GNU General Public License v3.0 (GPLv3), and/or commercial Qt license terms, as applicable to each module.
+b) SQLite Database Engine: Embedded relational database engine accessed via the Qt6Sql driver, dedicated to the Public Domain by its authors (http://www.sqlite.org/copyright.html).
+c) MinGW-w64 Runtime Libraries:
+   - GCC Runtime Libraries (libgcc_s_seh-1.dll and libstdc++-6.dll): Copyright (C) Free Software Foundation, Inc., licensed under the GNU General Public License v3.0 (GPLv3) with the GCC Runtime Library Exception v3.1.
+   - POSIX Threads for Windows (libwinpthread-1.dll / winpthreads): Copyright (C) MinGW-w64 Project, licensed under the MIT License and 3-Clause BSD License.
+d) Microsoft Windows System APIs and Runtimes: Dynamically links against standard Windows operating system libraries (including dwmapi.dll and advapi32.dll) and/or Microsoft Visual C++ Redistributable runtime components, governed by the applicable Microsoft Windows SDK and Visual Studio license terms.
+
+Full attribution notices, copyright disclosures, and complete license texts for all third-party FOSS components are provided in the accompanying NOTICE (NOTICE_en_US.txt / NOTICE_pt_BR.txt) and LICENSE files distributed with the Software. Nothing in this Notice restricts or limits the end user's rights under the applicable FOSS licenses (including rights relating to dynamically linked LGPLv3 libraries).
+
+4. RESTRICTIONS ON REPRODUCTION AND PERMITTED USES
+No proprietary part of the commercial edition of this Software, its installer packages, App Assets, registered trademarks, or associated technical documentation may be copied, reproduced, modified, decompiled, reverse engineered, redistributed, sublicensed, rented, leased, commercialized, or transmitted in any form or by any means without the prior express written permission of the Copyright Holder, EXCEPT:
+a) Installation and usage by a validly licensed customer in strict accordance with the applicable Commercial Licensing Agreement (CLC_en_US.txt), End-User License Agreement (EULA), or the Microsoft Store Standard Application License Terms (SALT) and Microsoft Usage Rules (http://go.microsoft.com/fwlink/p/?LinkId=723143);
+b) Copying and internal use of the accompanying documentation solely for personal or internal professional reference purposes by a licensed user;
+c) Hosting, package signing (including Microsoft Store MSIX certificate signing), archival retention, and digital delivery performed by Microsoft Corporation and its Affiliates as authorized under the Microsoft Store App Developer Agreement;
+d) Studying, copying, modifying, compiling, and redistributing the public source code made available in the official GitHub repository, strictly governed by the terms of the GNU Affero General Public License v3 (AGPLv3);
+e) Actions expressly permitted by mandatory provisions of applicable copyright law or applicable third-party open-source licenses (such as the GNU LGPLv3) that cannot be waived by contract.
+
+5. INTELLECTUAL PROPERTY INFRINGEMENT AND NOTICE AND TAKEDOWN
+Unauthorized use, reproduction, or distribution of this Software or its App Assets constitutes copyright and/or trademark infringement and may subject the infringer to civil damages and criminal penalties under Brazilian Federal Laws No. 9,609/1998 and No. 9,610/1998 and international law. Claims regarding intellectual property infringement in connection with the Microsoft Store distribution channel are handled in accordance with Microsoft's Notice and Takedown policies (http://go.microsoft.com/fwlink/p/?LinkID=224390) and may also be reported directly to the Copyright Holder at the contact address below.
+
+COPYRIGHT HOLDER & PUBLISHER CONTACT:
+Fernando Nillsson Cidade
+Official Support & Legal E-mail: linceu_lighthouse@outlook.com
+Fazenda Rio Grande, State of Parana, Brazil

@@ -1,0 +1,25 @@
+Development History and Rationale
+
+Motivation:
+CONCRETE MIX DESIGNER was born from the practical engineering need to replace academic and laboratory spreadsheets—often prone to broken formulas, circular references, and accidental cell overwrites—with a highly reliable, auditable native civil engineering platform strictly aligned with current Brazilian technical standards (ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, and NBR 8953:2015). Its direct inspiration originated from experimental structural concrete proportioning studies conducted at the Department of Civil Construction of the Federal University of Paraná (UFPR — course TC031 Civil Construction Materials II), grounded in the classical IPT/EPUSP method established by Paulo Roberto do Lago Helene and Paulo Terzian (1992).
+
+Design goals:
+- Mathematical and Normative Accuracy: unify the exponential analytical model of Abrams' Law, the quadratic polynomial regression of laboratory spreadsheets, Lyse's Linear Law, and Molinari's Hyperbolic Law into a deterministic, unambiguous C++20 calculation engine.
+- Didactic and Operational Clarity: structure the mix design workflow in the exact physical sequence performed in the laboratory—from structural specification and aggregate characterization to mixer mortar content optimization, 4-Quadrant Dosage Diagram plotting, field moisture correction, and cost evaluation.
+- Native and Accessible Visual Experience: integrate native Windows 11 controls with automatic Light and Dark theme adaptation, Modeless auxiliary dialogs with independent Z-Order stacking, and instantaneous runtime localization (Brazilian Portuguese and US English).
+- Privacy and Local Autonomy: ensure civil engineers, researchers, and students can compute and export official calculation reports (PDF, HTML, Markdown, and PNG) 100% offline, without cloud dependencies or telemetry collection.
+
+Development and evolution:
+1. Conception and Algorithmic Audit: comprehensive dependency mapping of input cells and formula precedents across the enhanced UFPR experimental dosage spreadsheet, eliminating rounding discrepancies and validating every equation against ABNT standards.
+2. C++20 and Qt 6.11.1 Architecture: development of a decoupled core engine (`source/core`) for rheological calculations, aggregate packing optimization, least-squares regression, and normative compliance, paired with a modular graphical user interface (`source/gui`) featuring interactive vector charts via Qt Charts.
+3. UI and Usability Refinement: integration of spreadsheet scenario selection into the Settings menu, full customization of technical report header metadata, smooth numeric editing in spinboxes, dark-theme contrast enhancements in the User Manual, and full adoption of Modeless Dialogs with independent Z-Order management.
+4. Dual-Toolchain Distribution Quality (MinGW and MSVC): standardization of build automation and runtime DLL deployment for commercial release on the Microsoft Store and open-source publication on GitHub.
+
+Expected impact:
+Provide the civil engineering community, concrete technology laboratories, and higher education institutions with a benchmark tool that prevents proportioning errors, optimizes Portland cement consumption per cubic meter, and enhances the safety and durability of concrete structures.
+
+Future vision:
+Continuous expansion of supplementary cementitious materials databases (silica fume, metakaolin, fly ash, and blast-furnace slag), continuous particle-packing grading curves (Fuller-Thompson, Andreasen, and Funk-Dinger models), and statistical batch strength control on the jobsite.
+
+Author:
+Fernando Nillsson Cidade

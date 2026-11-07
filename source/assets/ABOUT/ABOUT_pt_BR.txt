@@ -1,0 +1,60 @@
+Projeto: MÓDULO DE DOSAGEM DE CONCRETO
+Versão: 2026.11.6.0
+Autores: Fernando Nillsson Cidade
+
+Descrição resumida:
+MÓDULO DE DOSAGEM DE CONCRETO é um software desktop nativo de engenharia civil de alta precisão, desenvolvido em C++20 e Qt 6.11.1, voltado à dosagem experimental e racional de concreto de cimento Portland pelo consagrado Método IPT/EPUSP (Helene & Terzian, 1992). O aplicativo integra modelagem matemática pelas leis clássicas de Abrams, Lyse e Molinari, otimização de empacotamento granular de agregados graúdos, estudo experimental do teor ideal de argamassa seca (α), renderização interativa do Diagrama de Dosagem de 4 Quadrantes, verificação automática de conformidade normativa (ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025 e NBR 8953:2015), análise comparativa de custos e geração de memoriais de cálculo técnicos.
+
+Descrição detalhada:
+Projetado para engenheiros civis, tecnologistas de concreto, centrais dosadoras, laboratórios de controle tecnológico, professores e estudantes de engenharia, o MÓDULO DE DOSAGEM DE CONCRETO estrutura todo o fluxo experimental de dosagem em sete módulos integrados em abas: Parâmetros de Projeto, Materiais & Britas, Teor de Argamassa (α), Traços & Diagrama IPT, Traço Final & Amassadas, Análise de Custos e Relatório Técnico.
+A arquitetura prioriza exatidão numérica em ponto flutuante de dupla precisão (IEEE 754 double), execução 100% local (offline-first) com privacidade absoluta, suporte nativo aos temas Claro e Escuro do Windows 11 (via DWM API e QPalette), tradução dinâmica em tempo de execução (Português do Brasil e Inglês dos Estados Unidos) e gerenciamento de Janelas Modeless com Ordem no Eixo Z (Z-Order) independente entre a interface principal e as janelas auxiliares de consulta.
+
+Principais funcionalidades:
+- Parâmetros de Projeto e Durabilidade Normativa: definição da resistência característica à compressão (fck de 20 a 100 MPa), condição de preparo (Condições A, B e C da ABNT NBR 12655:2022, Desvio-Padrão Conhecido de Histórico com n ≥ 20 ou modo Laboratório/Arbitrário), cálculo automático da resistência de dosagem (fcj = fck + 1,65 × Sd), abatimento de tronco de cone (Slump conforme ABNT NBR 8953:2015), tipo estrutural (Concreto Armado CA ou Concreto Protendido CP, com acréscimo automático de +5 mm no cobrimento nominal segundo a Tabela 7.2 da ABNT NBR 6118:2023) e Classe de Agressividade Ambiental (CAA I a IV).
+- Caracterização de Materiais e Mistura Binária de Britas: cadastro de massa específica real (kg/dm³), massa unitária solta (kg/dm³), umidade superficial de campo (h%) e custos unitários para cimento Portland (R$/saco de 50 kg, R$/tonelada ou R$/kg), areia e duas graduações de brita (Brita 1 e Brita 2). Inclui tabela experimental de composição binária de britas (0% a 100% em passos de 10%) para determinação automática do ponto ótimo de máxima massa unitária compactada e mínimo índice de vazios (ABNT NBR 7211:2022 / NBR NM 45).
+- Determinação Experimental do Teor Ideal de Argamassa Seca (α): simulação e registro laboratorial do traço piloto (m = 5,0) variando α = (1 + a) / (1 + m) de 40% a 68% em passos de 2%, mantendo a massa de agregado graúdo constante na betoneira para adições sucessivas de cimento, areia e água.
+- Traços Auxiliares e Diagrama de Dosagem IPT de 4 Quadrantes: entrada dos 3 pontos experimentais ensaiados no abatimento alvo (Traço Rico, Traço Piloto/Médio e Traço Pobre), ajuste simultâneo por mínimos quadrados da Lei Exponencial de Abrams (fcj = k1 / k2^(a/c)) e da regressão polinomial de 2º grau da planilha acadêmica, regressão linear da Lei de Lyse (m = k3 + k4 × (a/c)), hipérbole da Lei de Molinari (C = 1000 / (1/γc + a/γa + p/γb + a/c)) e renderização interativa do Diagrama de 4 Quadrantes via Qt Charts com exportação em PNG e PDF.
+- Traço Unitário Final, Correção de Umidade e Dosagem Operacional: apresentação do traço unitário seco (1 : a : p), traço corrigido pela umidade superficial (1 : a_úmido : p_úmido) com desconto exato da água livre carreada pelos agregados, consumo de materiais por m³ de concreto adensado, pesagem para betoneira de laboratório, cálculo para 1 saco de cimento (50 kg), dimensionamento de padiolas de madeira (base 35 cm × 45 cm) e quadro de tolerâncias de pesagem em central dosadora (ABNT NBR 7212:2025 item 5.5).
+- Análise Comparativa de Custos (Analítico vs. Gráfico): confronto direto entre a solução analítica exata das regressões e a leitura manual em ábaco gráfico, calculando o custo unitário por m³ (R$/m³), o custo global para o volume total da obra e a diferença financeira e física equivalente em sacos de cimento de 50 kg.
+- Memorial de Cálculo e Exportação Multiformato: geração instantânea de relatório técnico completo com tradução dinâmica em tempo de execução, cópia para a área de transferência e exportação nativa para PDF (A4, 300 DPI), HTML5 e Markdown (.md).
+- Menu Configurações e Cenários de Referência: seleção direta do "Cenário da Planilha:" com lista suspensa integrada ao menu Configurações (incluindo os Cenários 0 a 5, com a planilha original corrigida da disciplina TC031 da UFPR) e configuração personalizada do cabeçalho técnico ("Projeto:", "Responsável:", "Instituição:" e "Matrícula / ID:"), permitindo optar entre reportar automaticamente o Cenário da Planilha traduzido em tempo de execução ou editar o nome do projeto manualmente.
+- Janelas Modeless e Ordem no Eixo Z (Z-Order): as janelas auxiliares de consulta (Manual do Usuário, Quadro de Normas Técnicas NBR e Sobre o Módulo de Dosagem de Concreto) operam como janelas não-modais (Modeless) independentes no eixo Z, permitindo alternar livremente o foco e a sobreposição entre a janela principal do aplicativo e os diálogos abertos sem bloquear o fluxo de trabalho.
+
+Instalação e distribuição:
+- Distribuído para Windows 10 e Windows 11 (x64) com implantação automatizada de dependências de execução do Qt 6.11.1 via windeployqt (incluindo Qt6Core, Qt6Gui, Qt6Widgets, Qt6Charts, Qt6Sql, Qt6OpenGL, Qt6OpenGLWidgets e runtimes do compilador MinGW 64-bit / MSVC 64-bit).
+- Pronto para distribuição comercial na Microsoft Store e publicação aberta em repositório GitHub.
+
+Armazenamento de dados e privacidade:
+- Operação 100% local e offline: nenhum dado de projeto, ensaio laboratorial, custo ou identificação técnica é transmitido pela internet.
+- As preferências de identificação do cabeçalho são armazenadas localmente no perfil do usuário via QSettings. Memoriais exportados em PDF, HTML, Markdown ou imagens PNG são gravados exclusivamente nos diretórios escolhidos pelo próprio usuário.
+- Sem telemetria, sem rastreamento, sem anúncios e sem necessidade de conta ou login.
+
+Requisitos do sistema:
+- Sistema operacional: Windows 10 (64 bits, versão 1903 ou superior) ou Windows 11 (64 bits).
+- Arquitetura: x86_64 (64 bits).
+- Memória RAM: mínimo de 4 GB (recomendado 8 GB).
+- Espaço em disco: aproximadamente 120 MB para instalação completa com bibliotecas Qt 6.
+
+Como usar (rápido):
+1. Abra o menu "Configurações" para escolher um "Cenário da Planilha:" na lista suspensa ou clique em "Dados do Projeto e Identificação (Ctrl+I)" para preencher Projeto, Responsável, Instituição e Matrícula/ID.
+2. Na Aba 1 (Parâmetros de Projeto), defina o fck, a condição de preparo (Sd), o abatimento alvo (Slump), o tipo estrutural (CA ou CP) e a classe de agressividade ambiental (CAA I a IV).
+3. Na Aba 2 (Materiais & Britas), insira as massas específicas, massas unitárias, umidades e custos dos materiais, e verifique a proporção ótima entre Brita 1 e Brita 2.
+4. Na Aba 3 (Teor de Argamassa α), avalie a tabela progressiva do traço piloto e defina o teor ideal de argamassa seca (α%).
+5. Na Aba 4 (Traços & Diagrama IPT), confira os 3 traços experimentais (Rico, Piloto e Pobre) e inspecione o Diagrama de Dosagem de 4 Quadrantes.
+6. Na Aba 5 (Traço Final & Amassadas) e na Aba 6 (Análise de Custos), consulte o traço seco e úmido, os consumos por m³, as dimensões de padiolas e o comparativo econômico.
+7. Na Aba 7 (Relatório Técnico), visualize o memorial de cálculo completo e exporte para PDF, HTML ou Markdown.
+
+Soluções de problemas comuns:
+- Curva de regressão com aviso de inconsistência física: verifique na Aba 4 se os três traços experimentais possuem relações água/cimento (a/c) estritamente crescentes e resistências (fcj) decrescentes conforme a Lei de Abrams.
+- Não conformidade normativa (status vermelho na barra inferior): verifique na Aba 1 os cartões da ABNT NBR 12655:2022 e NBR 6118:2023; reduza a relação a/c ou ajuste o fck para atender aos limites da Classe de Agressividade Ambiental selecionada.
+- Troca de idioma: utilize o menu "Idioma" na barra superior para alternar instantaneamente entre Português (BR) e Inglês (US) em toda a interface e nos relatórios.
+
+Contato e suporte:
+Autor: Fernando Nillsson Cidade
+E-mail: linceu_lighthouse@outlook.com
+
+Licença e avisos:
+Consulte as abas "Licença" (EULA) e "Avisos" (Notices) na janela "Sobre o Módulo de Dosagem de Concreto" para informações detalhadas sobre direitos autorais, termos de licenciamento comercial e atribuições de componentes de terceiros (Qt 6 sob licença LGPLv3).
+
+Notas finais:
+O MÓDULO DE DOSAGEM DE CONCRETO é uma ferramenta computacional de apoio à engenharia civil. Os resultados calculados devem sempre ser validados experimentalmente em laboratório por profissional legalmente habilitado (Engenheiro Civil com registro no CREA e emissão de ART) antes da execução em obras reais, conforme determinam as normas ABNT NBR 12655:2022 e ABNT NBR 6118:2023.

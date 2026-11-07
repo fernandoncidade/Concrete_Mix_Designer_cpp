@@ -1,0 +1,107 @@
+RELEASE NOTES: Version 2026.11.6.0
+Date: November 6, 2026
+
+General Summary
+This release introduces essential advancements in user communication, terms of use transparency, distribution model clarity, strict local privacy commitments, and complete bilingual harmonization across Portuguese and English documentation. All contact points have been unified under a single official support channel, delivering direct and dependable technical assistance. Furthermore, user guides, standards references, and help manuals have been refined and polished, ensuring an even smoother, more stable, and fully reliable workflow for civil engineering professionals, testing laboratories, educators, and students.
+
+New Features, Adjustments, and Improvements
+
+1. Centralized Official Technical Support Channel
+- Direct and Verified Support: All application informative windows, quick references, help manuals, and legal terms have been updated with the single, verified technical support address: linceu_lighthouse@outlook.com.
+- Transparent and Dependable Assistance: Established a dedicated direct email channel for answering technical mix design inquiries, collecting user feedback, and providing tailored assistance in an honest, agile manner, without requiring phone calls or remote access to user workstations.
+
+2. Clear and Transparent Distribution & Licensing Framework
+- Clarity and Freedom of Choice: Transparent formalization of the coexistence between the open-source community edition and the official commercial edition available through the Microsoft Store.
+- Convenience and Confidence for Enterprise and Professional Users: Engineers, construction companies, and testing laboratories acquiring the software through the Microsoft Store enjoy straightforward installation, automatic background updates, and an enterprise commercial license with no obligation to share internal proprietary projects. Simultaneously, academia and the broader technical community retain open access to inspect, study, and build upon the open-source codebase.
+
+3. Unwavering Commitment to Sovereign Local-First Privacy
+- Your Concrete Mix Data Remains Yours: Reaffirmed the local-first, strictly offline architecture of Concrete Mix Designer. All experimental mix calculations, regression curves, 4-quadrant charts, and technical reports run 100% locally on your computer.
+- Zero Cloud and Zero Telemetry: The application and companion tools never collect, monitor, or transmit project details, mix proportions, or user information to remote servers or cloud services, in full alignment with data protection regulations (such as LGPD and GDPR).
+
+4. Complete Bilingual Harmonization (Portuguese and English)
+- Identical Depth and Experience: All informational documents, licensing terms, privacy policies, copyright notices, and operating guides have been symmetrically synchronized across both supported languages (Brazilian Portuguese and US English).
+- Clarity and Textual Rigor: Every section has been meticulously reviewed so that users worldwide can easily understand their rights, operational workflows, and technical guidelines, regardless of the language they choose.
+
+5. Reliable and Accessible Navigation Across Help Manuals and Guides
+- Verified and Stable Internal Navigation: Cross-references and links connecting user manuals, technical architecture guides, and standards tables have been thoroughly audited and corrected for smooth, uninterrupted reading.
+- Generalized and Neutral Example Data: Sample template metadata and identification fields have been normalized so that engineers and institutions from any region can readily customize report headers with their own credentials and project titles.
+
+6. Enhanced System Stability, Uniformity, and Consistency
+- Official System-Wide Version Alignment: Version 2026.11.6.0 is consistently applied across all application dialogues (including the About window, installers, and launch screens).
+- Continued Mathematical Precision: Retained uncompromised precision across the IPT/EPUSP analytical mix design engine (Abrams', Lyse's, and Molinari's Laws), crisp vector rendering on the unified charts, and automatic compliance verification against applicable ABNT standards.
+
+Important Notes:
+- Strict Data Preservation: All custom project settings, report header metadata, and saved mix parameters remain completely preserved across updates.
+- 100% Offline Operation: All calculation features, engineering report generators, and chart exports continue to operate with zero dependency on an internet connection.
+
+================================================================================
+
+RELEASE NOTES: Version 2026.10.26.0
+Date: October 26, 2026
+
+General Summary
+This release introduces major enhancements in chart visual clarity, image export quality, international currency formatting in reports, and a brand-new command-line terminal tool for quick, automated operation. The combined mix design chart has been revamped to unify compressive strength, aggregate proportion, and cement content curves on a clean display equipped with full grid lines, completely removing background color fills that previously obscured data points. The language system now seamlessly adapts the currency symbol throughout all cost tables and the final technical report, displaying "$" in English and "R$" in Portuguese. Furthermore, users can now take advantage of a companion terminal tool to automate mix calculations, verify standards, and produce comprehensive engineering reports directly from the Windows command prompt.
+
+New Features, Adjustments, and Improvements
+
+1. Unified Mix Design Combined Chart (Abrams, Lyse, and Molinari)
+- Clean, Integrated Overview: Under the mixes and diagrams tab, the fifth chart brings the three essential mix design curves together in a single, well-proportioned view.
+- Elimination of Unwanted Shading: The solid color fill under the cement content curve has been removed, providing unobstructed visibility of the fitted curves and test points.
+- Precision Grid Lines and Axis Scales: Clear grid lines and scale ticks have been added to both horizontal and vertical axes, enabling effortless, accurate visual readings.
+- Enhanced Readability in the 4-Quadrant Diagram: Numerical labels across all four vertical axis scales on the complete diagram have been resized and spaced for effortless reading.
+
+2. High-Resolution Chart Image Export
+- Crisp Figures for Technical Documentation: The "Export Chart Image..." feature has been thoroughly improved to generate high-resolution, distortion-free images that match screen quality, ready for inclusion in engineering reports, presentations, and academic papers.
+
+3. Automatic Currency Symbol Switching in Reports and Costs
+- Language-Adaptive Currency Formatting: When toggling the application language between English and Portuguese, all material cost tables and the final technical calculation report instantly update the currency symbol ("$" for US English and "R$" for Brazilian Portuguese) without requiring a program restart.
+
+4. New Command Line Terminal Tool
+- Direct Mix Design from the Command Prompt: A companion terminal program allows users to calculate complete concrete mixes, estimate material consumption per cubic meter, and size batches directly from the command prompt.
+- Fast Standards Compliance Auditing: Quickly verifies whether a concrete mix satisfies the required compressive strength, minimum cement consumption, and maximum water-cement ratio specified by current technical standards.
+- Automated Technical Report Generation: Immediately produces complete engineering calculation reports in web-friendly formats, text editors, or digital files for record keeping.
+- Built-In Calculation Verification Tests: Includes automated diagnostic routines to check calculation integrity with immediate on-screen feedback.
+
+5. Greater Stability, Performance, and Reliability
+- Safer Calculation Handling: The mathematical engine now features extra safeguards to ensure immediate, dependable results without freezing, even when processing unusual input numbers.
+- Smooth and Reliable Workflow: Dialogs, reference tables, and report viewers open and close smoothly, delivering a robust and dependable user experience.
+
+Important Notes:
+- Strict Data Preservation: All user project details, metadata settings, and preferences remain fully intact across updates.
+- Total Privacy: All calculations, diagrams, command-line utilities, and generated reports operate 100% locally on your computer with zero internet dependency and zero telemetry.
+
+================================================================================
+
+RELEASE NOTES: Version 2026.10.23.0
+Date: October 23, 2026
+
+General Summary
+This release consolidates a major milestone in civil engineering accuracy, numerical precision, UI ergonomics, and Microsoft Store compliance for CONCRETE MIX DESIGNER. It incorporates the complete algorithmic audit of the enhanced IPT/EPUSP experimental mix design spreadsheet (Helene & Terzian, 1992 — UFPR TC031), a redesigned Settings menu featuring integrated Spreadsheet Scenario selection and custom technical header metadata, a Modeless Dialog architecture with independent Z-Order stacking alongside the main GUI, top bar decluttering, refined Windows 11 Dark Theme styling in the User Manual, complete runtime DLL deployment for the Mocks utilities (MinGW and MSVC), and full bilingual standardization of all institutional and legal documentation (Brazilian Portuguese and US English).
+
+New Features, Adjustments, and Improvements
+
+1. Settings Menu, Spreadsheet Scenario, and Technical Header Identification
+- "Spreadsheet Scenario:" Selection in Settings Menu: The "Spreadsheet Scenario:" label and its associated dropdown list (containing Scenarios 0 to 5, including Scenario 5 from the corrected original UFPR academic spreadsheet) have been moved into the top of the "Settings" menu, providing a cleaner and more focused workspace.
+- Project Data & Identification Dialog (Ctrl+I): Enables configuring the "Project:", "Responsible:", "Institution:", and "ID / Code:" fields displayed in the Technical Report header (Tab 7), with automatic local persistence via QSettings.
+- Dual Mode for the "Project:" Field: Users can choose between automatically reporting the selected "Spreadsheet Scenario" (with instantaneous runtime translation between Portuguese and English) or manually entering a custom project title.
+
+2. Modeless Dialogs and Independent Z-Order
+- Free Z-Order Stacking Between Main GUI and Dialogs: All auxiliary dialog windows (User Manual, NBR Technical Standards, About Concrete Mix Designer, and export notifications), with the exception of modal dialogs launched from the "Settings" menu, now operate as independent Modeless windows in the Z-Order.
+- Non-Blocking Workflow: Clicking the main window immediately brings it to the front in the Z-Order while reference dialogs remain open in the background; clicking an open dialog or selecting its menu item brings it back to the front without blocking mix design editing.
+- Synchronized Shutdown: Closing the main application window automatically and cleanly closes all open Modeless auxiliary windows.
+
+3. Interface Simplification and Smooth Numeric Editing
+- Removal of Redundant Toolbar Controls: Removed the "Language:" dropdown list and the "Recalculate All", "NBR Standards", "Manual", and "About" toolbar buttons, as these actions are already organized in the "File", "Language", and "Help" menus in the menu bar.
+- Smooth SpinBox Editing (QDoubleSpinBox): Disabled premature trailing-zero auto-completion on every keystroke (`KeyboardTracking(false)`), allowing users to type decimal values naturally and formatting numbers only upon confirmation (`Enter`) or focus change.
+- Dark Theme Contrast Fix in User Manual: Updated the internal HTML/CSS styling of the User Manual dialog (`ManualDialog`) to eliminate white background boxes behind inline technical expressions (`<code>`) and table headers (`<th>`) when Windows 11 is in Dark Theme.
+
+4. Mathematical Audit of the UFPR Spreadsheet and ABNT Normative Compliance
+- Full Mathematical Fidelity with the Enhanced UFPR Spreadsheet (TC031): Synchronized all input cell dependencies and formula precedents, including the 2nd-degree polynomial w/c vs. fcj regression alongside Abrams' Exponential Law, Lyse's Linear Law, Molinari's Hyperbolic Law, automatic propagation of the w/c ratio across all 15 steps of Tab 3 (Mortar Content α), and unit cost conversions across R$/bag, R$/t, and R$/kg.
+- Up-to-Date Normative Rigor: Automated compliance verification against ABNT NBR 12655:2022 (Preparation Conditions A, B, and C; CAA I to IV), ABNT NBR 6118:2023 (nominal cover for CA and automatic +5 mm increment for Prestressed Concrete CP per Table 7.2), ABNT NBR 7211:2022 (binary coarse aggregate blend), ABNT NBR 7212:2025 (central plant weighing tolerances — item 5.5), and ABNT NBR 8953:2015.
+
+5. Complete Runtime DLL Deployment for Mocks Binaries (MinGW and MSVC)
+- Definitive Fix for Missing DLLs in Mocks: The build system (`mocks/CMakeLists.txt`) now automatically deploys `libgcc_s_seh-1.dll`, `libstdc++-6.dll`, `libwinpthread-1.dll`, `Qt6Charts.dll`, `Qt6OpenGL.dll`, `Qt6OpenGLWidgets.dll`, and `Qt6Sql.dll` alongside `find_VersionEditor.exe`, `CompileTranslationsGUI.exe`, and `CompileTranslationsTerminal.exe` in both the primary build directory and the `export/` directory.
+
+Important Notes:
+- Strict Data Preservation: All user-configured header metadata and scenario preferences remain intact across sessions and updates.
+- Total Privacy: All rheological calculations, 4-quadrant charts, and PDF, HTML, Markdown, and PNG exports run 100% locally on the user's computer without any telemetry.

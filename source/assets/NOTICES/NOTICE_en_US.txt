@@ -1,0 +1,48 @@
+Version 2026.11.6.0, November 6, 2026
+Third-Party Software Licenses and Attributions Notice
+=====================================================
+
+The CONCRETE MIX DESIGNER application uses third-party libraries and runtime tools whose licenses and attributions are acknowledged and declared below, in strict compliance with open-source requirements, Microsoft Store policies (including the App Developer Agreement), and intellectual property legislation.
+
+------------------------------------------------------------------------
+1. Qt 6 Framework (Version 6.11.1)
+------------------------------------------------------------------------
+Dynamically linked modules (.dll):
+- Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll, Qt6Charts.dll, Qt6Sql.dll, Qt6OpenGL.dll, Qt6OpenGLWidgets.dll, and Windows platform plugins (e.g., qwindows.dll, qsqlite.dll).
+Copyright (C) 2026 The Qt Company Ltd. and other contributors.
+Official website: https://www.qt.io/
+License: GNU Lesser General Public License v3.0 (LGPLv3) — https://www.gnu.org/licenses/lgpl-3.0.html
+
+LGPLv3 and Microsoft Store Compliance Statement:
+CONCRETE MIX DESIGNER dynamically links to the Qt 6 libraries via standalone .dll files distributed alongside the executable. No modifications were made to the original Qt 6 source code. End users retain the freedom guaranteed under LGPLv3 to replace the dynamically linked Qt 6 libraries with compatible versions and to obtain the official Qt source code directly from https://code.qt.io/ or https://www.qt.io/download-open-source. 
+In accordance with Section 4.c of the Microsoft Store App Developer Agreement, this distribution grants Microsoft the necessary rights to host, install, run, and distribute the application as an agent, ensuring these actions do not violate the applicable FOSS licenses of the aforementioned components.
+
+------------------------------------------------------------------------
+2. C++20 Compiler Runtimes (MinGW-w64 / MSVC)
+------------------------------------------------------------------------
+2.1. MinGW 64-bit Distribution (GCC Runtime Libraries):
+- libgcc_s_seh-1.dll, libstdc++-6.dll, libwinpthread-1.dll
+License: GCC Runtime Library Exception v3.1 (GPLv3 with linking exception for executables compiled with GCC) and MIT/BSD License for winpthreads (MinGW-w64 Project).
+Official website: https://www.mingw-w64.org/ | https://gcc.gnu.org/
+
+2.2. MSVC 64-bit Distribution (Microsoft Visual C++ Redistributable):
+- vcruntime140.dll, vcruntime140_1.dll, msvcp140.dll
+Copyright (C) Microsoft Corporation. All rights reserved.
+Distributed under the Microsoft Visual Studio / Visual C++ Runtime redistribution terms.
+
+------------------------------------------------------------------------
+3. Scientific, Academic, and Normative References
+------------------------------------------------------------------------
+The mathematical models and verification criteria implemented in the proprietary source code of CONCRETE MIX DESIGNER are grounded in classical scientific literature and current Brazilian technical standards (all software code algorithms were originally authored from scratch by the developer):
+- HELENE, Paulo Roberto do Lago; TERZIAN, Paulo. Manual de Dosagem e Controle do Concreto. São Paulo: PINI / Brasília: SENAI, 1992. (IPT/EPUSP Method).
+- MEHTA, P. Kumar; MONTEIRO, Paulo J. M. Concrete: Microstructure, Properties, and Materials. 4th ed. McGraw-Hill Education, 2014.
+- ABNT NBR 12655:2022 — Portland cement concrete — Preparation, control, receipt and acceptance — Procedure.
+- ABNT NBR 6118:2023 — Design of concrete structures — Procedure.
+- ABNT NBR 7211:2022 — Aggregates for concrete — Requirements.
+- ABNT NBR 7212:2025 — Ready-mixed concrete — Preparation, delivery and control.
+- ABNT NBR 8953:2015 — Concrete for structural purposes — Classification by density, strength groups and consistency.
+
+------------------------------------------------------------------------
+4. Disclaimer of Warranties for Third-Party Components
+------------------------------------------------------------------------
+The third-party components listed above are provided by their respective copyright holders “AS IS”, without warranties of any kind, express or implied, under the terms of their respective licenses.

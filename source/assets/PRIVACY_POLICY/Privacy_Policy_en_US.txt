@@ -1,0 +1,70 @@
+Privacy Policy - CONCRETE MIX DESIGNER
+Last updated: November 6, 2026
+Version: 2026.11.6.0
+
+This Policy describes how CONCRETE MIX DESIGNER (“Software”) handles user information. The Software is designed to operate 100% locally on your device, without any automatic telemetry, data collection, or cloud synchronization. All analytical concrete mix design modules, charts, tables, and report exporters operate exclusively offline.
+
+1. Scope and Principles
+- Local operation: All data processed by the Software remains entirely on your device. The Software does not access, collect, or transmit any Personal Information to the developer or third parties.
+- Minimization: The Software only processes the structural and material inputs explicitly required to calculate concrete mix proportions and generate the technical reports triggered by you.
+- Transparency and control: You retain complete and direct control over the creation, editing, selection, export, and deletion of all your data directly through your local file system.
+
+2. Data Processed by the Software
+2.1 Content entered by you
+- Structural and durability parameters (fck, standard deviation Sd, preparation condition, target slump, structural type CA/CP, and Environmental Aggressiveness Class CAA I to IV).
+- Physical properties and unit costs of materials (Portland cement, sand, Gravels 1 and 2, water, and admixtures), binary coarse aggregate packing data, dry mortar content (α) test metrics, and auxiliary trial mix points.
+- Optional technical report header identification metadata configured via the Settings menu (“Project:”, “Responsible:”, “Institution:”, and “ID / Code:”).
+
+2.2 Files chosen by you
+- Technical Report Export: When exporting the engineering calculation report to PDF (.pdf), HTML (.html), or Markdown (.md), the Software writes the document exclusively to the local folder and filename you select.
+- Dosage Diagram Export: When saving the 4-quadrant charts to PNG (.png) or PDF (.pdf), the Software writes the image to the location you choose.
+- Clipboard: When clicking “Copy Text”, the Markdown report is copied to the local Windows clipboard solely by your direct action.
+
+2.3 Local technical data
+- Minimal local configuration preferences are stored via the operating system's standard mechanism (in the user's local Windows registry/AppData profile path), such as your chosen interface mode and the report header texts. There is no automatic collection or transmission of personal identifiers.
+
+3. What the Software DOES NOT Collect or Transmit
+- No account, registration, or login requirements.
+- No telemetry, app analytics, or online tracking.
+- No automatic sending of data to the developer or third-party servers.
+- No scanning of folders or reading of files beyond the paths you explicitly choose when exporting documents.
+- No network connection is required or utilized for calculations, chart rendering, or report generation.
+
+4. Storage and Retention
+- Storage location: Header identification preferences are saved locally in the operating system's user settings. Exported files (PDF, HTML, MD, PNG) are saved in the local directories you designate.
+- Retention: Your data remains on your device until you edit it, restore defaults via the “Restore Default” button in the Settings dialog, manually delete the exported files, or uninstall the application.
+
+5. Legal Basis (LGPD / GDPR / CCPA)
+- Strictly local processing is carried out solely to execute the Software's engineering calculation features at your request. This design natively complies with data minimization and privacy-by-design principles under the Brazilian General Data Protection Law (LGPD), the European GDPR, and the CCPA. Because no data is collected, transmitted, or processed remotely, you maintain absolute sovereignty over your information.
+
+6. Sharing
+- The Software does not share data with third parties. Any sharing of data occurs solely through your voluntary and manual action outside the Software (e.g., emailing a generated PDF report to colleagues, clients, or regulatory bodies).
+
+7. Security
+- Because data remains entirely on your local device, the security and protection of your information depend exclusively on your operating system's safeguards (e.g., Windows user accounts, folder permissions, BitLocker encryption, and backups). Keeping your operating system updated and maintaining regular backups of your exported technical reports is highly recommended.
+
+8. Microsoft Store Compliance and Accessibility
+- The Software strictly complies with Microsoft Store Policies regarding user privacy, transparency, and safe local execution. Furthermore, it supports native visual accessibility features (automatic support for Windows Light and Dark themes, keyboard navigation, and non-blocking dialogs). 
+- A prominent link to this Privacy Policy is available within the Software and on the Microsoft Store product detail page.
+
+9. Error and Diagnostic Reports
+- The developer has opted out of collecting App Analytics and Error Reporting Data. The Software itself does not send crash logs or error reports to the developer.
+- If your operating system generates generic crash reports (e.g., Windows Error Reporting), this process is governed entirely by your own Windows privacy settings and the privacy policy of Microsoft Corporation. The developer does not receive, access, or process identifiable personal data from this flow.
+
+10. Data Subject Rights (LGPD / GDPR / CCPA)
+- Access, correction, and deletion: Because no data is held on external servers, you exercise your data subject rights directly on your device. You can view, edit, reset to default values, and delete project data at any time through the graphical interface (Settings menu > Project Data & Identification).
+- Portability: You can use the built-in export functions (PDF, HTML, and Markdown) to extract complete, structured copies of your calculation reports at any time.
+
+11. Children and Adolescents
+- The Software is an advanced technical tool intended for professional civil engineers, researchers, and students. It is not directed at children under 13 and does not collect any personal data from any user.
+
+12. Third Parties and Libraries
+- The application utilizes the open-source Qt 6 framework (specifically the Qt6Core, Qt6Gui, Qt6Widgets, Qt6Charts, Qt6Sql, Qt6OpenGL, and Qt6OpenGLWidgets modules) and C++20 compiler runtimes (MinGW-w64 / MSVC) to provide the graphical interface and vector charts. All components operate strictly locally without any telemetry functions. Full open-source licenses and attributions are available in the “Notices” tab of the “About” window.
+
+13. Changes to this Policy
+- This Policy may be updated periodically to reflect Software updates or legal requirements. The date and version at the top of this document indicate the latest revision.
+
+14. Contact
+- For any questions regarding this Privacy Policy:
+  Fernando Nillsson Cidade
+  E-mail: linceu_lighthouse@outlook.com

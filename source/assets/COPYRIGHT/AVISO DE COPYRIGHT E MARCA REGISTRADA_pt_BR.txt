@@ -1,0 +1,54 @@
+AVISO DE DIREITOS AUTORAIS E MARCAS REGISTRADAS - CONCRETE MIX DESIGNER
+Aplicativo / Alvo Binário: ConcreteMixDesign (ConcreteMixDesign.exe)
+Versão: 2026.11.6.0
+======================================================================
+Copyright (C) 2025-2026 Fernando Nillsson Cidade. Todos os direitos reservados.
+
+1. TITULARIDADE E PROTEÇÃO DE DIREITOS AUTORAIS
+O aplicativo de software CONCRETE MIX DESIGNER (alvo binário executável: ConcreteMixDesign), Versão 2026.10.26.0 (em que o quarto segmento da versão ".0" é reservado para o gerenciamento de pacotes MSIX da Microsoft Store), é obra proprietária de Fernando Nillsson Cidade ("Editor do Aplicativo" e "Titular dos Direitos Autorais").
+
+Os elementos protegidos incluem, sem limitação:
+a) Código-fonte C++20 original e arquitetura de software modular (módulos ConcreteStandards, AggregateOptimizer, MortarContentOptimizer, RegressionEngine, MixDesignCalculator, ProjectData e NormativeDatabase);
+b) Algoritmos analíticos e experimentais de dosagem de concreto (implementação do Método IPT/EPUSP), rotinas de otimização de granulometria de agregados e teor de argamassa, motores de regressão estatística e modelos de cálculo de custos;
+c) Design da Interface Gráfica de Usuário (GUI), widgets personalizados (incluindo o renderizador do Diagrama de Dosagem de 4 Quadrantes / QuadChartWidget), caixas de diálogo e modelos (templates) de geração de relatórios técnicos;
+d) Arquivos de localização e tradução compilados (concrete_mix_design_pt_BR.qm e concrete_mix_design_en_US.qm), manuais do usuário e documentação técnica;
+e) Todos os "Ativos do Aplicativo" (App Assets) conforme definidos no Contrato de Desenvolvedor de Aplicativos da Microsoft Store, incluindo títulos do aplicativo, ícones (concrete_mix_design.ico), logotipos, identidade visual (trade dress), capturas de tela, imagens promocionais, trailers em vídeo e metadados da Loja.
+
+O Software e seus Ativos do Aplicativo são protegidos pelas leis de direitos autorais e propriedade intelectual da República Federativa do Brasil (Lei Federal nº 9.609/1998 - Lei de Proteção de Software; e Lei Federal nº 9.610/1998 - Lei de Direitos Autorais), leis de direitos autorais dos Estados Unidos e tratados internacionais aplicáveis (incluindo a Convenção de Berna para a Proteção das Obras Literárias e Artísticas, o Tratado da OMPI sobre Direito de Autor [WCT] e o Acordo TRIPS da OMC). O envio ou a distribuição do Software através da Microsoft Store não transfere qualquer titularidade do Software ou de seus Ativos do Aplicativo para a Microsoft Corporation ou qualquer terceiro.
+
+2. MARCAS REGISTRADAS, NOMES COMERCIAIS E AVISOS DE USO REFERENCIAL
+a) Identificadores do Editor: "CONCRETE MIX DESIGNER", "ConcreteMixDesign", "Linceu Lighthouse", bem como os ícones visuais distintivos, logotipos e identidade visual (trade dress) do aplicativo são marcas registradas ou identificadores comerciais de propriedade exclusiva de Fernando Nillsson Cidade.
+b) Marcas Registradas e Marcas da Microsoft: Microsoft, Windows, Windows 10, Windows 11, Visual Studio, Visual C++ (MSVC), Win32, MSIX, Xbox e Microsoft Store (bem como quaisquer "Marcas da Microsoft", incluindo o logotipo da Microsoft Store, ícone e selos de download descritos em http://go.microsoft.com/fwlink/p/?linkid=254841) são marcas registradas ou marcas comerciais da Microsoft Corporation nos Estados Unidos e/ou em outros países. A Microsoft Corporation é a única proprietária das Marcas da Microsoft e do goodwill (fundo de comércio/fama) associado. O uso de Marcas da Microsoft em conexão com a distribuição ou promoção deste Software está sujeito às especificações de uso de logotipo da Microsoft e não concede ao Editor do Aplicativo ou a qualquer usuário final nenhum direito, título ou interesse nas Marcas da Microsoft.
+c) Marcas Registradas do Qt: Qt e o logotipo Qt são marcas registradas da The Qt Company Ltd. e/ou de suas subsidiárias na Finlândia e em outros países.
+d) Normas Técnicas e Referências Institucionais (Uso Nominal / Referencial):
+   - "ABNT" e "NBR" (incluindo referências à ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025 e NBR 8953:2015) referem-se às Normas Técnicas Brasileiras publicadas pela Associação Brasileira de Normas Técnicas (ABNT).
+   - "IPT/EPUSP" refere-se à clássica metodologia experimental de dosagem de concreto desenvolvida no Instituto de Pesquisas Tecnológicas (IPT) e na Escola Politécnica da Universidade de São Paulo (EPUSP).
+   Todas as normas técnicas e metodologias acadêmicas são citadas estritamente sob os princípios de uso justo/referencial para verificação de conformidade normativa em engenharia civil e fins educacionais/profissionais de cálculo. Este Software é uma ferramenta computacional independente e não é afiliado, patrocinado ou oficialmente endossado pela ABNT, IPT, EPUSP ou Microsoft Corporation. A certificação do Software pela Microsoft para a Microsoft Store não constitui um endosso ou uma declaração de conformidade normativa por parte da Microsoft.
+e) Outras Marcas: Todas as outras marcas registradas, marcas de serviço, nomes comerciais e nomes de produtos referenciados no Software ou em sua documentação são de propriedade de seus respectivos donos.
+
+3. COMPONENTES DE SOFTWARE LIVRE E DE CÓDIGO ABERTO (FOSS) E DE TERCEIROS
+Este produto incorpora e vincula-se dinamicamente a bibliotecas de Software Livre e de Código Aberto ("FOSS") e componentes de tempo de execução (runtime) do sistema de terceiros. Os direitos autorais desses componentes de terceiros pertencem aos seus respectivos autores e titulares de direitos, e permanecem regidos pelas suas licenças de código aberto ou redistribuíveis aplicáveis:
+a) Framework Qt 6 (The Qt Company Ltd. - versão 6.11.x): Módulos vinculados dinamicamente incluindo Qt6Core, Qt6Gui, Qt6Widgets, Qt6Sql, Qt6OpenGL, Qt6OpenGLWidgets, Qt6Charts, e plugins associados de plataforma/imagem/SQL implantados via windeployqt. Licenciados sob a GNU Lesser General Public License v3.0 (LGPLv3), a GNU General Public License v3.0 (GPLv3) e/ou termos de licença comercial do Qt, conforme aplicável a cada módulo.
+b) Mecanismo de Banco de Dados SQLite: Mecanismo de banco de dados relacional embarcado, acessado via driver Qt6Sql, dedicado ao Domínio Público por seus autores (http://www.sqlite.org/copyright.html).
+c) Bibliotecas de Tempo de Execução MinGW-w64:
+   - Bibliotecas de Tempo de Execução GCC (libgcc_s_seh-1.dll e libstdc++-6.dll): Copyright (C) Free Software Foundation, Inc., licenciadas sob a GNU General Public License v3.0 (GPLv3) com a Exceção de Biblioteca de Tempo de Execução do GCC v3.1 (GCC Runtime Library Exception v3.1).
+   - Threads POSIX para Windows (libwinpthread-1.dll / winpthreads): Copyright (C) MinGW-w64 Project, licenciado sob a Licença MIT e Licença BSD de 3 Cláusulas.
+d) APIs e Tempos de Execução do Sistema Microsoft Windows: Vincula-se dinamicamente às bibliotecas padrão do sistema operacional Windows (incluindo dwmapi.dll e advapi32.dll) e/ou componentes de tempo de execução Microsoft Visual C++ Redistributable, regidos pelos termos de licença aplicáveis do Microsoft Windows SDK e do Visual Studio.
+
+Avisos completos de atribuição, divulgações de direitos autorais e os textos completos das licenças para todos os componentes FOSS de terceiros são fornecidos nos arquivos de AVISO (NOTICE_en_US.txt / NOTICE_pt_BR.txt) e LICENÇA (LICENSE) que acompanham e são distribuídos com o Software. Nada neste Aviso restringe ou limita os direitos do usuário final sob as licenças FOSS aplicáveis (incluindo direitos relativos a bibliotecas LGPLv3 vinculadas dinamicamente).
+
+4. RESTRIÇÕES DE REPRODUÇÃO E USOS PERMITIDOS
+Nenhuma parte proprietária da edição comercial deste Software, seus instaladores, Ativos do Aplicativo (App Assets), marcas registradas ou documentação técnica associada pode ser copiada, reproduzida, modificada, descompilada, submetida a engenharia reversa, redistribuída, sublicenciada, alugada, arrendada, comercializada ou transmitida de qualquer forma ou por qualquer meio sem a permissão prévia, expressa e por escrito do Titular dos Direitos Autorais, EXCETO:
+a) A instalação e uso por um cliente validamente licenciado, em estrita conformidade com o Contrato de Licenciamento Comercial aplicável (CLC_pt_BR.txt), Contrato de Licença de Usuário Final (EULA), ou os Termos Padrão de Licença de Aplicativo da Microsoft Store (SALT) e as Regras de Uso da Microsoft (http://go.microsoft.com/fwlink/p/?LinkId=723143);
+b) A cópia e o uso interno da documentação fornecida exclusivamente para fins de referência profissional interna ou pessoal por um usuário licenciado;
+c) A hospedagem, assinatura de pacotes (incluindo assinatura de certificado MSIX da Microsoft Store), retenção para arquivamento e entrega digital realizadas pela Microsoft Corporation e suas Afiliadas conforme autorizado sob o Contrato de Desenvolvedor de Aplicativos da Microsoft Store;
+d) O estudo, cópia, modificação, compilação e redistribuição do código-fonte público disponibilizado no repositório oficial do GitHub, regidos estritamente pelos termos da licença GNU Affero General Public License v3 (AGPLv3);
+e) As ações expressamente permitidas por disposições obrigatórias da lei de direitos autorais aplicável ou licenças de código aberto aplicáveis de terceiros (como a GNU LGPLv3) que não podem ser objeto de renúncia contratual.
+
+5. VIOLAÇÃO DE PROPRIEDADE INTELECTUAL E NOTIFICAÇÃO E RETIRADA
+O uso, reprodução ou distribuição não autorizada deste Software ou de seus Ativos do Aplicativo (App Assets) constitui violação de direitos autorais e/ou de marca registrada e pode sujeitar o infrator a indenizações civis e penalidades criminais sob as Leis Federais Brasileiras nº 9.609/1998 e nº 9.610/1998 e o direito internacional. Reclamações relacionadas a infração de propriedade intelectual em conexão com o canal de distribuição da Microsoft Store são tratadas de acordo com as políticas de Notificação e Retirada (Notice and Takedown) da Microsoft (http://go.microsoft.com/fwlink/p/?LinkID=224390) e também podem ser reportadas diretamente ao Titular dos Direitos Autorais no endereço de contato abaixo.
+
+CONTATO DO TITULAR DOS DIREITOS AUTORAIS E EDITOR:
+Fernando Nillsson Cidade
+E-mail Oficial de Suporte e Jurídico: linceu_lighthouse@outlook.com
+Fazenda Rio Grande, Estado do Paraná, Brasil

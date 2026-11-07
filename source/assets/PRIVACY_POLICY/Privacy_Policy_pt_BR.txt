@@ -1,0 +1,70 @@
+Política de Privacidade - CONCRETE MIX DESIGNER
+Última atualização: 6 de novembro de 2026
+Versão: 2026.11.6.0
+
+Esta Política descreve como o CONCRETE MIX DESIGNER (“Software”) lida com as informações do usuário. O Software foi projetado para operar 100% localmente no seu dispositivo, sem qualquer telemetria automática, coleta de dados ou sincronização em nuvem. Todos os módulos analíticos de dosagem de concreto, gráficos, tabelas e exportadores de relatórios operam exclusivamente offline.
+
+1. Escopo e Princípios
+- Operação local: Todos os dados processados pelo Software permanecem inteiramente no seu dispositivo. O Software não acessa, não coleta e não transmite nenhuma Informação Pessoal ao desenvolvedor ou a terceiros.
+- Minimização: O Software processa apenas as entradas estruturais e de materiais explicitamente necessárias para calcular as proporções do traço de concreto e gerar os relatórios técnicos acionados por você.
+- Transparência e controle: Você mantém o controle total e direto sobre a criação, edição, seleção, exportação e exclusão de todos os seus dados diretamente por meio do sistema de arquivos local.
+
+2. Dados Processados pelo Software
+2.1 Conteúdo inserido por você
+- Parâmetros estruturais e de durabilidade (fck, desvio padrão Sd, condição de preparo, abatimento/slump alvo, tipo estrutural CA/CP e Classe de Agressividade Ambiental CAA I a IV).
+- Propriedades físicas e custos unitários dos materiais (cimento Portland, areia, Britas 1 e 2, água e aditivos), dados de empacotamento binário de agregado graúdo, métricas de ensaio do teor de argamassa seca (α) e pontos experimentais auxiliares de dosagem.
+- Metadados de identificação opcionais do cabeçalho do relatório técnico, configurados por meio do menu Configurações (“Projeto:”, “Responsável:”, “Instituição:” e “ID / Código:”).
+
+2.2 Arquivos escolhidos por você
+- Exportação de Relatório Técnico: Ao exportar o relatório de cálculo de engenharia para PDF (.pdf), HTML (.html) ou Markdown (.md), o Software grava o documento exclusivamente na pasta local e com o nome de arquivo que você selecionar.
+- Exportação do Diagrama de Dosagem: Ao salvar os gráficos de 4 quadrantes para PNG (.png) ou PDF (.pdf), o Software grava a imagem no local de sua escolha.
+- Área de Transferência: Ao clicar em “Copiar Texto”, o relatório Markdown é copiado para a área de transferência local do Windows exclusivamente por sua ação direta.
+
+2.3 Dados técnicos locais
+- Preferências mínimas de configuração local são armazenadas por meio do mecanismo padrão do sistema operacional (no caminho de perfil local do Registro do Windows/AppData do usuário), como o modo de interface escolhido e os textos de cabeçalho do relatório. Não há coleta ou transmissão automática de identificadores pessoais.
+
+3. O que o Software NÃO Coleta nem Transmite
+- Sem requisitos de conta, registro ou login.
+- Sem telemetria, análise de aplicativos (analytics) ou rastreamento online.
+- Sem envio automático de dados para os servidores do desenvolvedor ou de terceiros.
+- Sem verificação de pastas ou leitura de arquivos além dos caminhos que você escolher explicitamente ao exportar documentos.
+- Nenhuma conexão de rede é necessária ou utilizada para cálculos, renderização de gráficos ou geração de relatórios.
+
+4. Armazenamento e Retenção
+- Local de armazenamento: As preferências de identificação do cabeçalho são salvas localmente nas configurações de usuário do sistema operacional. Os arquivos exportados (PDF, HTML, MD, PNG) são salvos nos diretórios locais que você designar.
+- Retenção: Seus dados permanecem no seu dispositivo até que você os edite, restaure os padrões por meio do botão “Restaurar Padrões” (Restore Default) na caixa de diálogo de Configurações, exclua manualmente os arquivos exportados ou desinstale o aplicativo.
+
+5. Base Legal (LGPD / GDPR / CCPA)
+- O processamento estritamente local é realizado com o único fim de executar as funcionalidades de cálculo de engenharia do Software a seu pedido. Esse design obedece nativamente aos princípios de minimização de dados e privacidade desde a concepção (privacy-by-design) sob a Lei Geral de Proteção de Dados do Brasil (LGPD), o GDPR europeu e a CCPA. Como nenhum dado é coletado, transmitido ou processado remotamente, você mantém soberania absoluta sobre suas informações.
+
+6. Compartilhamento
+- O Software não compartilha dados com terceiros. Qualquer compartilhamento de dados ocorre exclusivamente por meio de sua ação voluntária e manual fora do Software (ex: envio de um relatório em PDF gerado por e-mail para colegas, clientes ou órgãos reguladores).
+
+7. Segurança
+- Como os dados permanecem inteiramente no seu dispositivo local, a segurança e a proteção de suas informações dependem exclusivamente das proteções do seu sistema operacional (ex: contas de usuário do Windows, permissões de pastas, criptografia BitLocker e backups). É altamente recomendável manter seu sistema operacional atualizado e realizar backups regulares de seus relatórios técnicos exportados.
+
+8. Conformidade com a Microsoft Store e Acessibilidade
+- O Software cumpre rigorosamente as Políticas da Microsoft Store em relação à privacidade do usuário, transparência e execução local segura. Além disso, suporta recursos nativos de acessibilidade visual (suporte automático para temas Claro e Escuro do Windows, navegação por teclado e caixas de diálogo não bloqueantes). 
+- Um link em destaque para esta Política de Privacidade está disponível dentro do Software e na página de detalhes do produto na Microsoft Store.
+
+9. Relatórios de Erro e Diagnóstico
+- O desenvolvedor optou por não coletar Dados de Análise de Aplicativos (App Analytics) e de Relatórios de Erros. O próprio Software não envia logs de falhas ou relatórios de erros para o desenvolvedor.
+- Se o seu sistema operacional gerar relatórios de falhas genéricos (ex: Relatório de Erros do Windows), esse processo será governado inteiramente pelas suas próprias configurações de privacidade do Windows e pela política de privacidade da Microsoft Corporation. O desenvolvedor não recebe, não acessa e não processa dados pessoais identificáveis a partir desse fluxo.
+
+10. Direitos do Titular dos Dados (LGPD / GDPR / CCPA)
+- Acesso, correção e exclusão: Como nenhum dado é mantido em servidores externos, você exerce seus direitos de titular dos dados diretamente no seu dispositivo. Você pode visualizar, editar, redefinir para os valores padrão e excluir os dados do projeto a qualquer momento por meio da interface gráfica (menu Configurações > Dados e Identificação do Projeto).
+- Portabilidade: Você pode usar as funções de exportação integradas (PDF, HTML e Markdown) para extrair cópias completas e estruturadas dos seus relatórios de cálculo a qualquer momento.
+
+11. Crianças e Adolescentes
+- O Software é uma ferramenta técnica avançada destinada a engenheiros civis profissionais, pesquisadores e estudantes. Não é direcionado a crianças menores de 13 anos e não coleta nenhum dado pessoal de nenhum usuário.
+
+12. Terceiros e Bibliotecas
+- O aplicativo utiliza o framework de código aberto Qt 6 (especificamente os módulos Qt6Core, Qt6Gui, Qt6Widgets, Qt6Charts, Qt6Sql, Qt6OpenGL e Qt6OpenGLWidgets) e runtimes de compilador C++20 (MinGW-w64 / MSVC) para fornecer a interface gráfica e os gráficos vetoriais. Todos os componentes operam estritamente localmente, sem quaisquer funções de telemetria. As licenças de código aberto e atribuições completas estão disponíveis na guia “Avisos” (Notices) da janela “Sobre” (About).
+
+13. Alterações nesta Política
+- Esta Política poderá ser atualizada periodicamente para refletir atualizações do Software ou requisitos legais. A data e a versão na parte superior deste documento indicam a revisão mais recente.
+
+14. Contato
+- Para quaisquer dúvidas em relação a esta Política de Privacidade:
+  Fernando Nillsson Cidade
+  E-mail: linceu_lighthouse@outlook.com
