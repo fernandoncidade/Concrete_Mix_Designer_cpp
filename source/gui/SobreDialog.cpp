@@ -171,7 +171,7 @@ void SobreDialog::retranslateUi()
 
     headerTextLabel_->setText(
         "<b><span style='font-size:12pt;'>" + tr("Módulo de Dosagem de Concreto") + "</span></b><br>"
-        "<b>" + tr("Versão") + ":</b> 2026.11.6.0| C++20 | Qt 6.11.1<br>"
+        "<b>" + tr("Versão") + ":</b> 2026.11.11.0| C++20 | Qt 6.11.1<br>"
         "<b>" + tr("Autor") + ":</b> Fernando Nillsson Cidade<br>"
         "<b>" + tr("Descrição") + ":</b> " + tr("Módulo de Dosagem de Concreto pelo Método IPT / EPUSP (Helene & Terzian)")
     );

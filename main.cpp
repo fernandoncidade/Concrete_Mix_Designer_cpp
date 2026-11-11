@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
     // Configurações institucionais do aplicativo
     QApplication::setApplicationName("ConcreteMixDesigner");
     QApplication::setOrganizationName("EngenhariaCivil");
-QApplication::setApplicationVersion("2026.11.6.0");
+QApplication::setApplicationVersion("2026.11.11.0");
 
     source::utils::LogManager::configure_logging();
     source::utils::LogManager::info(QStringLiteral("Inicializando ConcreteMixDesigner."));

@@ -1,8 +1,8 @@
 Privacy Policy - CONCRETE MIX DESIGNER
-Last updated: November 6, 2026
-Version: 2026.11.6.0
+Last updated: November 11, 2026
+Version: 2026.11.11.0
 
-This Policy describes how CONCRETE MIX DESIGNER (“Software”) handles user information. The Software is designed to operate 100% locally on your device, without any automatic telemetry, data collection, or cloud synchronization. All analytical concrete mix design modules, charts, tables, and report exporters operate exclusively offline.
+This Policy describes how CONCRETE MIX DESIGNER (“Software”) handles user information. The Software is an application intended exclusively for academic study purposes, may contain possible errors, and does not serve as definitive software for decision-making in production or work environments (making it mandatory to manually verify all results or validate them through other more consolidated market tools), and is designed to operate 100% locally on your device, without any automatic telemetry, data collection, or cloud synchronization. All analytical concrete mix design modules, charts, tables, and report exporters operate exclusively offline.
 
 1. Scope and Principles
 - Local operation: All data processed by the Software remains entirely on your device. The Software does not access, collect, or transmit any Personal Information to the developer or third parties.
@@ -13,7 +13,7 @@ This Policy describes how CONCRETE MIX DESIGNER (“Software”) handles user in
 2.1 Content entered by you
 - Structural and durability parameters (fck, standard deviation Sd, preparation condition, target slump, structural type CA/CP, and Environmental Aggressiveness Class CAA I to IV).
 - Physical properties and unit costs of materials (Portland cement, sand, Gravels 1 and 2, water, and admixtures), binary coarse aggregate packing data, dry mortar content (α) test metrics, and auxiliary trial mix points.
-- Optional technical report header identification metadata configured via the Settings menu (“Project:”, “Responsible:”, “Institution:”, and “ID / Code:”).
+- Optional technical report header identification metadata and language preference configured via the Settings menu (“Settings > Language” and “Project:”, “Responsible:”, “Institution:”, and “ID / Code:”).
 
 2.2 Files chosen by you
 - Technical Report Export: When exporting the engineering calculation report to PDF (.pdf), HTML (.html), or Markdown (.md), the Software writes the document exclusively to the local folder and filename you select.
@@ -21,7 +21,7 @@ This Policy describes how CONCRETE MIX DESIGNER (“Software”) handles user in
 - Clipboard: When clicking “Copy Text”, the Markdown report is copied to the local Windows clipboard solely by your direct action.
 
 2.3 Local technical data
-- Minimal local configuration preferences are stored via the operating system's standard mechanism (in the user's local Windows registry/AppData profile path), such as your chosen interface mode and the report header texts. There is no automatic collection or transmission of personal identifiers.
+- Minimal local configuration preferences are stored via the operating system's standard mechanism (in the user's local Windows registry/AppData profile path), such as your chosen language under “Settings > Language”, interface mode, and the report header texts. There is no automatic collection or transmission of personal identifiers.
 
 3. What the Software DOES NOT Collect or Transmit
 - No account, registration, or login requirements.
@@ -55,8 +55,8 @@ This Policy describes how CONCRETE MIX DESIGNER (“Software”) handles user in
 - Access, correction, and deletion: Because no data is held on external servers, you exercise your data subject rights directly on your device. You can view, edit, reset to default values, and delete project data at any time through the graphical interface (Settings menu > Project Data & Identification).
 - Portability: You can use the built-in export functions (PDF, HTML, and Markdown) to extract complete, structured copies of your calculation reports at any time.
 
-11. Children and Adolescents
-- The Software is an advanced technical tool intended for professional civil engineers, researchers, and students. It is not directed at children under 13 and does not collect any personal data from any user.
+11. Target Audience, Academic Purpose, and Legal Liability Disclaimer
+- The Software is a technical tool conceived exclusively for academic study, didactic instruction, and theoretical research by civil engineering students, professors, and researchers (not directed at children under 13 and collecting zero personal data from any user), being provided “AS-IS” and “WITH ALL FAULTS”, and may contain algorithmic, numerical, or modeling errors, not serving as definitive software for decision-making in real production or work environments. It is strictly mandatory to manually verify all generated calculations and results or validate them through other more consolidated market tools, in addition to performing physical laboratory tests under the supervision of a legally licensed Civil Engineer (CONFEA/CREA System — Brazilian Federal Laws No. 5,194/1966 and No. 6,496/1977), with the author being fully exempt from any legal liabilities (civil, administrative, labor, or criminal) pursuant to Brazilian legislation (Brazilian Civil Code — Law No. 10,406/2002, Articles 186, 393, 421, and 927; Software Law — Law No. 9,609/1998; Copyright Law — Law No. 9,610/1998; Consumer Defense Code — Law No. 8,078/1990) and applicable international conventions (UCC § 2-316, Berne Convention, WIPO Treaties, TRIPS Agreement, and Sections 15 and 16 of the GNU AGPLv3).
 
 12. Third Parties and Libraries
 - The application utilizes the open-source Qt 6 framework (specifically the Qt6Core, Qt6Gui, Qt6Widgets, Qt6Charts, Qt6Sql, Qt6OpenGL, and Qt6OpenGLWidgets modules) and C++20 compiler runtimes (MinGW-w64 / MSVC) to provide the graphical interface and vector charts. All components operate strictly locally without any telemetry functions. Full open-source licenses and attributions are available in the “Notices” tab of the “About” window.

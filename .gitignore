@@ -18,6 +18,7 @@ CMakeUserPresets.json
 /repo/Concrete_Mix_Designer_mingw.iss
 /repo/Concrete_Mix_Designer_msvc.iss
 /repo/Para preservar o cmake --build sem rodar cmake --preset.txt
+/repo/AppxManifest.xml
 
 # Saídas de instaladores
 InnoSetupOutput/

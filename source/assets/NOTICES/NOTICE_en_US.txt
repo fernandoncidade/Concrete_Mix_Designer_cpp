@@ -1,4 +1,4 @@
-Version 2026.11.6.0, November 6, 2026
+Version 2026.11.11.0, November 11, 2026
 Third-Party Software Licenses and Attributions Notice
 =====================================================
 
@@ -33,7 +33,7 @@ Distributed under the Microsoft Visual Studio / Visual C++ Runtime redistributio
 ------------------------------------------------------------------------
 3. Scientific, Academic, and Normative References
 ------------------------------------------------------------------------
-The mathematical models and verification criteria implemented in the proprietary source code of CONCRETE MIX DESIGNER are grounded in classical scientific literature and current Brazilian technical standards (all software code algorithms were originally authored from scratch by the developer):
+The mathematical models and verification criteria implemented in the proprietary source code of CONCRETE MIX DESIGNER are intended exclusively for academic study, didactic instruction, and theoretical research purposes, grounded in classical scientific literature and current Brazilian technical standards (all software code algorithms were originally authored from scratch by the developer):
 - HELENE, Paulo Roberto do Lago; TERZIAN, Paulo. Manual de Dosagem e Controle do Concreto. São Paulo: PINI / Brasília: SENAI, 1992. (IPT/EPUSP Method).
 - MEHTA, P. Kumar; MONTEIRO, Paulo J. M. Concrete: Microstructure, Properties, and Materials. 4th ed. McGraw-Hill Education, 2014.
 - ABNT NBR 12655:2022 — Portland cement concrete — Preparation, control, receipt and acceptance — Procedure.
@@ -43,6 +43,6 @@ The mathematical models and verification criteria implemented in the proprietary
 - ABNT NBR 8953:2015 — Concrete for structural purposes — Classification by density, strength groups and consistency.
 
 ------------------------------------------------------------------------
-4. Disclaimer of Warranties for Third-Party Components
+4. Strictly Academic Purpose, Manual Verification, and Legal Disclaimer
 ------------------------------------------------------------------------
-The third-party components listed above are provided by their respective copyright holders “AS IS”, without warranties of any kind, express or implied, under the terms of their respective licenses.
+The third-party components listed above and the CONCRETE MIX DESIGNER application itself are provided “AS IS” and “WITH ALL FAULTS”, without warranties of any kind, express or implied. CONCRETE MIX DESIGNER is an application intended exclusively for academic study purposes, may contain possible algorithmic, numerical, precision, or modeling errors, and does not serve as definitive software for decision-making in real production, construction sites, batching plants, or professional work environments. It is strictly mandatory to manually verify all calculations and obtained results or validate them through other more consolidated market tools, in addition to performing physical laboratory tests under the direct supervision and Technical Responsibility Annotation (ART) of a legally licensed Civil Engineer (CONFEA/CREA System — Brazilian Federal Laws No. 5,194/1966 and No. 6,496/1977). Pursuant to Brazilian legislation (Brazilian Civil Code — Law No. 10,406/2002, Articles 186, 393, 421, and 927; Software Law — Law No. 9,609/1998; Copyright Law — Law No. 9,610/1998; Consumer Defense Code — Law No. 8,078/1990) and applicable international conventions (Uniform Commercial Code — UCC § 2-316, Berne Convention, WIPO Treaties, TRIPS Agreement, and Sections 15 and 16 of the GNU AGPLv3 license), the author is fully exempt from any civil, administrative, labor, property, or criminal liability regarding the real or definitive use of this software in production and work environments.

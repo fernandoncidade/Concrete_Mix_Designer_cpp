@@ -8,12 +8,14 @@
 
 ### 1. Visão Geral da Arquitetura em Camadas
 
-O **Concrete Mix Design C++ (v2026.11.6.0)** adota uma arquitetura modular estritamente desacoplada em três camadas principais sobre o padrão **ISO C++20** e o framework **Qt 6.11.1**:
+O **Concrete Mix Design C++ (v2026.11.11.0)** adota uma arquitetura modular estritamente desacoplada em três camadas principais sobre o padrão **ISO C++20** e o framework **Qt 6.11.1**:
 
 1. **Camada de Domínio, Cálculo Analítico e Banco de Dados Normativo (`source/core/`):**
-   Implementa toda a física, estatística, regressões numéricas (Leis de Abrams, Lyse e Molinari), otimização de empacotamento granular, sequência experimental de teor de argamassa ($\alpha$), fechamento volumétrico de $1\text{ m}^3$, dimensionamento de amassadas e padiolas, geração de relatórios (Markdown/HTML) e o banco de dados relacional **SQLite 3 embarcado em memória (`:memory:`)**.
+   Implementa toda a física, estatística, regressões numéricas (Leis de Abrams, Lyse e Molinari), otimização de empacotamento granular, sequência experimental de teor de argamassa ($\alpha$), fechamento volumétrico de $1\text{ m}^3$, dimensionamento de amassadas e padiolas, geração de relatórios (Markdown/HTML) e o banco de dados relacional **SQLite 3 embarcado em memória (`:memory:`)** (concebido exclusivamente para fins de estudo acadêmico, exigindo conferência manual obrigatória e validação em ferramentas consolidadas no mercado antes de qualquer decisão em produção).
 2. **Camada de Internacionalização Dinâmica (`source/language/`):**
-   Gerencia o carregamento em tempo de execução dos catálogos binários compilados (`.qm`) para Português (`pt_BR`) e Inglês (`en_US`) via `GerenciadorTraducao` (Singleton reativo conectado ao evento `QEvent::LanguageChange`).
+   Gerencia o carregamento em tempo de execução dos catálogos binários compilados (`.qm`) para Português (`pt_BR`) e Inglês (`en_US`) via `GerenciadorTraducao` (Singleton reativo conectado ao evento `QEvent::LanguageChange`), acionado pelo submenu `Configurações > Idioma`.
+3. **Camada de Interface Gráfica do Usuário e Renderização Vetorial (`source/gui/`):**
+   Orquestra a janela principal (`MainWindow`), o menu **Configurações (`Ctrl+I`)** com o seletor dos 6 cenários de engenharia (`Cenário 0` a `Cenário 5`) e o submenu **Idioma**, as 7 abas de trabalho especializadas, o renderizador vetorial de 4 quadrantes (`QuadChartWidget`), o 5º diagrama unificado (`IptUnifiedDiagramWidget`) e os diálogos institucionais modeless (`ManualDialog` e `SobreDialog`).
 4. **Camada de Interface de Linha de Comando — CLI (`source/cli/`):**
    Utilitário de console standalone (`concrete-mix-designer-cli.exe`) que orquestra diretamente o motor de cálculo (`source/core/`) sem dependências gráficas (`QtWidgets`), oferecendo comandos automatizados para dosagem, cálculo, auditoria normativa, consulta ao banco de normas e emissão de laudos técnicos em múltiplos formatos.
 
@@ -35,7 +37,7 @@ O **Concrete Mix Design C++ (v2026.11.6.0)** adota uma arquitetura modular estri
 
 ### 3. Módulos da Camada GUI (`source/gui/`)
 
-- [`MainWindow`](../source/gui/MainWindow.hpp): Janela principal com barra de menus (`Arquivo`, `Exibir`, `Configurações`, `Idioma`, `Ajuda`), seletor dos 6 cenários, diálogo modal de **Configurações — Dados do Projeto e Identificação** (persistido via `QSettings`) e barra de status normativa.
+- [`MainWindow`](../source/gui/MainWindow.hpp): Janela principal com barra de menus (`Arquivo`, `Exibir`, `Configurações` — integrando o submenu `Configurações > Idioma` e o seletor dos 6 cenários — e `Ajuda`), diálogo modal de **Configurações — Dados do Projeto e Identificação** (persistido via `QSettings`) e barra de status normativa.
 - [`TabProjectParams`](../source/gui/TabProjectParams.hpp): **Aba 1 (`1. Parâmetros de Projeto`)**.
 - [`TabMaterials`](../source/gui/TabMaterials.hpp): **Aba 2 (`2. Materiais & Britas`)**.
 - [`TabMortarContent`](../source/gui/TabMortarContent.hpp): **Aba 3 (`3. Teor de Argamassa (α)`)**.
@@ -57,14 +59,14 @@ O **Concrete Mix Design C++ (v2026.11.6.0)** adota uma arquitetura modular estri
 
 ### 1. Layered Architecture Overview
 
-**Concrete Mix Design C++ (v2026.11.6.0)** adopts a strictly decoupled three-tier modular architecture built on the **ISO C++20** standard and the **Qt 6.11.1** framework:
+**Concrete Mix Design C++ (v2026.11.11.0)** adopts a strictly decoupled three-tier modular architecture built on the **ISO C++20** standard and the **Qt 6.11.1** framework:
 
 1. **Domain, Analytical Calculation, and Normative Database Layer (`source/core/`):**
-   Implements all physics, statistics, numerical regressions (Abrams', Lyse's, and Molinari's Laws), granular packing optimization, pilot mortar content ($\alpha$) experimental sequence, $1\text{ m}^3$ volumetric closure, batch and volume-box (*padiola*) sizing, report generation (Markdown/HTML), and the **embedded in-memory SQLite 3 relational database (`:memory:`)**.
+   Implements all physics, statistics, numerical regressions (Abrams', Lyse's, and Molinari's Laws), granular packing optimization, pilot mortar content ($\alpha$) experimental sequence, $1\text{ m}^3$ volumetric closure, batch and volume-box (*padiola*) sizing, report generation (Markdown/HTML), and the **embedded in-memory SQLite 3 relational database (`:memory:`)** (conceived exclusively for academic study purposes, requiring mandatory manual verification and validation in consolidated market tools prior to any production decision).
 2. **Dynamic Internationalization Layer (`source/language/`):**
-   Manages runtime loading of compiled binary translation catalogs (`.qm`) for Portuguese (`pt_BR`) and English (`en_US`) via `GerenciadorTraducao` (reactive Singleton bound to `QEvent::LanguageChange`).
+   Manages runtime loading of compiled binary translation catalogs (`.qm`) for Portuguese (`pt_BR`) and English (`en_US`) via `GerenciadorTraducao` (reactive Singleton bound to `QEvent::LanguageChange`), triggered by the `Settings > Language` submenu.
 3. **Graphical User Interface and Vector Rendering Layer (`source/gui/`):**
-   Orchestrates the main window (`MainWindow`), the main toolbar with the 6 engineering scenarios (`Scenario 0` to `Scenario 5`), the **Settings (`Ctrl+I`)** menu, the 7 specialized workspace tabs, the 4-quadrant vector chart renderer (`QuadChartWidget`), the 5th unified diagram widget (`IptUnifiedDiagramWidget`), and the institutional modal dialogs (`ManualDialog` and `SobreDialog`).
+   Orchestrates the main window (`MainWindow`), the **Settings (`Ctrl+I`)** menu featuring the 6 engineering scenarios (`Scenario 0` to `Scenario 5`) and the **Language** submenu, the 7 specialized workspace tabs, the 4-quadrant vector chart renderer (`QuadChartWidget`), the 5th unified diagram widget (`IptUnifiedDiagramWidget`), and the institutional modeless dialogs (`ManualDialog` and `SobreDialog`).
 4. **Command Line Interface Layer — CLI (`source/cli/`):**
    Standalone console utility (`concrete-mix-designer-cli.exe`) that directly orchestrates the calculation engine (`source/core/`) without GUI dependencies (`QtWidgets`), providing automated mix design, volumetric closure, normative auditing, standards database queries, and multi-format report exports.
 
@@ -86,7 +88,7 @@ O **Concrete Mix Design C++ (v2026.11.6.0)** adota uma arquitetura modular estri
 
 ### 3. GUI Layer Modules (`source/gui/`)
 
-- [`MainWindow`](../source/gui/MainWindow.hpp): Main application window featuring the menu bar (`File`, `View`, `Settings`, `Language`, `Help`), the 6-scenario selector, the **Settings — Project Data and Identification** modal dialog (persisted via `QSettings`), and the normative status bar.
+- [`MainWindow`](../source/gui/MainWindow.hpp): Main application window featuring the menu bar (`File`, `View`, `Settings` — integrating the `Settings > Language` submenu and the 6-scenario selector — and `Help`), the **Settings — Project Data and Identification** modal dialog (persisted via `QSettings`), and the normative status bar.
 - [`TabProjectParams`](../source/gui/TabProjectParams.hpp): **Tab 1 (`1. Project Parameters`)**.
 - [`TabMaterials`](../source/gui/TabMaterials.hpp): **Tab 2 (`2. Materials & Coarse Aggregates`)**.
 - [`TabMortarContent`](../source/gui/TabMortarContent.hpp): **Tab 3 (`3. Mortar Content (α)`)**.

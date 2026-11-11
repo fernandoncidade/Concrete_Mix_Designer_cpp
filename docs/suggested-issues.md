@@ -6,14 +6,14 @@
 
 ## Português (Brasil)
 
-### 1.Itens Concluídos na Versão `2026.11.6.0`
+### 1.Itens Concluídos na Versão `2026.11.11.0`
 
 - [x] **Auditoria Completa da Planilha Experimental UFPR (TC031):** Correção de precedência de células, eliminação de arredondamentos prematuros, correção da inversão de preços de areia/brita e criação do **Cenário 5** dedicado.
 - [x] **Validação Normativa ABNT NBR Completa:** Conformidade com **NBR 12655:2022** (incluindo restrições de $f_{ck}$ para Condições B e C), **NBR 6118:2023** ($D_{\max} \le 1,2 \cdot c_{\text{nom}}$), **NBR 7211:2022**, **NBR 7212:2025** (item 5.5: $\pm 1\%$, $\pm 3\%$, $\pm 3\%$, $\pm 5\%$) e **NBR 8953:2015**.
 - [x] **Correção de Edição das `QDoubleSpinBox`:** Eliminação definitiva do preenchimento automático de zeros à direita durante a digitação.
-- [x] **Menu `Configurações` (`Ctrl+I`):** Configuração de `Projeto:`, `Responsável:`, `Instituição:` e `Matrícula / ID:`, com opção de reportar automaticamente o `Cenário da Planilha` ou editar manualmente.
-- [x] **Tradução Dinâmica em Tempo de Execução (`pt_BR` $\leftrightarrow$ `en_US`):** Tradução instantânea na **Aba 7 (Relatório Técnico)**, no **Cenário 5** e em 100% das 309 chaves dos arquivos `.ts` e `.qm`.
-- [x] **Conformidade Microsoft Store, Microsoft Partner Center e GitHub:** Revisão jurídica e técnica de todos os arquivos em `source/assets/`, `docs/` e raiz do projeto.
+- [x] **Menu `Configurações` (`Ctrl+I`) e Submenu `Configurações > Idioma`:** Configuração de `Projeto:`, `Responsável:`, `Instituição:` e `Matrícula / ID:`, com opção de reportar automaticamente o `Cenário da Planilha` ou editar manualmente, além da organização da seleção de idioma no submenu `Configurações > Idioma`.
+- [x] **Tradução Dinâmica em Tempo de Execução (`pt_BR` $\leftrightarrow$ `en_US`):** Tradução instantânea via `Configurações > Idioma` na **Aba 7 (Relatório Técnico)**, no **Cenário 5** e em 100% das chaves dos arquivos `.ts` e `.qm`.
+- [x] **Conformidade Jurídica, Finalidade Acadêmica e Isenção de Responsabilidade Legal:** Revisão jurídica e técnica de todos os arquivos em `source/assets/`, `docs/` e raiz do projeto, explicitando que o software se destina exclusivamente a estudos acadêmicos, pode conter possíveis erros e requer conferência manual e validação em ferramentas mais consolidadas no mercado, isentando o autor de responsabilidades legais em produção sob a legislação brasileira e convenções internacionais.
 - [x] **5º Gráfico Unificado Abrams/Lyse/Molinari (IPT):** Visualização unificada das 3 curvas experimentais em coordenadas limpas com linhas de grade nítidas, sem sobreposição de cores e com exportação em alta resolução.
 - [x] **Adequação Dinâmica de Moeda (R$ / $):** Símbolo monetário adaptado automaticamente em tempo de execução na Aba 7 e tabelas orçamentárias.
 - [x] **Interface de Linha de Comando (CLI - `concrete-mix-designer-cli`):** Suíte completa de terminal com comandos `design`, `calc`, `verify`, `report`, `standards`, `presets` e `test`.
@@ -36,14 +36,14 @@
 
 ## English (United States)
 
-### 1. Completed Items in Version `2026.11.6.0`
+### 1. Completed Items in Version `2026.11.11.0`
 
 - [x] **Comprehensive Audit of the UFPR Experimental Spreadsheet (TC031):** Fixed cell precedence conflicts, eliminated premature intermediate rounding, corrected swapped sand/coarse aggregate unit prices, and created the dedicated **Scenario 5**.
 - [x] **Full ABNT NBR Normative Validation:** Compliance with **NBR 12655:2022** (including $f_{ck}$ restrictions for Conditions B and C), **NBR 6118:2023** ($D_{\max} \le 1.2 \cdot c_{\text{nom}}$), **NBR 7211:2022**, **NBR 7212:2025** (Section 5.5: $\pm 1\%$, $\pm 3\%$, $\pm 3\%$, $\pm 5\%$), and **NBR 8953:2015**.
 - [x] **`QDoubleSpinBox` Editing Fix:** Permanently eliminated automatic trailing-zero padding while typing.
-- [x] **`Settings` Menu (`Ctrl+I`):** Configuration of `Project:`, `Engineer:`, `Institution:`, and `Registration / ID:`, with the option to automatically report the `Spreadsheet Scenario` or edit manually.
-- [x] **Dynamic Runtime Translation (`pt_BR` $\leftrightarrow$ `en_US`):** Instant runtime translation across **Tab 7 (Technical Report)**, **Scenario 5**, and 100% of the 309 keys in the `.ts` and `.qm` files.
-- [x] **Microsoft Store, Microsoft Partner Center, and GitHub Compliance:** Legal and technical alignment across all files in `source/assets/`, `docs/`, and the project root.
+- [x] **`Settings` Menu (`Ctrl+I`) and `Settings > Language` Submenu:** Configuration of `Project:`, `Engineer:`, `Institution:`, and `Registration / ID:`, with the option to automatically report the `Spreadsheet Scenario` or edit manually, plus organization of language selection inside the `Settings > Language` submenu.
+- [x] **Dynamic Runtime Translation (`pt_BR` $\leftrightarrow$ `en_US`):** Instant runtime translation via `Settings > Language` across **Tab 7 (Technical Report)**, **Scenario 5**, and 100% of the keys in the `.ts` and `.qm` files.
+- [x] **Legal Compliance, Academic Study Purpose, and Legal Liability Exemption:** Legal and technical alignment across all files in `source/assets/`, `docs/`, and the project root, explicitly stating that the software is intended exclusively for academic study, may contain possible errors, and requires manual verification and validation in more consolidated market tools, exempting the author from production legal liabilities under Brazilian legislation and international conventions.
 - [x] **5th Unified Abrams/Lyse/Molinari (IPT) Diagram:** Combined view of the 3 experimental curves in normalized coordinates with high-contrast grid lines, zero color fills, and high-DPI export.
 - [x] **Dynamic Currency Symbol Adaptability ($ / R$):** Automatic runtime switching of currency symbols across Tab 7 reports and cost analysis tables.
 - [x] **Command Line Interface (CLI - `concrete-mix-designer-cli`):** Standalone terminal suite with `design`, `calc`, `verify`, `report`, `standards`, `presets`, and `test` commands.

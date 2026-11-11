@@ -19,7 +19,7 @@ Exemplos de comportamentos que contribuem para criar um ambiente positivo, const
 - Demonstrar empatia, respeito profissional e cordialidade em revisões de código (*Pull Requests*), discussões de normas técnicas (ABNT NBR) e relatos de problemas (*Issues*);
 - Fundamentar debates técnicos e matemáticos com base em evidências experimentais, literatura científica consagrada (Helene & Terzian; Mehta & Monteiro) e normas técnicas oficiais;
 - Aceitar críticas construtivas de engenharia de software e de engenharia civil com maturidade profissional;
-- Focar no que é melhor para a precisão científica do software, para a segurança das estruturas de concreto e para a comunidade de usuários;
+- Focar no que é melhor para a precisão científica e didática do software (concebido exclusivamente para fins de estudo acadêmico, exigindo conferência manual obrigatória e validação em ferramentas consolidadas no mercado antes de qualquer decisão em produção), para a segurança das estruturas de concreto e para a comunidade de usuários;
 - Respeitar os direitos autorais, marcas registradas, patentes e termos de licenciamento do projeto e de bibliotecas de terceiros.
 
 Exemplos de comportamentos inaceitáveis incluem:
@@ -64,7 +64,7 @@ Examples of behavior that contributes to creating a positive, constructive, and 
 - Demonstrating empathy, professional respect, and courtesy in code reviews (*Pull Requests*), technical standard discussions (ABNT NBR), and issue reports (*Issues*);
 - Grounding technical and mathematical debates in experimental evidence, established scientific literature (Helene & Terzian; Mehta & Monteiro), and official technical standards;
 - Gracefully accepting constructive software engineering and civil engineering criticism with professional maturity;
-- Focusing on what is best for the scientific accuracy of the software, the safety of concrete structures, and the user community;
+- Focusing on what is best for the scientific and educational accuracy of the software (conceived exclusively for academic study purposes, requiring mandatory manual verification and validation in consolidated market tools prior to any production decision), the safety of concrete structures, and the user community;
 - Respecting copyrights, trademarks, patents, and licensing terms of the project and third-party libraries.
 
 Examples of unacceptable behavior include:

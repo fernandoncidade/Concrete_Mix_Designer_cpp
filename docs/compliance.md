@@ -8,7 +8,7 @@
 
 ### 1. Conformidade com as Normas Técnicas Brasileiras (ABNT NBR)
 
-O **Concrete Mix Design C++ (v2026.11.6.0)** incorpora em seu banco de dados relacional em memória ([`NormativeDatabase`](../source/core/NormativeDatabase.cpp)) e no motor normativo ([`ConcreteStandards`](../source/core/ConcreteStandards.cpp)) os requisitos obrigatórios das normas técnicas brasileiras vigentes:
+O **Concrete Mix Design C++ (v2026.11.11.0)** incorpora em seu banco de dados relacional em memória ([`NormativeDatabase`](../source/core/NormativeDatabase.cpp)) e no motor normativo ([`ConcreteStandards`](../source/core/ConcreteStandards.cpp)) os requisitos obrigatórios das normas técnicas brasileiras vigentes:
 
 1. **ABNT NBR 12655:2022 (*Concreto de cimento Portland — Preparo, controle, recebimento e aceitação*):**
    - **Tabela 6 — Requisitos para o concreto em condições especiais de exposição:**
@@ -45,10 +45,11 @@ O aplicativo cumpre integralmente os requisitos técnicos, comerciais e de conte
 
 ---
 
-### 3. Conformidade Legislativa e Regulamentação Profissional
+### 3. Conformidade Legislativa, Finalidade Estritamente Acadêmica e Isenção de Responsabilidade Legal
 
-- **Legislação Brasileira:** Lei do Software (Lei nº 9.609/1998), Lei de Direitos Autorais (Lei nº 9.610/1998), LGPD (Lei nº 13.709/2018), Código de Defesa do Consumidor (Lei nº 8.078/1990) e regulamentação profissional de Engenharia Civil (Lei Federal nº 5.194/1966 e Lei nº 6.496/1977 — CONFEA/CREA e exigência de ART).
-- **Legislação Internacional:** *United States Copyright Act* (17 U.S.C. § 101 et seq.), Convenção de Berna, Tratado OMPI/WCT, Regulamento Europeu **GDPR (UE 2016/679)**, **CCPA/CPRA** e regulamentos de controle de exportação (**EAR**).
+- **Finalidade Estritamente Acadêmica e Conferência Manual Obrigatória:** Este software constitui uma aplicação desenvolvida exclusivamente para fins de estudo acadêmico, instrução didática e pesquisa teórica, fornecida "NO ESTADO EM QUE SE ENCONTRA" ("AS-IS" e "WITH ALL FAULTS"), podendo conter possíveis erros algorítmicos, numéricos ou de modelagem e não servindo como software definitivo para tomadas de decisão em produção real ou ambientes de trabalho, sendo obrigatório conferir manualmente todos os cálculos e resultados ou validá-los através de outras ferramentas mais consolidadas no mercado.
+- **Legislação Brasileira e Isenção Legal:** Código Civil Brasileiro (Lei nº 10.406/2002, arts. 186, 393, 421 e 927), Lei do Software (Lei nº 9.609/1998), Lei de Direitos Autorais (Lei nº 9.610/1998), LGPD (Lei nº 13.709/2018), Código de Defesa do Consumidor (Lei nº 8.078/1990) e regulamentação profissional de Engenharia Civil (Lei Federal nº 5.194/1966 e Lei nº 6.496/1977 — CONFEA/CREA e exigência de ART), ficando o autor integralmente isento de quaisquer responsabilidades legais pelo uso real ou definitivo em produção e ambientes de trabalho.
+- **Legislação e Convenções Internacionais:** *United States Copyright Act* (17 U.S.C. § 101 et seq.), *Uniform Commercial Code* (UCC § 2-316), Convenção de Berna, Tratado OMPI/WCT, Acordo TRIPS, Seções 15 e 16 da GNU AGPLv3, Regulamento Europeu **GDPR (UE 2016/679)**, **CCPA/CPRA** e regulamentos de controle de exportação (**EAR**).
 
 ---
 
@@ -56,7 +57,7 @@ O aplicativo cumpre integralmente os requisitos técnicos, comerciais e de conte
 
 ### 1. Compliance with Brazilian Technical Standards (ABNT NBR)
 
-**Concrete Mix Design C++ (v2026.11.6.0)** embeds within its in-memory relational database ([`NormativeDatabase`](../source/core/NormativeDatabase.cpp)) and normative engine ([`ConcreteStandards`](../source/core/ConcreteStandards.cpp)) the mandatory requirements of current Brazilian technical standards:
+**Concrete Mix Design C++ (v2026.11.11.0)** embeds within its in-memory relational database ([`NormativeDatabase`](../source/core/NormativeDatabase.cpp)) and normative engine ([`ConcreteStandards`](../source/core/ConcreteStandards.cpp)) the mandatory requirements of current Brazilian technical standards:
 
 1. **ABNT NBR 12655:2022 (*Portland cement concrete — Preparation, control, receipt, and acceptance*):**
    - **Table 6 — Requirements for concrete under special exposure conditions:**
@@ -93,7 +94,8 @@ The application fully complies with the technical, commercial, and content requi
 
 ---
 
-### 3. Statutory Compliance and Professional Engineering Regulation
+### 3. Statutory Compliance, Strictly Academic Purpose, and Legal Liability Disclaimer
 
-- **Brazilian Legislation:** Software Act (Law No. 9,609/1998), Copyright Act (Law No. 9,610/1998), LGPD (Law No. 13,709/2018), Consumer Defense Code (Law No. 8,078/1990), and Civil Engineering professional regulation (Federal Law No. 5,194/1966 and Law No. 6,496/1977 — CONFEA/CREA and ART requirement).
-- **International Legislation:** *United States Copyright Act* (17 U.S.C. § 101 et seq.), Berne Convention, WIPO Copyright Treaty (WCT), European **GDPR (Regulation (EU) 2016/679)**, **CCPA/CPRA**, and Export Administration Regulations (**EAR**).
+- **Strictly Academic Purpose and Mandatory Manual Verification:** This software constitutes an application developed exclusively for academic study, didactic instruction, and theoretical research purposes, provided "AS-IS" and "WITH ALL FAULTS", may contain possible algorithmic, numerical, or modeling errors, and does not serve as definitive software for decision-making in real production or work environments, making it mandatory to manually verify all calculations and results or validate them through other more consolidated market tools.
+- **Brazilian Legislation and Legal Exemption:** Brazilian Civil Code (Law No. 10,406/2002, Articles 186, 393, 421, and 927), Software Act (Law No. 9,609/1998), Copyright Act (Law No. 9,610/1998), LGPD (Law No. 13,709/2018), Consumer Defense Code (Law No. 8,078/1990), and Civil Engineering professional regulation (Federal Law No. 5,194/1966 and Law No. 6,496/1977 — CONFEA/CREA and ART requirement), with the author being fully exempt from any legal liabilities for real or definitive use in production and work environments.
+- **International Legislation and Conventions:** *United States Copyright Act* (17 U.S.C. § 101 et seq.), *Uniform Commercial Code* (UCC § 2-316), Berne Convention, WIPO Copyright Treaty (WCT), TRIPS Agreement, Sections 15 and 16 of the GNU AGPLv3, European **GDPR (Regulation (EU) 2016/679)**, **CCPA/CPRA**, and Export Administration Regulations (**EAR**).

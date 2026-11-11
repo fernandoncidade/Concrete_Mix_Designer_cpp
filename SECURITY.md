@@ -6,9 +6,9 @@
 
 ## Português (Brasil)
 
-### 1. Compromisso com a Segurança Técnica e Integridade Estrutural
+### 1. Compromisso com a Segurança Técnica, Finalidade Acadêmica e Integridade Estrutural
 
-A segurança da informação, a integridade de memória do aplicativo e a exatidão matemática dos cálculos de engenharia civil são prioridades absolutas do **Concrete Mix Design C++**. Este documento estabelece a política oficial de segurança do produto em conformidade com as **Políticas da Microsoft Store (Seção 10.2 — Segurança)**, o **Microsoft Application Developer Agreement (ADA v8.9)**, as diretrizes de divulgação coordenada de vulnerabilidades do GitHub (**CVD — Coordinated Vulnerability Disclosure**) e a legislação aplicável (**LGPD — Lei nº 13.709/2018**, **Marco Civil da Internet — Lei nº 12.965/2014** e **GDPR — Regulamento UE 2016/679**).
+A segurança da informação, a integridade de memória do aplicativo e a exatidão matemática dos cálculos didáticos de engenharia civil são prioridades absolutas do **Concrete Mix Design C++**. O aplicativo destina-se exclusivamente a fins de estudo acadêmico, podendo conter possíveis erros e não servindo como software definitivo para tomadas de decisão em produção ou ambientes de trabalho, sendo obrigatório conferir manualmente todos os resultados ou validá-los através de outras ferramentas mais consolidadas no mercado, ficando o autor isento de responsabilidades legais nos termos da legislação brasileira (Código Civil — Lei nº 10.406/2002; Leis nº 9.609/1998, nº 9.610/1998, nº 8.078/1990, nº 5.194/1966 e nº 6.496/1977) e convenções internacionais (UCC § 2-316 "AS-IS", Convenção de Berna, OMPI/WIPO, TRIPS e Seções 15 e 16 da GNU AGPLv3). Este documento estabelece a política oficial de segurança do produto em conformidade com as **Políticas da Microsoft Store (Seção 10.2 — Segurança)**, o **Microsoft Application Developer Agreement (ADA v8.9)**, as diretrizes de divulgação coordenada de vulnerabilidades do GitHub (**CVD — Coordinated Vulnerability Disclosure**) e a legislação aplicável (**LGPD — Lei nº 13.709/2018**, **Marco Civil da Internet — Lei nº 12.965/2014** e **GDPR — Regulamento UE 2016/679**).
 
 ### 2. Versões Suportadas
 
@@ -16,8 +16,8 @@ Apenas a versão estável mais recente distribuída na **Microsoft Store** e no 
 
 | Versão | Status de Suporte | Plataforma / Arquitetura | Padrão C++ / Framework |
 | :--- | :--- | :--- | :--- |
-| **2026.11.6.0** | ✅ Suportada (Ativa) | Windows 10 (1809+) / Windows 11 (x64) | C++20 / Qt 6.11.1 |
-| `< 2026.11.6.0` | ❌ Descontinuada | — | — |
+| **2026.11.11.0** | ✅ Suportada (Ativa) | Windows 10 (1809+) / Windows 11 (x64) | C++20 / Qt 6.11.1 |
+| `< 2026.11.11.0` | ❌ Descontinuada | — | — |
 
 ### 3. Arquitetura de Segurança por Design (*Security & Privacy by Design*)
 
@@ -38,7 +38,7 @@ Se você identificar uma vulnerabilidade de segurança de software (como corrup�
 3. Inclua no relato:
    - Descrição detalhada da vulnerabilidade ou inconsistência normativa;
    - Passos exatos para reprodução (cenário selecionado, valores de entrada ou arquivo de projeto);
-   - Versão do sistema operacional Windows e versão do aplicativo (`2026.11.6.0`);
+   - Versão do sistema operacional Windows e versão do aplicativo (`2026.11.11.0`);
    - Impacto técnico estimado.
 
 ### 5. Prazos de Resposta e Divulgação Coordenada (Melhor Esforço)
@@ -53,9 +53,9 @@ O mantenedor envidará os melhores esforços técnicos para tratar todos os rela
 
 ## English (United States)
 
-### 1. Commitment to Technical Security and Structural Integrity
+### 1. Commitment to Technical Security, Academic Purpose, and Structural Integrity
 
-Information security, application memory integrity, and the mathematical accuracy of civil engineering calculations are absolute priorities of **Concrete Mix Design C++**. This document establishes the official product security policy in compliance with **Microsoft Store Policies (Section 10.2 — Security)**, the **Microsoft Application Developer Agreement (ADA v8.9)**, GitHub's **Coordinated Vulnerability Disclosure (CVD)** guidelines, and applicable legislation (**LGPD — Brazilian Law No. 13,709/2018**, **Brazilian Civil Rights Framework for the Internet — Law No. 12,965/2014**, and **GDPR — EU Regulation 2016/679**).
+Information security, application memory integrity, and the mathematical accuracy of educational civil engineering calculations are absolute priorities of **Concrete Mix Design C++**. The application is intended exclusively for academic study purposes, may contain possible errors, and does not serve as definitive software for decision-making in production or work environments, making it mandatory to manually verify all results or validate them through other more consolidated market tools, with the author being exempt from legal liabilities under Brazilian legislation (Civil Code — Law No. 10,406/2002; Laws No. 9,609/1998, No. 9,610/1998, No. 8,078/1990, No. 5,194/1966, and No. 6,496/1977) and international conventions (UCC § 2-316 "AS-IS", Berne Convention, WIPO, TRIPS, and Sections 15 and 16 of the GNU AGPLv3). This document establishes the official product security policy in compliance with **Microsoft Store Policies (Section 10.2 — Security)**, the **Microsoft Application Developer Agreement (ADA v8.9)**, GitHub's **Coordinated Vulnerability Disclosure (CVD)** guidelines, and applicable legislation (**LGPD — Brazilian Law No. 13,709/2018**, **Brazilian Civil Rights Framework for the Internet — Law No. 12,965/2014**, and **GDPR — EU Regulation 2016/679**).
 
 ### 2. Supported Versions
 
@@ -63,8 +63,8 @@ Only the latest stable version distributed on the **Microsoft Store** and in the
 
 | Version | Support Status | Platform / Architecture | C++ Standard / Framework |
 | :--- | :--- | :--- | :--- |
-| **2026.11.6.0** | ✅ Supported (Active) | Windows 10 (1809+) / Windows 11 (x64) | C++20 / Qt 6.11.1 |
-| `< 2026.11.6.0` | ❌ Discontinued | — | — |
+| **2026.11.11.0** | ✅ Supported (Active) | Windows 10 (1809+) / Windows 11 (x64) | C++20 / Qt 6.11.1 |
+| `< 2026.11.11.0` | ❌ Discontinued | — | — |
 
 ### 3. Security & Privacy by Design Architecture
 
@@ -85,7 +85,7 @@ If you identify a software security vulnerability (such as memory corruption, sa
 3. Please include in your report:
    - Detailed description of the vulnerability or normative inconsistency;
    - Exact steps to reproduce (selected scenario, input values, or project file);
-   - Windows operating system version and application version (`2026.11.6.0`);
+   - Windows operating system version and application version (`2026.11.11.0`);
    - Estimated technical impact.
 
 ### 5. Response Timelines and Coordinated Disclosure (Best-Effort Basis)

@@ -70,10 +70,11 @@ private:
 
     ProjectData m_projectData;
 
-    // Menus
+    // Menus (Cenário da Planilha e Idioma alocados como submenus em Configurações)
     QMenu *m_menuFile = nullptr;
     QMenu *m_menuView = nullptr;
     QMenu *m_menuSettings = nullptr;
+    QMenu *m_menuPresets = nullptr;
     QMenu *m_menuLanguage = nullptr;
     QMenu *m_menuHelp = nullptr;
     QAction *m_actExit = nullptr;
@@ -84,14 +85,10 @@ private:
     QAction *m_actNorms = nullptr;
     QAction *m_actManual = nullptr;
     QAction *m_actAbout = nullptr;
+    QAction *m_actPresets[6] = {nullptr};
     QAction *m_actLangPt = nullptr;
     QAction *m_actLangEn = nullptr;
     QAction *m_actViewTabs[7] = {nullptr};
-
-    // Controles de Cenário da Planilha no menu Configurações
-    QWidgetAction *m_presetWidgetAction = nullptr;
-    QLabel *m_lblPreset = nullptr;
-    QComboBox *m_comboPresets = nullptr;
 
     QTabWidget *m_tabWidget = nullptr;
 

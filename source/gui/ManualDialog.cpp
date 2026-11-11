@@ -176,7 +176,7 @@ void ManualDialog::loadManualContent()
             {QStringLiteral("7. Tab 5: Final Mix & Batching"), QStringLiteral("sec7")},
             {QStringLiteral("8. Tab 6: Cost Analysis"), QStringLiteral("sec8")},
             {QStringLiteral("9. Tab 7: Technical Report & Export"), QStringLiteral("sec9")},
-            {QStringLiteral("10. Standards & Normative Rules"), QStringLiteral("sec10")},
+            {QStringLiteral("10. Standards & Academic Disclaimer"), QStringLiteral("sec10")},
             {QStringLiteral("11. Dual Compilation (MinGW / MSVC)"), QStringLiteral("sec11")},
             {QStringLiteral("12. Troubleshooting & FAQ"), QStringLiteral("sec12")},
             {QStringLiteral("13. Command Line Interface (CLI)"), QStringLiteral("sec13")}
@@ -192,7 +192,7 @@ void ManualDialog::loadManualContent()
             {QStringLiteral("7. Aba 5: Traço Final e Amassadas"), QStringLiteral("sec7")},
             {QStringLiteral("8. Aba 6: Análise de Custos"), QStringLiteral("sec8")},
             {QStringLiteral("9. Aba 7: Relatório Técnico e Exportação"), QStringLiteral("sec9")},
-            {QStringLiteral("10. Normas Técnicas e Critérios"), QStringLiteral("sec10")},
+            {QStringLiteral("10. Normas e Aviso Acadêmico Legal"), QStringLiteral("sec10")},
             {QStringLiteral("11. Compilação Dual (MinGW / MSVC)"), QStringLiteral("sec11")},
             {QStringLiteral("12. Resolução de Problemas (FAQ)"), QStringLiteral("sec12")},
             {QStringLiteral("13. Interface de Linha de Comando (CLI)"), QStringLiteral("sec13")}
@@ -230,12 +230,13 @@ void ManualDialog::loadManualContent()
         html = QStringLiteral("<html><head><style>") + styleSheet + QStringLiteral("</style></head><body>"
 
             "<h2 id='sec1'>1. Overview &amp; Settings Menu</h2>"
-            "<p><b>Concrete Mix Designer</b> is an analytical civil engineering platform implementing the "
+            "<p><b>Concrete Mix Designer</b> is an analytical civil engineering platform for <b>academic and educational study purposes</b> implementing the "
             "celebrated <b>IPT / EPUSP Method (Helene &amp; Terzian, 1992)</b> for experimental structural concrete proportioning. "
-            "Use the <b>Settings (&amp;Configurações)</b> menu in the top menu bar to select the <b>Spreadsheet Scenario</b> "
-            "(from the dropdown list) and configure header identification fields (<code>Ctrl+I</code>: "
-            "<b>Project:</b>, <b>Responsible:</b>, <b>Institution:</b>, and <b>ID / Code:</b>), choosing whether <b>Project:</b> "
-            "automatically reports the selected <b>Spreadsheet Scenario</b> (with dynamic runtime translation) or uses manual custom text. "
+            "Use the <b>Settings (&amp;Configurações)</b> menu in the top menu bar to select the <b>📂 Spreadsheet Scenario:</b> "
+            "submenu (<b>Settings &gt; 📂 Spreadsheet Scenario:</b>), configure header identification fields (<code>Ctrl+I</code>: "
+            "<b>Project:</b>, <b>Responsible:</b>, <b>Institution:</b>, and <b>ID / Code:</b> — choosing whether <b>Project:</b> "
+            "automatically reports the selected <b>Spreadsheet Scenario</b> or uses manual custom text), and access the "
+            "<b>Settings &gt; 🌐 Language (&amp;Configurações &gt; 🌐 &amp;Idioma)</b> submenu to switch the entire interface, calculation report, currency (<b>R$</b> / <b>$</b>), and legal tabs between <b>Português (BR)</b> and <b>English (US)</b> in real time. "
             "Auxiliary windows (Manual, Technical Standards, About) operate as <b>Modeless Dialogs</b> with independent <b>Z-Order</b> alongside the main GUI.</p>"
 
             "<h2 id='sec2'>2. Fundamental Empirical Laws</h2>"
@@ -280,15 +281,18 @@ void ManualDialog::loadManualContent()
             "Automatically switches currency symbols between Brazilian Real (<b>R$</b>) and US Dollar (<b>$</b>) depending on selected language. "
             "Supports clipboard copy and export to PDF, HTML, and Markdown.</p>"
 
-            "<h2 id='sec10'>10. Standards &amp; Normative Rules</h2>"
-            "<p>Enforces strict compliance with: <b>ABNT NBR 12655:2022</b>, <b>ABNT NBR 6118:2023</b>, <b>ABNT NBR 7211:2022</b>, <b>ABNT NBR 7212:2025</b> (central plant weighing tolerances item 5.5: cement ±1%, aggregates ±3%, water ±3%, admixtures ±5%), and <b>ABNT NBR 8953:2015</b>.</p>"
+            "<h2 id='sec10'>10. Standards &amp; Academic Disclaimer</h2>"
+            "<p>Enforces strict compliance with: <b>ABNT NBR 12655:2022</b>, <b>ABNT NBR 6118:2023</b>, <b>ABNT NBR 7211:2022</b>, <b>ABNT NBR 7212:2025</b> (central plant weighing tolerances item 5.5: cement ±1%, aggregates ±3%, water ±3%, admixtures ±5%), and <b>ABNT NBR 8953:2015</b>.<br>"
+            "<b>IMPORTANT ACADEMIC &amp; LEGAL NOTICE:</b> This application is intended <b>exclusively for academic study, didactic instruction, and theoretical research</b>. It may contain algorithmic, numerical, or modeling errors and <b>does not serve as definitive software for decision-making in real production, construction sites, or concrete plants</b>. "
+            "All results must be <b>manually verified</b>, cross-checked using <b>consolidated commercial market tools</b>, and validated through physical laboratory trial batches under the supervision of a licensed Civil Engineer (CONFEA/CREA — Brazilian Federal Laws No. 5,194/1966 and No. 6,496/1977). "
+            "Under Brazilian Law (Civil Code — Law No. 10,406/2002; Software Law — Law No. 9,609/1998; Copyright Law — Law No. 9,610/1998) and international conventions (UCC § 2-316 'AS-IS', Berne Convention, WIPO, TRIPS, GNU AGPLv3 Sections 15 &amp; 16), the author is fully exempt from any civil, administrative, or criminal liability arising from use in production or work environments.</p>"
 
             "<h2 id='sec11'>11. Dual Compilation (MinGW / MSVC)</h2>"
             "<p>Supports compilation on both <b>MinGW 64-bit</b> and <b>MSVC 64-bit</b>. Automated <code>windeployqt</code> deployment co-locates all required Qt6 DLLs to ensure standalone execution.</p>"
 
             "<h2 id='sec12'>12. Troubleshooting &amp; FAQ</h2>"
             "<p><b>Curve fitting warning?</b> Ensure at least 3 experimental mixes are entered with monotonically decreasing strength as w/c increases.<br>"
-            "<b>How to customize report header or change scenario?</b> Open the <b>Settings (&amp;Configurações)</b> menu to select the <i>Spreadsheet Scenario</i> or click <i>Project Data &amp; Identification (Ctrl+I)</i>.</p>"
+            "<b>How to change the language, customize report header, or select a scenario?</b> Open the <b>Settings (&amp;Configurações)</b> menu to choose the language under <b>Settings &gt; 🌐 Language (&amp;Configurações &gt; 🌐 &amp;Idioma)</b>, select the scenario under <b>Settings &gt; 📂 Spreadsheet Scenario:</b>, or click <i>Project Data &amp; Identification (Ctrl+I)</i>.</p>"
 
             "<h2 id='sec13'>13. Command Line Interface (CLI)</h2>"
             "<p>The project includes <code>concrete-mix-designer-cli.exe</code> for terminal automation, batch simulations, and CI/CD pipelines:</p>"
@@ -308,12 +312,13 @@ void ManualDialog::loadManualContent()
         html = QStringLiteral("<html><head><style>") + styleSheet + QStringLiteral("</style></head><body>"
 
             "<h2 id='sec1'>1. Visão Geral e Menu Configurações</h2>"
-            "<p>O <b>Módulo de Dosagem de Concreto</b> é uma plataforma de engenharia civil de alta precisão dedicada à dosagem experimental de concreto estrutural "
+            "<p>O <b>Módulo de Dosagem de Concreto</b> é uma plataforma analítica de engenharia civil voltada <b>exclusivamente para fins de estudo acadêmico e ensino</b>, dedicada à dosagem experimental de concreto estrutural "
             "pelo consagrado <b>Método IPT / EPUSP (Helene &amp; Terzian, 1992)</b>. "
-            "Utilize o menu <b>Configurações</b> na barra de menus superior para selecionar o <b>Cenário da Planilha:</b> "
-            "(na lista suspensa associada) e configurar os dados de identificação do cabeçalho (<code>Ctrl+I</code>: "
-            "<b>Projeto:</b>, <b>Responsável:</b>, <b>Instituição:</b> e <b>Matrícula / ID:</b>), escolhendo se o campo <b>Projeto:</b> "
-            "deve reportar automaticamente o <b>Cenário da Planilha</b> selecionado (com tradução dinâmica em tempo de execução) ou ser editado manualmente. "
+            "Utilize o menu <b>Configurações</b> na barra de menus superior para selecionar o submenu <b>📂 Cenário da Planilha:</b> "
+            "(<b>Configurações &gt; 📂 Cenário da Planilha:</b>), configurar os dados de identificação do cabeçalho (<code>Ctrl+I</code>: "
+            "<b>Projeto:</b>, <b>Responsável:</b>, <b>Instituição:</b> e <b>Matrícula / ID:</b> — escolhendo se o campo <b>Projeto:</b> "
+            "deve reportar automaticamente o <b>Cenário da Planilha</b> selecionado ou ser editado manualmente), e acessar o submenu "
+            "<b>Configurações &gt; 🌐 Idioma (Settings &gt; 🌐 Language)</b> para alternar em tempo real todo o aplicativo, o memorial de cálculo, a moeda (<b>R$</b> / <b>$</b>) e as abas legais entre <b>Português (BR)</b> e <b>English (US)</b>. "
             "As janelas auxiliares (Manual, Normas Técnicas, Sobre) operam como <b>Janelas Modeless</b> com <b>Z-Order (Ordem no Eixo Z)</b> independente junto à GUI principal.</p>"
 
             "<h2 id='sec2'>2. Leis Fundamentais da Dosagem</h2>"
@@ -358,15 +363,18 @@ void ManualDialog::loadManualContent()
             "Conta com alternância dinâmica do símbolo da moeda (<b>R$</b> em português e <b>$</b> em inglês) em todas as tabelas econômicas. "
             "Permite copiar ou exportar em PDF, HTML e Markdown.</p>"
 
-            "<h2 id='sec10'>10. Normas Técnicas e Critérios</h2>"
-            "<p>Atendimento estrito às normas da ABNT: <b>NBR 12655:2022</b>, <b>NBR 6118:2023</b>, <b>NBR 7211:2022</b>, <b>NBR 7212:2025</b> (tolerâncias de pesagem em central item 5.5: cimento ±1%, agregados ±3%, água ±3%, aditivos ±5%) e <b>NBR 8953:2015</b>.</p>"
+            "<h2 id='sec10'>10. Normas e Aviso Acadêmico Legal</h2>"
+            "<p>Atendimento estrito às normas da ABNT: <b>NBR 12655:2022</b>, <b>NBR 6118:2023</b>, <b>NBR 7211:2022</b>, <b>NBR 7212:2025</b> (tolerâncias de pesagem em central item 5.5: cimento ±1%, agregados ±3%, água ±3%, aditivos ±5%) e <b>NBR 8953:2015</b>.<br>"
+            "<b>AVISO IMPORTANTE DE FINALIDADE ACADÊMICA E ISENÇÃO LEGAL:</b> Este aplicativo destina-se <b>exclusivamente para fins de estudo acadêmico, instrução didática e pesquisa teórica</b>. O software pode conter erros algorítmicos, numéricos ou de modelagem e <b>não serve como software definitivo para tomadas de decisão em produção real, canteiros de obras ou centrais dosadoras</b>. "
+            "Todos os resultados devem ser <b>obrigatoriamente conferidos manualmente</b>, validados através de <b>outras ferramentas mais consolidadas no mercado</b> e comprovados por ensaios físicos de laboratório sob supervisão de Engenheiro Civil habilitado (Sistema CONFEA/CREA — Leis Federais nº 5.194/1966 e nº 6.496/1977). "
+            "Nos termos da legislação brasileira (Código Civil — Lei nº 10.406/2002; Lei do Software — Lei nº 9.609/1998; Lei de Direitos Autorais — Lei nº 9.610/1998) e convenções internacionais (UCC § 2-316 'AS-IS', Convenção de Berna, OMPI/WIPO, TRIPS e Seções 15 e 16 da GNU AGPLv3), o autor fica integralmente isento de quaisquer responsabilidades civis, administrativas ou penais pelo uso real ou definitivo em produção e ambientes de trabalho.</p>"
 
             "<h2 id='sec11'>11. Compilação Dual (MinGW / MSVC)</h2>"
             "<p>Suporte completo a builds em <b>MinGW 64-bit</b> e <b>MSVC 64-bit</b>. Automação com <code>windeployqt</code> garante que todas as DLLs do Qt6 acompanhem os binários.</p>"
 
             "<h2 id='sec12'>12. Resolução de Problemas (FAQ)</h2>"
             "<p><b>Alerta no ajuste de curva?</b> Certifique-se de que inseriu 3 traços experimentais com relação a/c crescente e resistência decrescente.<br>"
-            "<b>Como trocar o cenário da planilha ou personalizar o cabeçalho do relatório?</b> Acesse o menu <b>Configurações</b> para escolher o <i>Cenário da Planilha</i> ou clique em <i>Dados do Projeto e Identificação (Ctrl+I)</i>.</p>"
+            "<b>Como alterar o idioma, trocar o cenário da planilha ou personalizar o cabeçalho do relatório?</b> Acesse o menu <b>Configurações</b> para selecionar o idioma em <b>Configurações &gt; 🌐 Idioma</b>, escolher o cenário em <b>Configurações &gt; 📂 Cenário da Planilha:</b> ou clicar em <i>Dados do Projeto e Identificação (Ctrl+I)</i>.</p>"
 
             "<h2 id='sec13'>13. Interface de Linha de Comando (CLI)</h2>"
             "<p>O projeto acompanha o executável de console <code>concrete-mix-designer-cli.exe</code> para automações em terminal, simulações em lote e esteiras CI/CD:</p>"

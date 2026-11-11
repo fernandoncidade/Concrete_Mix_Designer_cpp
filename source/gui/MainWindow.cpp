@@ -166,36 +166,32 @@ void MainWindow::createMenuBar()
     // Menu Configurações
     m_menuSettings = menuBar()->addMenu(tr("&Configurações"));
 
-    m_presetWidgetAction = new QWidgetAction(m_menuSettings);
-    auto *presetContainer = new QWidget(m_menuSettings);
-    auto *presetLayout = new QHBoxLayout(presetContainer);
-    presetLayout->setContentsMargins(12, 6, 12, 6);
-    presetLayout->setSpacing(8);
+    // Submenu Configurações > 📂 Cenário da Planilha:
+    m_menuPresets = m_menuSettings->addMenu(tr("📂 Cenário da Planilha:"));
+    auto *presetGroup = new QActionGroup(this);
+    presetGroup->setExclusive(true);
 
-    m_lblPreset = new QLabel(tr("📂 Cenário da Planilha:"), presetContainer);
-    presetLayout->addWidget(m_lblPreset);
+    const QString presetTitles[6] = {
+        tr("Cenário 0: Personalizável pelo usuário"),
+        tr("Cenário 1: Concreto C25 Urbano (CAA II) - CP II-F-32, Slump 100mm, Obra 30 m³"),
+        tr("Cenário 2: Concreto C30 Marinho (CAA III) - CP III-40 RS, Britas 1+2, Obra 50 m³"),
+        tr("Cenário 3: Concreto C40 Alto Desempenho (CAA IV) - CP V-ARI, Slump 160mm, Obra 100 m³"),
+        tr("Cenário 4: Concreto C20 Fundações (CAA I - Condição B) - CP II-Z-32, Brita 2, Obra 40 m³"),
+        tr("Cenário 5: Planilha UFPR Original Corrigida (TC031 - C30, Sd 3,5 MPa, α 52%, Obra 30 m³)")
+    };
 
-    m_comboPresets = new QComboBox(presetContainer);
-    m_comboPresets->addItem(tr("Cenário 0: Personalizável pelo usuário"));
-    m_comboPresets->addItem(tr("Cenário 1: Concreto C25 Urbano (CAA II) - CP II-F-32, Slump 100mm, Obra 30 m³"));
-    m_comboPresets->addItem(tr("Cenário 2: Concreto C30 Marinho (CAA III) - CP III-40 RS, Britas 1+2, Obra 50 m³"));
-    m_comboPresets->addItem(tr("Cenário 3: Concreto C40 Alto Desempenho (CAA IV) - CP V-ARI, Slump 160mm, Obra 100 m³"));
-    m_comboPresets->addItem(tr("Cenário 4: Concreto C20 Fundações (CAA I - Condição B) - CP II-Z-32, Brita 2, Obra 40 m³"));
-    m_comboPresets->addItem(tr("Cenário 5: Planilha UFPR Original Corrigida (TC031 - C30, Sd 3,5 MPa, α 52%, Obra 30 m³)"));
-    m_comboPresets->setMinimumWidth(420);
-    m_comboPresets->blockSignals(true);
-    m_comboPresets->setCurrentIndex(1);
-    m_comboPresets->blockSignals(false);
-    presetLayout->addWidget(m_comboPresets, 1);
-
-    m_presetWidgetAction->setDefaultWidget(presetContainer);
-    m_menuSettings->addAction(m_presetWidgetAction);
-    connect(m_comboPresets, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [this](int index) {
-        onPresetSelected(index);
-        if (m_menuSettings && m_menuSettings->isVisible()) {
-            m_menuSettings->close();
-        }
-    });
+    for (int i = 0; i < 6; ++i) {
+        m_actPresets[i] = m_menuPresets->addAction(presetTitles[i], [this, i]() {
+            onPresetSelected(i);
+        });
+        m_actPresets[i]->setCheckable(true);
+        presetGroup->addAction(m_actPresets[i]);
+    }
+    if (m_projectData.currentPresetIndex >= 0 && m_projectData.currentPresetIndex < 6) {
+        m_actPresets[m_projectData.currentPresetIndex]->setChecked(true);
+    } else {
+        m_actPresets[1]->setChecked(true);
+    }
     m_menuSettings->addSeparator();
 
     m_actProjectSettings = m_menuSettings->addAction(
@@ -231,8 +227,10 @@ void MainWindow::createMenuBar()
         showProjectSettingsDialog();
     });
 
-    // Menu Idioma
-    m_menuLanguage = menuBar()->addMenu(tr("&Idioma"));
+    m_menuSettings->addSeparator();
+
+    // Submenu Configurações > 🌐 Idioma
+    m_menuLanguage = m_menuSettings->addMenu(tr("🌐 &Idioma"));
     auto *langGroup = new QActionGroup(this);
     langGroup->setExclusive(true);
 
@@ -470,7 +468,8 @@ void MainWindow::retranslateUi()
     if (m_menuFile) m_menuFile->setTitle(tr("&Arquivo"));
     if (m_menuView) m_menuView->setTitle(tr("&Exibir"));
     if (m_menuSettings) m_menuSettings->setTitle(tr("&Configurações"));
-    if (m_menuLanguage) m_menuLanguage->setTitle(tr("&Idioma"));
+    if (m_menuPresets) m_menuPresets->setTitle(tr("📂 Cenário da Planilha:"));
+    if (m_menuLanguage) m_menuLanguage->setTitle(tr("🌐 &Idioma"));
     if (m_menuHelp) m_menuHelp->setTitle(tr("A&juda"));
 
     if (m_actRecalculate) m_actRecalculate->setText(tr("🔄 Recalcular Tudo"));
@@ -490,19 +489,14 @@ void MainWindow::retranslateUi()
     if (m_actViewTabs[5]) m_actViewTabs[5]->setText(tr("6. Análise de Custos"));
     if (m_actViewTabs[6]) m_actViewTabs[6]->setText(tr("7. Relatório Técnico"));
 
-    if (m_lblPreset) m_lblPreset->setText(tr("📂 Cenário da Planilha:"));
-
-    if (m_comboPresets) {
-        m_comboPresets->blockSignals(true);
-        m_comboPresets->setItemText(0, tr("Cenário 0: Personalizável pelo usuário"));
-        m_comboPresets->setItemText(1, tr("Cenário 1: Concreto C25 Urbano (CAA II) - CP II-F-32, Slump 100mm, Obra 30 m³"));
-        m_comboPresets->setItemText(2, tr("Cenário 2: Concreto C30 Marinho (CAA III) - CP III-40 RS, Britas 1+2, Obra 50 m³"));
-        m_comboPresets->setItemText(3, tr("Cenário 3: Concreto C40 Alto Desempenho (CAA IV) - CP V-ARI, Slump 160mm, Obra 100 m³"));
-        m_comboPresets->setItemText(4, tr("Cenário 4: Concreto C20 Fundações (CAA I - Condição B) - CP II-Z-32, Brita 2, Obra 40 m³"));
-        if (m_comboPresets->count() > 5) {
-            m_comboPresets->setItemText(5, tr("Cenário 5: Planilha UFPR Original Corrigida (TC031 - C30, Sd 3,5 MPa, α 52%, Obra 30 m³)"));
-        }
-        m_comboPresets->blockSignals(false);
+    if (m_actPresets[0]) m_actPresets[0]->setText(tr("Cenário 0: Personalizável pelo usuário"));
+    if (m_actPresets[1]) m_actPresets[1]->setText(tr("Cenário 1: Concreto C25 Urbano (CAA II) - CP II-F-32, Slump 100mm, Obra 30 m³"));
+    if (m_actPresets[2]) m_actPresets[2]->setText(tr("Cenário 2: Concreto C30 Marinho (CAA III) - CP III-40 RS, Britas 1+2, Obra 50 m³"));
+    if (m_actPresets[3]) m_actPresets[3]->setText(tr("Cenário 3: Concreto C40 Alto Desempenho (CAA IV) - CP V-ARI, Slump 160mm, Obra 100 m³"));
+    if (m_actPresets[4]) m_actPresets[4]->setText(tr("Cenário 4: Concreto C20 Fundações (CAA I - Condição B) - CP II-Z-32, Brita 2, Obra 40 m³"));
+    if (m_actPresets[5]) m_actPresets[5]->setText(tr("Cenário 5: Planilha UFPR Original Corrigida (TC031 - C30, Sd 3,5 MPa, α 52%, Obra 30 m³)"));
+    if (m_projectData.currentPresetIndex >= 0 && m_projectData.currentPresetIndex < 6 && m_actPresets[m_projectData.currentPresetIndex]) {
+        m_actPresets[m_projectData.currentPresetIndex]->setChecked(true);
     }
 
     if (m_tabWidget) {
@@ -574,6 +568,10 @@ void MainWindow::onPresetSelected(int index)
         break;
     default:
         break;
+    }
+
+    if (index >= 0 && index < 6 && m_actPresets[index]) {
+        m_actPresets[index]->setChecked(true);
     }
 
     syncAllTabsFromData();
@@ -904,9 +902,10 @@ void MainWindow::showProjectSettingsDialog()
     form->setSpacing(10);
 
     const bool isEn = (Language::GerenciadorTraducao::instance().codigoIdiomaAtual() == QStringLiteral("en_US"));
-    const QString currentScenarioText = m_comboPresets
-        ? m_comboPresets->currentText()
-        : QString::fromStdString(ProjectData::getPresetName(m_projectData.currentPresetIndex, isEn));
+    const int presetIdx = m_projectData.currentPresetIndex;
+    const QString currentScenarioText = (presetIdx >= 0 && presetIdx < 6 && m_actPresets[presetIdx])
+        ? m_actPresets[presetIdx]->text()
+        : QString::fromStdString(ProjectData::getPresetName(presetIdx, isEn));
 
     auto editProject = new QLineEdit(grpFields);
     editProject->setPlaceholderText(tr("Digite o nome ou identificação personalizada do projeto..."));

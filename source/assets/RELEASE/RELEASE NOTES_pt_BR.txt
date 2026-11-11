@@ -1,3 +1,34 @@
+NOTAS DE LANÇAMENTO: Versão 2026.11.11.0
+Data: 11 de novembro de 2026
+
+Resumo Geral
+Esta versão traz uma organização mais simples e intuitiva na barra de menus do aplicativo, além de reforçar de forma clara e transparente a finalidade exclusivamente acadêmica e educacional do programa em todos os manuais, termos de uso, avisos legais e guias de consulta. O seletor de idiomas foi integrado diretamente dentro do menu de configurações, reunindo todas as opções de personalização em um único lugar. Adicionalmente, toda a documentação em Português e Inglês foi revisada e alinhada linha por linha para garantir uma leitura contínua, padronizada e fácil de compreender, destacando a necessidade obrigatória de conferência manual dos cálculos e de validação em ferramentas consolidadas no mercado.
+
+Novidades, Ajustes e Melhorias
+
+1. Nova Organização dos Submenus em Configurações > 📂 Cenário da Planilha: e Configurações > 🌐 Idioma
+- Menu Mais Limpo, Padronizado e Centralizado: A opção de escolha do idioma do aplicativo foi movida da barra principal para o submenu "Configurações > 🌐 Idioma", e a seleção de "Configurações > 📂 Cenário da Planilha:" foi padronizada no mesmo formato de submenu com marcação direta do cenário ativo, deixando o topo da tela mais organizado e reunindo todas as preferências de uso no mesmo menu.
+- Troca Instantânea entre Português e Inglês: Ao acessar "Configurações > 🌐 Idioma", o usuário continua alternando imediatamente todos os textos da tela, nomes de cenários, gráficos, símbolos de moeda ("R$" e "$"), relatórios e janelas informativas entre Português do Brasil e Inglês dos Estados Unidos sem precisar reiniciar o programa.
+
+2. Esclarecimento de Finalidade Acadêmica, Conferência Manual e Isenção Legal
+- Aplicação Exclusiva para Fins de Estudos Acadêmicos: Todos os documentos internos do aplicativo (incluindo as abas Sobre, Histórico, Licença de Uso, Avisos, Direitos Autorais e Política de Privacidade) foram atualizados para deixar claro que esta ferramenta é destinada exclusivamente ao estudo acadêmico, ao aprendizado e à simulação didática de dosagem de concreto.
+- Obrigatoriedade de Conferência Manual e Validação Externa: Foi destacado expressamente que o programa pode conter possíveis erros de cálculo ou de modelagem e não serve como um software definitivo para tomadas de decisão em produção real, obras ou ambientes de trabalho, sendo indispensável conferir manualmente todos os resultados obtidos ou validá-los através de outras ferramentas mais consolidadas no mercado, além de realizar os ensaios físicos obrigatórios em laboratório sob supervisão de engenheiro civil habilitado.
+- Proteção e Conformidade com a Legislação Brasileira e Convenções Internacionais: As descrições legais foram aperfeiçoadas com base nas leis brasileiras vigentes (Código Civil, Lei do Software, Lei de Direitos Autorais, Código de Defesa do Consumidor e legislação profissional do Sistema CONFEA/CREA) e nas convenções internacionais aplicáveis, assegurando total transparência e isenção de responsabilidade legal quanto ao uso real ou definitivo em ambientes de produção.
+
+3. Atualização do Manual do Usuário e dos Guias de Consulta
+- Instruções Passo a Passo Atualizadas: O Manual do Usuário integrado ao aplicativo e os guias de ajuda foram atualizados para explicar de forma simples como acessar o novo caminho "Configurações > Idioma", como selecionar os cenários de referência e como preencher a identificação do cabeçalho do relatório.
+- Avisos de Segurança e Boas Práticas de Estudo: Foram incluídas orientações claras nos manuais reforçando a verificação manual das fórmulas e o caráter educativo das simulações apresentadas pelo programa.
+
+4. Alinhamento e Simetria Completa entre Português e Inglês
+- Tradução Fiel Linha por Linha: Todos os arquivos de texto e manuais de documentação passaram por uma revisão completa para garantir que as versões em Português e em Inglês possuam exatamente a mesma quantidade de linhas e o mesmo conteúdo traduzido fielmente.
+- Leitura Contínua sem Quebras Indesejadas: Os parágrafos de todos os documentos e manuais foram padronizados em linhas contínuas, facilitando a leitura em qualquer tamanho de janela.
+
+Observações Importantes:
+- Finalidade Estritamente Acadêmica: Este aplicativo serve apenas como ferramenta de estudo acadêmico, contém possíveis erros e não deve ser utilizado como software definitivo para tomadas de decisão em produção ou ambientes de trabalho sem conferência manual e validação em outras ferramentas mais consolidadas no mercado.
+- Preservação de Dados e Privacidade 100% Local: Todas as preferências salvas pelo usuário permanecem intactas e o programa continua funcionando de maneira totalmente local e offline, sem coleta ou envio de informações pela internet.
+
+================================================================================
+
 NOTAS DE LANÇAMENTO: Versão 2026.11.6.0
 Data: 6 de novembro de 2026
 

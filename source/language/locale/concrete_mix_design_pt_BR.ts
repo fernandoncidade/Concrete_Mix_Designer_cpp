@@ -107,104 +107,106 @@
 <context>
     <name>ConcreteMix::IptUnifiedDiagramWidget</name>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="48"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="52"/>
         <source>📋 Copiar Imagem (Área de Transferência)</source>
         <translation>📋 Copiar Imagem (Área de Transferência)</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="49"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="53"/>
         <source>💾 Salvar Gráfico em Alta Resolução (PNG)...</source>
         <translation>💾 Salvar Gráfico em Alta Resolução (PNG)...</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="55"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="59"/>
         <source>Salvar Composição Gráfica IPT</source>
         <translation>Salvar Composição Gráfica IPT</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="57"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="61"/>
         <source>Imagens PNG (*.png);;Todos os Arquivos (*.*)</source>
         <translation>Imagens PNG (*.png);;Todos os Arquivos (*.*)</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="79"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="90"/>
         <source>Copiado</source>
         <translation>Copiado</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="79"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="91"/>
         <source>Diagrama copiado para a Área de Transferência em alta resolução!</source>
         <translation>Diagrama copiado para a Área de Transferência em alta resolução!</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="93"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="131"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="151"/>
         <source>Sucesso</source>
         <translation>Sucesso</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="93"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="132"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="152"/>
         <source>Composição gráfica IPT exportada com sucesso para:
 %1</source>
         <translation>Composição gráfica IPT exportada com sucesso para:
 %1</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="96"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="155"/>
         <source>Erro</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="96"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="156"/>
         <source>Não foi possível salvar o arquivo de imagem.</source>
         <translation>Não foi possível salvar o arquivo de imagem.</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="291"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="436"/>
         <source>Relação a/c</source>
         <translation>Relação a/c</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="295"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="444"/>
         <source>a/c - L/Kg</source>
         <translation>a/c - L/Kg</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="299"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="450"/>
         <source>Consumo de Cimento - Ci</source>
         <translation>Consumo de Cimento - Ci</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="301"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="455"/>
         <source>Ci - Kg/m³</source>
         <translation>Ci - Kg/m³</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="308"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="465"/>
         <source>Resistência à Compressão - Fc</source>
         <translation>Resistência à Compressão - Fc</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="316"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="476"/>
         <source>Relação agregado/Cimento - m</source>
         <translation>Relação agregado/Cimento - m</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="319"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="482"/>
         <source>m - Kg/Kg</source>
         <translation>m - Kg/Kg</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="329"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="495"/>
         <source>Abrams</source>
         <translation>Abrams</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="331"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="500"/>
         <source>Lyse</source>
         <translation>Lyse</translation>
     </message>
     <message>
-        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="333"/>
+        <location filename="../../gui/IptUnifiedDiagramWidget.cpp" line="505"/>
         <source>Molinari</source>
         <translation>Molinari</translation>
     </message>
@@ -212,136 +214,134 @@
 <context>
     <name>ConcreteMix::MainWindow</name>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="103"/>
-        <location filename="../../gui/MainWindow.cpp" line="145"/>
-        <location filename="../../gui/MainWindow.cpp" line="472"/>
-        <location filename="../../gui/MainWindow.cpp" line="496"/>
+        <location filename="../../gui/MainWindow.cpp" line="116"/>
+        <location filename="../../gui/MainWindow.cpp" line="158"/>
+        <location filename="../../gui/MainWindow.cpp" line="484"/>
+        <location filename="../../gui/MainWindow.cpp" line="503"/>
         <source>1. Parâmetros de Projeto</source>
         <translation>1. Parâmetros de Projeto</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="104"/>
-        <location filename="../../gui/MainWindow.cpp" line="146"/>
-        <location filename="../../gui/MainWindow.cpp" line="473"/>
-        <location filename="../../gui/MainWindow.cpp" line="497"/>
+        <location filename="../../gui/MainWindow.cpp" line="117"/>
+        <location filename="../../gui/MainWindow.cpp" line="159"/>
+        <location filename="../../gui/MainWindow.cpp" line="485"/>
+        <location filename="../../gui/MainWindow.cpp" line="504"/>
         <source>2. Materiais &amp; Britas</source>
         <translation>2. Materiais &amp; Britas</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="105"/>
-        <location filename="../../gui/MainWindow.cpp" line="147"/>
-        <location filename="../../gui/MainWindow.cpp" line="474"/>
-        <location filename="../../gui/MainWindow.cpp" line="498"/>
+        <location filename="../../gui/MainWindow.cpp" line="118"/>
+        <location filename="../../gui/MainWindow.cpp" line="160"/>
+        <location filename="../../gui/MainWindow.cpp" line="486"/>
+        <location filename="../../gui/MainWindow.cpp" line="505"/>
         <source>3. Teor de Argamassa (α)</source>
         <translation>3. Teor de Argamassa (α)</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="106"/>
-        <location filename="../../gui/MainWindow.cpp" line="148"/>
-        <location filename="../../gui/MainWindow.cpp" line="475"/>
-        <location filename="../../gui/MainWindow.cpp" line="499"/>
+        <location filename="../../gui/MainWindow.cpp" line="119"/>
+        <location filename="../../gui/MainWindow.cpp" line="161"/>
+        <location filename="../../gui/MainWindow.cpp" line="487"/>
+        <location filename="../../gui/MainWindow.cpp" line="506"/>
         <source>4. Traços &amp; Diagrama IPT</source>
         <translation>4. Traços &amp; Diagrama IPT</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="107"/>
-        <location filename="../../gui/MainWindow.cpp" line="149"/>
-        <location filename="../../gui/MainWindow.cpp" line="476"/>
-        <location filename="../../gui/MainWindow.cpp" line="500"/>
+        <location filename="../../gui/MainWindow.cpp" line="120"/>
+        <location filename="../../gui/MainWindow.cpp" line="162"/>
+        <location filename="../../gui/MainWindow.cpp" line="488"/>
+        <location filename="../../gui/MainWindow.cpp" line="507"/>
         <source>5. Traço Final &amp; Amassadas</source>
         <translation>5. Traço Final &amp; Amassadas</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="108"/>
-        <location filename="../../gui/MainWindow.cpp" line="150"/>
-        <location filename="../../gui/MainWindow.cpp" line="477"/>
-        <location filename="../../gui/MainWindow.cpp" line="501"/>
+        <location filename="../../gui/MainWindow.cpp" line="121"/>
+        <location filename="../../gui/MainWindow.cpp" line="163"/>
+        <location filename="../../gui/MainWindow.cpp" line="489"/>
+        <location filename="../../gui/MainWindow.cpp" line="508"/>
         <source>6. Análise de Custos</source>
         <translation>6. Análise de Custos</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="109"/>
-        <location filename="../../gui/MainWindow.cpp" line="151"/>
-        <location filename="../../gui/MainWindow.cpp" line="478"/>
-        <location filename="../../gui/MainWindow.cpp" line="502"/>
+        <location filename="../../gui/MainWindow.cpp" line="122"/>
+        <location filename="../../gui/MainWindow.cpp" line="164"/>
+        <location filename="../../gui/MainWindow.cpp" line="490"/>
+        <location filename="../../gui/MainWindow.cpp" line="509"/>
         <source>7. Relatório Técnico</source>
         <translation>7. Relatório Técnico</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="136"/>
-        <location filename="../../gui/MainWindow.cpp" line="457"/>
+        <location filename="../../gui/MainWindow.cpp" line="149"/>
+        <location filename="../../gui/MainWindow.cpp" line="468"/>
         <source>&amp;Arquivo</source>
         <translation>&amp;Arquivo</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="137"/>
-        <location filename="../../gui/MainWindow.cpp" line="463"/>
+        <location filename="../../gui/MainWindow.cpp" line="150"/>
+        <location filename="../../gui/MainWindow.cpp" line="475"/>
         <source>🔄 Recalcular Tudo</source>
         <translation>🔄 Recalcular Tudo</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="140"/>
-        <location filename="../../gui/MainWindow.cpp" line="464"/>
+        <location filename="../../gui/MainWindow.cpp" line="153"/>
+        <location filename="../../gui/MainWindow.cpp" line="476"/>
         <source>&amp;Sair</source>
         <translation>&amp;Sair</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="144"/>
-        <location filename="../../gui/MainWindow.cpp" line="458"/>
+        <location filename="../../gui/MainWindow.cpp" line="157"/>
+        <location filename="../../gui/MainWindow.cpp" line="469"/>
         <source>&amp;Exibir</source>
         <translation>&amp;Exibir</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="154"/>
-        <location filename="../../gui/MainWindow.cpp" line="459"/>
+        <location filename="../../gui/MainWindow.cpp" line="167"/>
+        <location filename="../../gui/MainWindow.cpp" line="470"/>
         <source>&amp;Configurações</source>
         <translation>&amp;Configurações</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="162"/>
-        <location filename="../../gui/MainWindow.cpp" line="480"/>
+        <location filename="../../gui/MainWindow.cpp" line="170"/>
+        <location filename="../../gui/MainWindow.cpp" line="471"/>
         <source>📂 Cenário da Planilha:</source>
         <translation>📂 Cenário da Planilha:</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="189"/>
-        <location filename="../../gui/MainWindow.cpp" line="465"/>
+        <location filename="../../gui/MainWindow.cpp" line="198"/>
+        <location filename="../../gui/MainWindow.cpp" line="477"/>
         <source>📝 &amp;Dados do Projeto e Identificação (Projeto, Responsável, Instituição, ID)...</source>
         <translation>📝 &amp;Dados do Projeto e Identificação (Projeto, Responsável, Instituição, ID)...</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="199"/>
-        <location filename="../../gui/MainWindow.cpp" line="466"/>
+        <location filename="../../gui/MainWindow.cpp" line="208"/>
+        <location filename="../../gui/MainWindow.cpp" line="478"/>
         <source>📂 Projeto: Reportar &apos;Cenário da Planilha&apos; Automaticamente</source>
         <translation>📂 Projeto: Reportar &apos;Cenário da Planilha&apos; Automaticamente</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="204"/>
-        <location filename="../../gui/MainWindow.cpp" line="467"/>
+        <location filename="../../gui/MainWindow.cpp" line="213"/>
+        <location filename="../../gui/MainWindow.cpp" line="479"/>
         <source>✏️ Projeto: Editar Informações Manualmente...</source>
         <translation>✏️ Projeto: Editar Informações Manualmente...</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="222"/>
-        <location filename="../../gui/MainWindow.cpp" line="460"/>
         <source>&amp;Idioma</source>
-        <translation>&amp;Idioma</translation>
+        <translation type="vanished">&amp;Idioma</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="246"/>
-        <location filename="../../gui/MainWindow.cpp" line="461"/>
+        <location filename="../../gui/MainWindow.cpp" line="257"/>
+        <location filename="../../gui/MainWindow.cpp" line="473"/>
         <source>A&amp;juda</source>
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="247"/>
-        <location filename="../../gui/MainWindow.cpp" line="468"/>
+        <location filename="../../gui/MainWindow.cpp" line="258"/>
+        <location filename="../../gui/MainWindow.cpp" line="480"/>
         <source>📖 &amp;Manual do Usuário</source>
         <translation>📖 &amp;Manual do Usuário</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="249"/>
-        <location filename="../../gui/MainWindow.cpp" line="469"/>
+        <location filename="../../gui/MainWindow.cpp" line="260"/>
+        <location filename="../../gui/MainWindow.cpp" line="481"/>
         <source>📋 &amp;Normas Técnicas (NBR)</source>
         <translation>📋 &amp;Normas Técnicas (NBR)</translation>
     </message>
@@ -358,134 +358,140 @@
         <translation type="vanished">  📂 Cenário da Planilha:  </translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="166"/>
-        <location filename="../../gui/MainWindow.cpp" line="484"/>
+        <location filename="../../gui/MainWindow.cpp" line="175"/>
+        <location filename="../../gui/MainWindow.cpp" line="492"/>
         <source>Cenário 0: Personalizável pelo usuário</source>
         <translation>Cenário 0: Personalizável pelo usuário</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="167"/>
-        <location filename="../../gui/MainWindow.cpp" line="485"/>
+        <location filename="../../gui/MainWindow.cpp" line="176"/>
+        <location filename="../../gui/MainWindow.cpp" line="493"/>
         <source>Cenário 1: Concreto C25 Urbano (CAA II) - CP II-F-32, Slump 100mm, Obra 30 m³</source>
         <translation>Cenário 1: Concreto C25 Urbano (CAA II) - CP II-F-32, Slump 100mm, Obra 30 m³</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="168"/>
-        <location filename="../../gui/MainWindow.cpp" line="486"/>
+        <location filename="../../gui/MainWindow.cpp" line="177"/>
+        <location filename="../../gui/MainWindow.cpp" line="494"/>
         <source>Cenário 2: Concreto C30 Marinho (CAA III) - CP III-40 RS, Britas 1+2, Obra 50 m³</source>
         <translation>Cenário 2: Concreto C30 Marinho (CAA III) - CP III-40 RS, Britas 1+2, Obra 50 m³</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="169"/>
-        <location filename="../../gui/MainWindow.cpp" line="487"/>
+        <location filename="../../gui/MainWindow.cpp" line="178"/>
+        <location filename="../../gui/MainWindow.cpp" line="495"/>
         <source>Cenário 3: Concreto C40 Alto Desempenho (CAA IV) - CP V-ARI, Slump 160mm, Obra 100 m³</source>
         <translation>Cenário 3: Concreto C40 Alto Desempenho (CAA IV) - CP V-ARI, Slump 160mm, Obra 100 m³</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="170"/>
-        <location filename="../../gui/MainWindow.cpp" line="488"/>
+        <location filename="../../gui/MainWindow.cpp" line="179"/>
+        <location filename="../../gui/MainWindow.cpp" line="496"/>
         <source>Cenário 4: Concreto C20 Fundações (CAA I - Condição B) - CP II-Z-32, Brita 2, Obra 40 m³</source>
         <translation>Cenário 4: Concreto C20 Fundações (CAA I - Condição B) - CP II-Z-32, Brita 2, Obra 40 m³</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="171"/>
-        <location filename="../../gui/MainWindow.cpp" line="490"/>
+        <location filename="../../gui/MainWindow.cpp" line="180"/>
+        <location filename="../../gui/MainWindow.cpp" line="497"/>
         <source>Cenário 5: Planilha UFPR Original Corrigida (TC031 - C30, Sd 3,5 MPa, α 52%, Obra 30 m³)</source>
         <translation>Cenário 5: Planilha UFPR Original Corrigida (TC031 - C30, Sd 3,5 MPa, α 52%, Obra 30 m³)</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="251"/>
-        <location filename="../../gui/MainWindow.cpp" line="470"/>
+        <location filename="../../gui/MainWindow.cpp" line="233"/>
+        <location filename="../../gui/MainWindow.cpp" line="472"/>
+        <source>🌐 &amp;Idioma</source>
+        <translation>🌐 &amp;Idioma</translation>
+    </message>
+    <message>
+        <location filename="../../gui/MainWindow.cpp" line="262"/>
+        <location filename="../../gui/MainWindow.cpp" line="482"/>
         <source>ℹ️ &amp;Sobre o Módulo de Dosagem de Concreto</source>
         <translation>ℹ️ &amp;Sobre o Módulo de Dosagem de Concreto</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="700"/>
+        <location filename="../../gui/MainWindow.cpp" line="711"/>
         <source>&lt;h3&gt;Normas Técnicas Brasileiras Aplicadas&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 12655:2022:&lt;/b&gt; Concreto de cimento Portland – Preparo, controle, recebimento e aceitação. Define classes de agressividade ambiental (CAA I a IV), relação a/c máxima, consumo mínimo de cimento, fck mínimo e desvios-padrão de dosagem (Sd = 4,0; 5,5; 7,0 MPa ou histórico com n ≥ 20).&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 6118:2023:&lt;/b&gt; Projeto de estruturas de concreto – Procedimento. Especifica cobrimentos nominais de armadura (cnom de 20 a 50 mm) e durabilidade estrutural.&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 7211:2022:&lt;/b&gt; Agregados para concreto – Requisitos. Zonas granulométricas (ótima e utilizável), módulo de finura (MF), dimensão máxima característica (DMC) e limites de substâncias nocivas.&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 7212:2025:&lt;/b&gt; Concreto dosado em central – Preparo, fornecimento e controle. Tolerâncias de pesagem em balança dosadora (item 5.5): Cimento e Adições (±1%), Agregados (±3%), Água (±3%) e Aditivos (±5%).&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 8953:2015:&lt;/b&gt; Concreto para fins estruturais – Classificação por grupos de resistência (C20 a C100) e consistência (S10 a S220 pelo abatimento de tronco de cone).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Mehta &amp; Monteiro (2014):&lt;/b&gt; Concreto: Microestrutura, Propriedades e Materiais. Fundamentação da Lei de Abrams, transição interfacial matriz-agregado e empacotamento granular.&lt;/li&gt;&lt;/ul&gt;</source>
         <translation>&lt;h3&gt;Normas Técnicas Brasileiras Aplicadas&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 12655:2022:&lt;/b&gt; Concreto de cimento Portland – Preparo, controle, recebimento e aceitação. Define classes de agressividade ambiental (CAA I a IV), relação a/c máxima, consumo mínimo de cimento, fck mínimo e desvios-padrão de dosagem (Sd = 4,0; 5,5; 7,0 MPa ou histórico com n ≥ 20).&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 6118:2023:&lt;/b&gt; Projeto de estruturas de concreto – Procedimento. Especifica cobrimentos nominais de armadura (cnom de 20 a 50 mm) e durabilidade estrutural.&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 7211:2022:&lt;/b&gt; Agregados para concreto – Requisitos. Zonas granulométricas (ótima e utilizável), módulo de finura (MF), dimensão máxima característica (DMC) e limites de substâncias nocivas.&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 7212:2025:&lt;/b&gt; Concreto dosado em central – Preparo, fornecimento e controle. Tolerâncias de pesagem em balança dosadora (item 5.5): Cimento e Adições (±1%), Agregados (±3%), Água (±3%) e Aditivos (±5%).&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 8953:2015:&lt;/b&gt; Concreto para fins estruturais – Classificação por grupos de resistência (C20 a C100) e consistência (S10 a S220 pelo abatimento de tronco de cone).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Mehta &amp; Monteiro (2014):&lt;/b&gt; Concreto: Microestrutura, Propriedades e Materiais. Fundamentação da Lei de Abrams, transição interfacial matriz-agregado e empacotamento granular.&lt;/li&gt;&lt;/ul&gt;</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="716"/>
+        <location filename="../../gui/MainWindow.cpp" line="727"/>
         <source>Fechar</source>
         <translation>Fechar</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="854"/>
+        <location filename="../../gui/MainWindow.cpp" line="864"/>
         <source>Configurações — Dados do Projeto e Identificação</source>
         <translation>Configurações — Dados do Projeto e Identificação</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="875"/>
+        <location filename="../../gui/MainWindow.cpp" line="885"/>
         <source>1. Origem das Informações Reportadas em &apos;Projeto:&apos;</source>
         <translation>1. Origem das Informações Reportadas em &apos;Projeto:&apos;</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="879"/>
+        <location filename="../../gui/MainWindow.cpp" line="889"/>
         <source>Reportar as informações selecionadas em &apos;Cenário da Planilha&apos; (tradução dinâmica)</source>
         <translation>Reportar as informações selecionadas em &apos;Cenário da Planilha&apos; (tradução dinâmica)</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="880"/>
+        <location filename="../../gui/MainWindow.cpp" line="890"/>
         <source>Editar as informações de &apos;Projeto:&apos; manualmente</source>
         <translation>Editar as informações de &apos;Projeto:&apos; manualmente</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="890"/>
+        <location filename="../../gui/MainWindow.cpp" line="900"/>
         <source>2. Dados de Identificação do Relatório Técnico</source>
         <translation>2. Dados de Identificação do Relatório Técnico</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="900"/>
+        <location filename="../../gui/MainWindow.cpp" line="911"/>
         <source>Digite o nome ou identificação personalizada do projeto...</source>
         <translation>Digite o nome ou identificação personalizada do projeto...</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="931"/>
+        <location filename="../../gui/MainWindow.cpp" line="942"/>
         <source>Ex.: Eng. Civil / Responsável Técnico / CREA</source>
         <translation>Ex.: Eng. Civil / Responsável Técnico / CREA</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="934"/>
+        <location filename="../../gui/MainWindow.cpp" line="945"/>
         <source>Ex.: UFPR - Universidade Federal do Paraná / Empresa</source>
         <translation>Ex.: UFPR - Universidade Federal do Paraná / Empresa</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="937"/>
+        <location filename="../../gui/MainWindow.cpp" line="948"/>
         <source>Ex.: GRR20182393 / Matrícula / Código ART</source>
         <translation>Ex.: GRR20182393 / Matrícula / Código ART</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="939"/>
+        <location filename="../../gui/MainWindow.cpp" line="950"/>
         <source>Projeto:</source>
         <translation>Projeto:</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="940"/>
+        <location filename="../../gui/MainWindow.cpp" line="951"/>
         <source>Responsável:</source>
         <translation>Responsável:</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="941"/>
+        <location filename="../../gui/MainWindow.cpp" line="952"/>
         <source>Instituição:</source>
         <translation>Instituição:</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="942"/>
+        <location filename="../../gui/MainWindow.cpp" line="953"/>
         <source>Matrícula / ID:</source>
         <translation>Matrícula / ID:</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="948"/>
+        <location filename="../../gui/MainWindow.cpp" line="959"/>
         <source>Restaurar Padrão</source>
         <translation>Restaurar Padrão</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="949"/>
+        <location filename="../../gui/MainWindow.cpp" line="960"/>
         <source>Cancelar</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="950"/>
+        <location filename="../../gui/MainWindow.cpp" line="961"/>
         <source>Salvar e Aplicar</source>
         <translation>Salvar e Aplicar</translation>
     </message>
@@ -526,57 +532,57 @@
         <translation type="vanished">Dosagem Experimental de Concreto (Método IPT/EPUSP) - NBR 12655 / NBR 6118</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="651"/>
+        <location filename="../../gui/MainWindow.cpp" line="662"/>
         <source>&lt;b&gt;fcj:&lt;/b&gt; - MPa (fck - MPa, Sd - MPa)</source>
         <translation>&lt;b&gt;fcj:&lt;/b&gt; - MPa (fck - MPa, Sd - MPa)</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="652"/>
+        <location filename="../../gui/MainWindow.cpp" line="663"/>
         <source>&lt;b&gt;a/c:&lt;/b&gt; -</source>
         <translation>&lt;b&gt;a/c:&lt;/b&gt; -</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="653"/>
+        <location filename="../../gui/MainWindow.cpp" line="664"/>
         <source>&lt;b&gt;Traço Seco:&lt;/b&gt; -</source>
         <translation>&lt;b&gt;Traço Seco:&lt;/b&gt; -</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="654"/>
+        <location filename="../../gui/MainWindow.cpp" line="665"/>
         <source>&lt;b&gt;Consumo Cimento:&lt;/b&gt; - kg/m³</source>
         <translation>&lt;b&gt;Consumo Cimento:&lt;/b&gt; - kg/m³</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="655"/>
+        <location filename="../../gui/MainWindow.cpp" line="666"/>
         <source>&lt;span style=&apos;color: #888888; font-weight: bold;&apos;&gt;Aguardando dados&lt;/span&gt;</source>
         <translation>&lt;span style=&apos;color: #888888; font-weight: bold;&apos;&gt;Aguardando dados&lt;/span&gt;</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="659"/>
+        <location filename="../../gui/MainWindow.cpp" line="670"/>
         <source>&lt;b&gt;fcj:&lt;/b&gt; %1 MPa (fck %2 MPa, Sd %3 MPa)</source>
         <translation>&lt;b&gt;fcj:&lt;/b&gt; %1 MPa (fck %2 MPa, Sd %3 MPa)</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="664"/>
+        <location filename="../../gui/MainWindow.cpp" line="675"/>
         <source>&lt;b&gt;a/c:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;a/c:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="666"/>
+        <location filename="../../gui/MainWindow.cpp" line="677"/>
         <source>&lt;b&gt;Traço Seco:&lt;/b&gt; 1 : %1 : %2 (1 : %3)</source>
         <translation>&lt;b&gt;Traço Seco:&lt;/b&gt; 1 : %1 : %2 (1 : %3)</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="671"/>
+        <location filename="../../gui/MainWindow.cpp" line="682"/>
         <source>&lt;b&gt;Consumo Cimento:&lt;/b&gt; %1 kg/m³</source>
         <translation>&lt;b&gt;Consumo Cimento:&lt;/b&gt; %1 kg/m³</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="675"/>
+        <location filename="../../gui/MainWindow.cpp" line="686"/>
         <source>&lt;span style=&apos;color: green; font-weight: bold;&apos;&gt;✔ NBR 12655: CONFORME&lt;/span&gt;</source>
         <translation>&lt;span style=&apos;color: green; font-weight: bold;&apos;&gt;✔ NBR 12655: CONFORME&lt;/span&gt;</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="677"/>
+        <location filename="../../gui/MainWindow.cpp" line="688"/>
         <source>&lt;span style=&apos;color: red; font-weight: bold;&apos;&gt;⚠ NBR: NÃO CONFORME&lt;/span&gt;</source>
         <translation>&lt;span style=&apos;color: red; font-weight: bold;&apos;&gt;⚠ NBR: NÃO CONFORME&lt;/span&gt;</translation>
     </message>
@@ -585,7 +591,7 @@
         <translation type="vanished">&lt;h3&gt;Normas Técnicas Brasileiras Aplicadas&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 12655:2022:&lt;/b&gt; Concreto de cimento Portland – Preparo, controle, recebimento e aceitação. Define classes de agressividade ambiental (CAA I a IV), relação a/c máxima, consumo mínimo de cimento, fck mínimo e desvios-padrão de dosagem (Sd = 4,0; 5,5; 7,0 MPa ou histórico com n ≥ 20).&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 6118:2023:&lt;/b&gt; Projeto de estruturas de concreto – Procedimento. Especifica cobrimentos nominais de armadura (cnom de 20 a 50 mm) e durabilidade estrutural.&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 7211:2022:&lt;/b&gt; Agregados para concreto – Requisitos. Zonas granulométricas (ótima e utilizável), módulo de finura (MF), dimensão máxima característica (DMC) e limites de substâncias nocivas.&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 7212:2025:&lt;/b&gt; Concreto dosado em central – Preparo, fornecimento e controle. Tolerâncias de pesagem em balança dosadora: Cimento (±1%), Agregados (±2%), Água (±1%) e Aditivos (±3%).&lt;/li&gt;&lt;li&gt;&lt;b&gt;ABNT NBR 8953:2015:&lt;/b&gt; Concreto para fins estruturais – Classificação por grupos de resistência (C20 a C100) e consistência (S10 a S220 pelo abatimento de tronco de cone).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Mehta &amp; Monteiro (2014):&lt;/b&gt; Concreto: Microestrutura, Propriedades e Materiais. Fundamentação da Lei de Abrams, transição interfacial matriz-agregado e empacotamento granular.&lt;/li&gt;&lt;/ul&gt;</translation>
     </message>
     <message>
-        <location filename="../../gui/MainWindow.cpp" line="711"/>
+        <location filename="../../gui/MainWindow.cpp" line="722"/>
         <source>Quadro de Normas Técnicas</source>
         <translation>Quadro de Normas Técnicas</translation>
     </message>
@@ -593,219 +599,221 @@
 <context>
     <name>ConcreteMix::QuadChartWidget</name>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="29"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="674"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="35"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="720"/>
         <source>📷 Exportar Imagem dos Gráficos...</source>
         <translation>📷 Exportar Imagem dos Gráficos...</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="31"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="37"/>
         <source>Salvar Gráfico</source>
         <translation>Salvar Gráfico</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="31"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="37"/>
         <source>Imagens PNG (*.png);;PDF (*.pdf)</source>
         <translation>Imagens PNG (*.png);;PDF (*.pdf)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="64"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="678"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="70"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="724"/>
         <source>📊 Diagrama Completo de 4 Quadrantes (IPT)</source>
         <translation>📊 Diagrama Completo de 4 Quadrantes (IPT)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="68"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="159"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="207"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="74"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="177"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="225"/>
         <source>1º Quadrante - Lei de Abrams (fcj x a/c)</source>
         <translation>1º Quadrante - Lei de Abrams (fcj x a/c)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="78"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="679"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="84"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="725"/>
         <source>1º Quad: Abrams (fcj x a/c)</source>
         <translation>1º Quad: Abrams (fcj x a/c)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="81"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="170"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="317"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="87"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="188"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="341"/>
         <source>2º Quadrante - Lei de Lyse (m x a/c)</source>
         <translation>2º Quadrante - Lei de Lyse (m x a/c)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="91"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="680"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="97"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="726"/>
         <source>2º Quad: Lyse (m x a/c)</source>
         <translation>2º Quad: Lyse (m x a/c)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="94"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="181"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="425"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="100"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="199"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="455"/>
         <source>3º Quadrante - Lei de Molinari (m x C)</source>
         <translation>3º Quadrante - Lei de Molinari (m x C)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="104"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="681"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="110"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="727"/>
         <source>3º Quad: Molinari (m x C)</source>
         <translation>3º Quad: Molinari (m x C)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="107"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="192"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="529"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="113"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="210"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="565"/>
         <source>4º Quadrante - Consumo x Custo por m³</source>
         <translation>4º Quadrante - Consumo x Custo por m³</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="117"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="682"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="123"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="728"/>
         <source>4º Quad: Consumo e Custo</source>
         <translation>4º Quad: Consumo e Custo</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="121"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="683"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="127"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="729"/>
         <source>5° Abrams/Lyse/Molinari (IPT)</source>
         <translation>5° Abrams/Lyse/Molinari (IPT)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="234"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="344"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="452"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="252"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="368"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="482"/>
         <source>Pontos Experimentais</source>
         <translation>Pontos Experimentais</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="260"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="278"/>
         <source>Curva de Regressão</source>
         <translation>Curva de Regressão</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="270"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="288"/>
         <source>fcj de dosagem = %1 MPa</source>
         <translation>fcj de dosagem = %1 MPa</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="277"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="295"/>
         <source>a/c ótimo = %1</source>
         <translation>a/c ótimo = %1</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="218"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="288"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="328"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="396"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="236"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="306"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="352"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="420"/>
         <source>Relação Água/Cimento (a/c)</source>
         <translation>Relação Água/Cimento (a/c)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="225"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="295"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="243"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="319"/>
         <source>Resistência fcj (MPa)</source>
         <translation>Resistência fcj (MPa)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="369"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="393"/>
         <source>Reta de Lyse</source>
         <translation>Reta de Lyse</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="379"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="403"/>
         <source>a/c = %1</source>
         <translation>a/c = %1</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="385"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="409"/>
         <source>m ótimo = %1</source>
         <translation>m ótimo = %1</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="335"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="403"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="443"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="507"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="359"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="433"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="473"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="543"/>
         <source>Traço Seco Total m (1:m)</source>
         <translation>Traço Seco Total m (1:m)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="473"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="503"/>
         <source>Curva de Molinari</source>
         <translation>Curva de Molinari</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="483"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="513"/>
         <source>m = %1</source>
         <translation>m = %1</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="489"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="519"/>
         <source>Consumo C = %1 kg/m³</source>
         <translation>Consumo C = %1 kg/m³</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="436"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="500"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="533"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="587"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="466"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="530"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="569"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="626"/>
         <source>Consumo de Cimento C (kg/m³)</source>
         <translation>Consumo de Cimento C (kg/m³)</translation>
     </message>
     <message>
+        <location filename="../../gui/QuadChartWidget.cpp" line="599"/>
         <source>Custo Total (%1/m³) x Consumo</source>
         <translation>Custo Total (%1/m³) x Consumo</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="560"/>
         <source>Custo Total (R$/m³) x Consumo</source>
-        <translation>Custo Total (R$/m³) x Consumo</translation>
+        <translation type="vanished">Custo Total (R$/m³) x Consumo</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="571"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="610"/>
         <source>C = %1 kg/m³</source>
         <translation>C = %1 kg/m³</translation>
     </message>
     <message>
+        <location filename="../../gui/QuadChartWidget.cpp" line="616"/>
         <source>Custo = %1 %2/m³</source>
         <translation>Custo = %1 %2/m³</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="577"/>
         <source>Custo = R$ %1/m³</source>
-        <translation>Custo = R$ %1/m³</translation>
+        <translation type="vanished">Custo = R$ %1/m³</translation>
     </message>
     <message>
+        <location filename="../../gui/QuadChartWidget.cpp" line="577"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="640"/>
         <source>Custo Estimado (%1/m³)</source>
         <translation>Custo Estimado (%1/m³)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="540"/>
-        <location filename="../../gui/QuadChartWidget.cpp" line="594"/>
         <source>Custo Estimado (R$/m³)</source>
-        <translation>Custo Estimado (R$/m³)</translation>
+        <translation type="vanished">Custo Estimado (R$/m³)</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="726"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="784"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="796"/>
         <source>Sucesso</source>
         <translation>Sucesso</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="726"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="784"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="796"/>
         <source>Gráficos exportados com sucesso para:
 %1</source>
         <translation>Gráficos exportados com sucesso para:
 %1</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="728"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="798"/>
         <source>Erro</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../../gui/QuadChartWidget.cpp" line="728"/>
+        <location filename="../../gui/QuadChartWidget.cpp" line="798"/>
         <source>Não foi possível salvar o arquivo de imagem.</source>
         <translation>Não foi possível salvar o arquivo de imagem.</translation>
     </message>
@@ -813,14 +821,14 @@
 <context>
     <name>ConcreteMix::TabCosts</name>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="29"/>
-        <location filename="../../gui/TabCosts.cpp" line="249"/>
+        <location filename="../../gui/TabCosts.cpp" line="30"/>
+        <location filename="../../gui/TabCosts.cpp" line="252"/>
         <source>1. Parâmetros de Volume e Leituras do Ábaco Gráfico Manual</source>
         <translation>1. Parâmetros de Volume e Leituras do Ábaco Gráfico Manual</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="33"/>
-        <location filename="../../gui/TabCosts.cpp" line="252"/>
+        <location filename="../../gui/TabCosts.cpp" line="34"/>
+        <location filename="../../gui/TabCosts.cpp" line="255"/>
         <source>&lt;b&gt;Volume Total da Obra (m³):&lt;/b&gt;</source>
         <translation>&lt;b&gt;Volume Total da Obra (m³):&lt;/b&gt;</translation>
     </message>
@@ -829,142 +837,142 @@
         <translation type="vanished"> </translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="41"/>
-        <location filename="../../gui/TabCosts.cpp" line="255"/>
+        <location filename="../../gui/TabCosts.cpp" line="42"/>
+        <location filename="../../gui/TabCosts.cpp" line="258"/>
         <source>Leitura Gráfica Manual a/c:</source>
         <translation>Leitura Gráfica Manual a/c:</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="49"/>
-        <location filename="../../gui/TabCosts.cpp" line="258"/>
+        <location filename="../../gui/TabCosts.cpp" line="50"/>
+        <location filename="../../gui/TabCosts.cpp" line="261"/>
         <source>Leitura Gráfica Manual Traço m:</source>
         <translation>Leitura Gráfica Manual Traço m:</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="57"/>
-        <location filename="../../gui/TabCosts.cpp" line="261"/>
+        <location filename="../../gui/TabCosts.cpp" line="58"/>
+        <location filename="../../gui/TabCosts.cpp" line="264"/>
         <source>Leitura Gráfica Manual Consumo C (kg/m³):</source>
         <translation>Leitura Gráfica Manual Consumo C (kg/m³):</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="68"/>
-        <location filename="../../gui/TabCosts.cpp" line="265"/>
+        <location filename="../../gui/TabCosts.cpp" line="69"/>
+        <location filename="../../gui/TabCosts.cpp" line="268"/>
         <source>2. Comparativo Detalhado de Custos e Consumos (Analítico x Gráfico)</source>
         <translation>2. Comparativo Detalhado de Custos e Consumos (Analítico x Gráfico)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="75"/>
-        <location filename="../../gui/TabCosts.cpp" line="269"/>
+        <location filename="../../gui/TabCosts.cpp" line="76"/>
+        <location filename="../../gui/TabCosts.cpp" line="272"/>
         <source>Item de Comparação</source>
         <translation>Item de Comparação</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="76"/>
-        <location filename="../../gui/TabCosts.cpp" line="270"/>
+        <location filename="../../gui/TabCosts.cpp" line="77"/>
+        <location filename="../../gui/TabCosts.cpp" line="273"/>
         <source>Solução Analítica (Equações)</source>
         <translation>Solução Analítica (Equações)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="77"/>
-        <location filename="../../gui/TabCosts.cpp" line="271"/>
+        <location filename="../../gui/TabCosts.cpp" line="78"/>
+        <location filename="../../gui/TabCosts.cpp" line="274"/>
         <source>Leitura Manual (Ábaco)</source>
         <translation>Leitura Manual (Ábaco)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="78"/>
-        <location filename="../../gui/TabCosts.cpp" line="272"/>
+        <location filename="../../gui/TabCosts.cpp" line="79"/>
+        <location filename="../../gui/TabCosts.cpp" line="275"/>
         <source>Diferença (|Δ|)</source>
         <translation>Diferença (|Δ|)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="89"/>
-        <location filename="../../gui/TabCosts.cpp" line="277"/>
+        <location filename="../../gui/TabCosts.cpp" line="90"/>
+        <location filename="../../gui/TabCosts.cpp" line="280"/>
         <source>3. Impacto Financeiro da Precisão Analítica das Equações na Obra</source>
         <translation>3. Impacto Financeiro da Precisão Analítica das Equações na Obra</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="114"/>
-        <location filename="../../gui/TabCosts.cpp" line="280"/>
+        <location filename="../../gui/TabCosts.cpp" line="115"/>
+        <location filename="../../gui/TabCosts.cpp" line="283"/>
         <source>Diferença Total no Custo da Obra</source>
         <translation>Diferença Total no Custo da Obra</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="115"/>
-        <location filename="../../gui/TabCosts.cpp" line="283"/>
+        <location filename="../../gui/TabCosts.cpp" line="116"/>
+        <location filename="../../gui/TabCosts.cpp" line="286"/>
         <source>Diferença na Quantidade de Cimento (Sacos 50 kg)</source>
         <translation>Diferença na Quantidade de Cimento (Sacos 50 kg)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="192"/>
+        <location filename="../../gui/TabCosts.cpp" line="195"/>
         <source>Relação Água/Cimento (a/c)</source>
         <translation>Relação Água/Cimento (a/c)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="197"/>
+        <location filename="../../gui/TabCosts.cpp" line="200"/>
         <source>Traço Seco Total (m)</source>
         <translation>Traço Seco Total (m)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="202"/>
+        <location filename="../../gui/TabCosts.cpp" line="205"/>
         <source>Consumo de Cimento C (kg/m³)</source>
         <translation>Consumo de Cimento C (kg/m³)</translation>
     </message>
     <message>
+        <location filename="../../gui/TabCosts.cpp" line="210"/>
         <source>Custo de Cimento (%1/m³)</source>
         <translation>Custo de Cimento (%1/m³)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="207"/>
         <source>Custo de Cimento (R$/m³)</source>
-        <translation>Custo de Cimento (R$/m³)</translation>
+        <translation type="vanished">Custo de Cimento (R$/m³)</translation>
     </message>
     <message>
+        <location filename="../../gui/TabCosts.cpp" line="215"/>
         <source>Custo de Areia (%1/m³)</source>
         <translation>Custo de Areia (%1/m³)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="212"/>
         <source>Custo de Areia (R$/m³)</source>
-        <translation>Custo de Areia (R$/m³)</translation>
+        <translation type="vanished">Custo de Areia (R$/m³)</translation>
     </message>
     <message>
+        <location filename="../../gui/TabCosts.cpp" line="220"/>
         <source>Custo de Brita (%1/m³)</source>
         <translation>Custo de Brita (%1/m³)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="217"/>
         <source>Custo de Brita (R$/m³)</source>
-        <translation>Custo de Brita (R$/m³)</translation>
+        <translation type="vanished">Custo de Brita (R$/m³)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="222"/>
+        <location filename="../../gui/TabCosts.cpp" line="225"/>
         <source>Custo Total por m³ de Concreto</source>
         <translation>Custo Total por m³ de Concreto</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="227"/>
+        <location filename="../../gui/TabCosts.cpp" line="230"/>
         <source>Custo Total da Obra (%1 m³)</source>
         <translation>Custo Total da Obra (%1 m³)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="232"/>
+        <location filename="../../gui/TabCosts.cpp" line="235"/>
         <source>Consumo Total de Cimento na Obra</source>
         <translation>Consumo Total de Cimento na Obra</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="237"/>
+        <location filename="../../gui/TabCosts.cpp" line="240"/>
         <source>Total de Sacos de Cimento (50 kg)</source>
         <translation>Total de Sacos de Cimento (50 kg)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="238"/>
-        <location filename="../../gui/TabCosts.cpp" line="239"/>
-        <location filename="../../gui/TabCosts.cpp" line="240"/>
+        <location filename="../../gui/TabCosts.cpp" line="241"/>
+        <location filename="../../gui/TabCosts.cpp" line="242"/>
+        <location filename="../../gui/TabCosts.cpp" line="243"/>
         <source>%1 sacos</source>
         <translation>%1 sacos</translation>
     </message>
     <message>
-        <location filename="../../gui/TabCosts.cpp" line="244"/>
+        <location filename="../../gui/TabCosts.cpp" line="247"/>
         <source>%1 sacos de 50 kg</source>
         <translation>%1 sacos de 50 kg</translation>
     </message>
@@ -1431,6 +1439,7 @@
     </message>
     <message>
         <location filename="../../gui/TabMaterials.cpp" line="83"/>
+        <location filename="../../gui/TabMaterials.cpp" line="670"/>
         <source>R$/sc (50 kg)</source>
         <translation>R$/sc (50 kg)</translation>
     </message>
@@ -1439,7 +1448,7 @@
         <location filename="../../gui/TabMaterials.cpp" line="122"/>
         <location filename="../../gui/TabMaterials.cpp" line="159"/>
         <location filename="../../gui/TabMaterials.cpp" line="196"/>
-        <location filename="../../gui/TabMaterials.cpp" line="672"/>
+        <location filename="../../gui/TabMaterials.cpp" line="671"/>
         <location filename="../../gui/TabMaterials.cpp" line="682"/>
         <source>R$/kg</source>
         <translation>R$/kg</translation>
@@ -1449,7 +1458,7 @@
         <location filename="../../gui/TabMaterials.cpp" line="121"/>
         <location filename="../../gui/TabMaterials.cpp" line="158"/>
         <location filename="../../gui/TabMaterials.cpp" line="195"/>
-        <location filename="../../gui/TabMaterials.cpp" line="670"/>
+        <location filename="../../gui/TabMaterials.cpp" line="672"/>
         <location filename="../../gui/TabMaterials.cpp" line="681"/>
         <source>R$/t</source>
         <translation>R$/t</translation>
@@ -1548,9 +1557,8 @@
         <translation>M.U. Compactada (kg/dm³)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabMaterials.cpp" line="671"/>
         <source>R$/sc 50kg</source>
-        <translation>R$/sc 50kg</translation>
+        <translation type="vanished">R$/sc 50kg</translation>
     </message>
 </context>
 <context>
@@ -2039,12 +2047,12 @@
         <translation>Documento PDF (*.pdf)</translation>
     </message>
     <message>
-        <location filename="../../gui/TabTechnicalReport.cpp" line="165"/>
+        <location filename="../../gui/TabTechnicalReport.cpp" line="164"/>
         <source>PDF Gerado</source>
         <translation>PDF Gerado</translation>
     </message>
     <message>
-        <location filename="../../gui/TabTechnicalReport.cpp" line="165"/>
+        <location filename="../../gui/TabTechnicalReport.cpp" line="164"/>
         <source>Memorial técnico oficial exportado em PDF com sucesso!
 %1</source>
         <translation>Memorial técnico oficial exportado em PDF com sucesso!

@@ -1,13 +1,13 @@
 Project: CONCRETE MIX DESIGNER
-Version: 2026.11.6.0
+Version: 2026.11.11.0
 Authors: Fernando Nillsson Cidade
 
 Short description:
 CONCRETE MIX DESIGNER is a high-precision native civil engineering desktop application, built with C++20 and Qt 6.11.1, dedicated to the experimental and rational proportioning of Portland cement concrete using the renowned IPT/EPUSP Method (Helene & Terzian, 1992). The software integrates mathematical modeling based on the classical laws of Abrams, Lyse, and Molinari, coarse aggregate binary packing optimization, experimental dry mortar content (α) analysis, interactive 4-Quadrant Dosage Diagram rendering, automated normative compliance verification (ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, and NBR 8953:2015), comparative cost analysis, and full engineering calculation report generation.
 
 Detailed description:
-Designed for civil engineers, concrete technologists, ready-mix batching plants, quality control laboratories, professors, and engineering students, CONCRETE MIX DESIGNER organizes the complete experimental proportioning workflow into seven integrated tabbed modules: Project Parameters, Materials & Gravel Blend, Mortar Content (α), Trial Mixes & IPT Diagram, Final Mix & Batching, Cost Analysis, and Technical Report.
-Its architecture prioritizes IEEE 754 double-precision numerical accuracy, 100% local execution (offline-first) with strict privacy, native support for Windows 11 Light and Dark themes (via DWM API and QPalette), instant runtime localization (Brazilian Portuguese and US English), and Modeless Dialog management with independent Z-Order between the main application window and auxiliary reference dialogs.
+Designed exclusively for academic study, didactic instruction, educational simulation, and theoretical research in civil engineering, CONCRETE MIX DESIGNER organizes the complete experimental proportioning workflow into seven integrated tabbed modules: Project Parameters, Materials & Gravel Blend, Mortar Content (α), Trial Mixes & IPT Diagram, Final Mix & Batching, Cost Analysis, and Technical Report.
+Its architecture prioritizes IEEE 754 double-precision numerical accuracy, 100% local execution (offline-first) with strict privacy, native support for Windows 11 Light and Dark themes (via DWM API and QPalette), instant runtime localization (Brazilian Portuguese and US English via the Settings > Language menu), and Modeless Dialog management with independent Z-Order between the main application window and auxiliary reference dialogs.
 
 Main features:
 - Project Parameters and Normative Durability: configuration of characteristic compressive strength (fck from 20 to 100 MPa), preparation control condition (Conditions A, B, and C per ABNT NBR 12655:2022, Known Historical Standard Deviation with n ≥ 20, or Laboratory/Arbitrary mode), automatic target dosage strength calculation (fcj = fck + 1.65 × Sd), target slump (per ABNT NBR 8953:2015), structural type (Reinforced Concrete CA or Prestressed Concrete CP, with automatic +5 mm nominal cover increment per ABNT NBR 6118:2023 Table 7.2), and Environmental Aggressiveness Class (CAA I to IV).
@@ -17,12 +17,12 @@ Main features:
 - Final Unit Proportions, Moisture Correction, and Field Batching: display of unit dry mix proportion (1 : a : p), surface-moisture-corrected wet proportion (1 : a_wet : p_wet) with exact deduction of aggregate free water, material consumption per m³ of compacted concrete, laboratory mixer batch weights, 1-bag cement (50 kg) field recipe, wooden volume-measuring boxes ("padiolas", 35 cm × 45 cm base), and central batching plant weighing tolerances (ABNT NBR 7212:2025 item 5.5).
 - Comparative Cost Analysis (Analytical vs. Graphical): direct comparison between the exact analytical regression solution and manual graphical chart readings, computing unit cost per m³ (R$/m³), total project concrete cost, and equivalent financial and 50 kg cement bag differences.
 - Technical Report and Multi-Format Export: instant generation of a comprehensive, dynamically translated engineering calculation report with clipboard copy and native export to PDF (A4, 300 DPI), HTML5, and Markdown (.md).
-- Settings Menu and Reference Scenarios: direct selection of "Spreadsheet Scenario:" via the dropdown list integrated into the Settings menu (including Scenarios 0 to 5, featuring the corrected original UFPR TC031 academic spreadsheet) and custom header metadata configuration ("Project:", "Responsible:", "Institution:", and "ID / Code:"), allowing users to choose between automatically reporting the dynamically translated Spreadsheet Scenario or manually editing the project name.
+- Settings Menu, Language Submenu, and Reference Scenarios: direct selection of the application language under "Settings > Language", selection of "Spreadsheet Scenario:" via the dropdown list integrated into the Settings menu (including Scenarios 0 to 5, featuring the corrected original UFPR TC031 academic spreadsheet), and custom header metadata configuration ("Project:", "Responsible:", "Institution:", and "ID / Code:"), allowing users to choose between automatically reporting the dynamically translated Spreadsheet Scenario or manually editing the project name.
 - Modeless Dialogs and Independent Z-Order: auxiliary reference windows (User Manual, NBR Technical Standards, and About Concrete Mix Designer) operate as non-modal (Modeless) windows with independent Z-Order, enabling users to freely switch focus and window stacking between the main GUI and open dialogs without blocking the engineering workflow.
 
 Installation and distribution:
 - Distributed for Windows 10 and Windows 11 (x64) with automated deployment of Qt 6.11.1 runtime dependencies via windeployqt (including Qt6Core, Qt6Gui, Qt6Widgets, Qt6Charts, Qt6Sql, Qt6OpenGL, Qt6OpenGLWidgets, and MinGW 64-bit / MSVC 64-bit compiler runtimes).
-- Ready for commercial distribution on the Microsoft Store and open publication on GitHub.
+- Provided as a strictly academic and educational study tool for concrete technology instruction and research.
 
 Data storage and privacy:
 - 100% local and offline operation: no project data, laboratory test metrics, cost figures, or engineering identification details are transmitted over the internet.
@@ -36,7 +36,7 @@ System requirements:
 - Disk space: approximately 120 MB for full installation including Qt 6 runtime libraries.
 
 Quick start:
-1. Open the "Settings" menu to choose a "Spreadsheet Scenario:" from the dropdown list or click "Project Data & Identification (Ctrl+I)" to enter Project, Responsible Engineer, Institution, and ID/Code.
+1. Open the "Settings" menu to select the language under "Settings > Language", choose a "Spreadsheet Scenario:" from the dropdown list, or click "Project Data & Identification (Ctrl+I)" to enter Project, Responsible Engineer, Institution, and ID/Code.
 2. In Tab 1 (Project Parameters), define fck, preparation condition (Sd), target slump, structural type (CA or CP), and environmental aggressiveness class (CAA I to IV).
 3. In Tab 2 (Materials & Gravel Blend), enter specific masses, bulk unit masses, moisture contents, and unit costs, and inspect the optimal binary blend of Gravel 1 and Gravel 2.
 4. In Tab 3 (Mortar Content α), review the progressive pilot mix table and set the optimal dry mortar content (α%).
@@ -47,14 +47,14 @@ Quick start:
 Common troubleshooting:
 - Regression curve warning: check Tab 4 to ensure the three experimental mixes have strictly increasing water/cement ratios (w/c) and decreasing compressive strengths (fcj) in accordance with Abrams' Law.
 - Normative non-compliance (red status in the bottom bar): inspect the ABNT NBR 12655:2022 and NBR 6118:2023 cards in Tab 1; reduce the w/c ratio or increase fck to satisfy the selected Environmental Aggressiveness Class limits.
-- Language switching: use the "Language" menu in the top menu bar to switch instantaneously between Brazilian Portuguese (pt_BR) and US English (en_US) across the entire UI and technical reports.
+- Language switching: use the "Settings > Language" submenu in the top menu bar to switch instantaneously between Brazilian Portuguese (pt_BR) and US English (en_US) across the entire UI and technical reports.
 
 Support and contact:
 Author: Fernando Nillsson Cidade
 E-mail: linceu_lighthouse@outlook.com
 
 License and notices:
-See the "License" (EULA) and "Notices" tabs in the "About Concrete Mix Designer" dialog for detailed information on copyright, commercial licensing terms, and third-party software attributions (Qt 6 under LGPLv3).
+See the "License" (EULA) and "Notices" tabs in the "About Concrete Mix Designer" dialog for detailed information on copyright, strictly academic scope, legal liability disclaimers, and third-party software attributions (Qt 6 under LGPLv3).
 
 Final notes:
-CONCRETE MIX DESIGNER is a computational decision-support tool for civil engineering. All calculated mix proportions must be experimentally validated in a laboratory by a licensed professional engineer before execution in structural works, in strict compliance with ABNT NBR 12655:2022 and ABNT NBR 6118:2023.
+STRICTLY ACADEMIC PURPOSE AND LEGAL LIABILITY DISCLAIMER NOTICE: CONCRETE MIX DESIGNER is an application developed exclusively for academic study, didactic instruction, and theoretical research purposes, provided "AS-IS" and "WITH ALL FAULTS", and may contain algorithmic, numerical, precision, or modeling errors, not serving as a definitive or certified software for decision-making in real production, construction sites, batching plants, or professional work environments. It is strictly mandatory to manually verify all calculations and obtained results, cross-check them through other more consolidated market tools, and validate them via physical laboratory tests under the direct supervision and Technical Responsibility Annotation (ART) of a legally licensed Civil Engineer (CONFEA/CREA System — Brazilian Federal Laws No. 5,194/1966 and No. 6,496/1977; ABNT NBR 12655:2022 and NBR 6118:2023). In strict accordance with Brazilian legislation (Brazilian Civil Code — Law No. 10,406/2002, Articles 186, 393, 421, and 927; Software Law — Law No. 9,609/1998; Copyright Law — Law No. 9,610/1998; Consumer Defense Code — Law No. 8,078/1990) and applicable international conventions and treaties (Uniform Commercial Code — UCC § 2-316, Berne Convention, WIPO Treaties, TRIPS Agreement, and Sections 15 and 16 of the GNU AGPLv3 license), the author is fully exempt from any civil, administrative, labor, property, or criminal liability regarding the real, commercial, or definitive use of this software in production and work environments.

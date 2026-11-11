@@ -8,7 +8,7 @@
 
 ### 1. Fronteiras de Confiança e Superfície de Ataque
 
-O **Concrete Mix Design C++ (v2026.11.6.0)** é um aplicativo desktop nativo (`WIN32_EXECUTABLE`) que opera integralmente no espaço de usuário local do sistema operacional **Microsoft Windows 10/11 (x64)**. O modelo de ameaças (*STRIDE*) foi estruturado para atender à **Política 10.2 e 10.5 da Microsoft Store**, à **LGPD (Lei nº 13.709/2018)** e ao **GDPR (Regulamento UE 2016/679)**:
+O **Concrete Mix Design C++ (v2026.11.11.0)** é um aplicativo desktop nativo (`WIN32_EXECUTABLE`) que opera integralmente no espaço de usuário local do sistema operacional **Microsoft Windows 10/11 (x64)**. O modelo de ameaças (*STRIDE*) foi estruturado para atender à **Política 10.2 e 10.5 da Microsoft Store**, à **LGPD (Lei nº 13.709/2018)** e ao **GDPR (Regulamento UE 2016/679)**:
 
 | Categoria STRIDE | Vetor Potencial Analisado | Mitigação Implementada no Código C++20 |
 | :--- | :--- | :--- |
@@ -24,17 +24,18 @@ O **Concrete Mix Design C++ (v2026.11.6.0)** é um aplicativo desktop nativo (`W
 
 ### 2. Persistência Local Segura (`QSettings`)
 
-As únicas informações salvas localmente entre sessões são o código de idioma (`idioma`) e os 6 campos de preferências de cabeçalho do menu **Configurações** (`usePresetProjectName`, `customProjectName`, `engineerName`, `institution`, `studentId`), armazenados na chave de usuário padrão do Windows (`HKEY_CURRENT_USER\Software\AppsCpp\ConcreteMixDesign`), sem exigir privilégios administrativos (UAC).
+As únicas informações salvas localmente entre sessões são o código de idioma (`idioma`, selecionado em **Configurações > Idioma**) e os 6 campos de preferências de cabeçalho do menu **Configurações** (`usePresetProjectName`, `customProjectName`, `engineerName`, `institution`, `studentId`), armazenados na chave de usuário padrão do Windows (`HKEY_CURRENT_USER\Software\AppsCpp\ConcreteMixDesign`), sem exigir privilégios administrativos (UAC).
 
 ---
 
-### 3. Modelo de Segurança da Linha de Comando (CLI)
+### 3. Modelo de Segurança da Linha de Comando (CLI) e Escopo Acadêmico
 
-O binário `concrete-mix-designer-cli.exe` é projetado para operação segura e determinística em ambientes corporativos e de automação:
+O binário `concrete-mix-designer-cli.exe` é projetado para operação segura e determinística em ambientes de estudo e automação:
 - Validação estrita de limites físicos em todos os argumentos de entrada (`--fck`, `--slump`, `--ac`, etc.);
 - Sanitização de caminhos de arquivo para prevenir travessia de diretórios (*Path Traversal*);
 - Validação de integridade e formato de esquemas JSON ao carregar arquivos de projetos externos;
-- Códigos de saída consistentes para integração segura em pipelines de esteira (CI/CD).
+- Códigos de saída consistentes para integração segura em pipelines de esteira (CI/CD);
+- **Escopo Estritamente Acadêmico e Isenção de Responsabilidade:** O software destina-se exclusivamente a fins de estudo acadêmico, podendo conter possíveis erros de modelagem ou cálculo, e não serve como ferramenta definitiva para tomadas de decisão em produção ou ambientes de trabalho, exigindo conferência manual obrigatória dos resultados e validação por ferramentas mais consolidadas no mercado, sob total isenção de responsabilidade legal do autor conforme a legislação brasileira e convenções internacionais.
 
 ---
 
@@ -42,7 +43,7 @@ O binário `concrete-mix-designer-cli.exe` é projetado para operação segura e
 
 ### 1. Trust Boundaries and Attack Surface
 
-**Concrete Mix Design C++ (v2026.11.6.0)** is a native desktop application (`WIN32_EXECUTABLE`) operating entirely within the local user space of the **Microsoft Windows 10/11 (x64)** operating system. Its threat model (*STRIDE*) is engineered to comply with **Microsoft Store Policies 10.2 and 10.5**, the **Brazilian LGPD (Law No. 13,709/2018)**, and the **EU GDPR (Regulation (EU) 2016/679)**:
+**Concrete Mix Design C++ (v2026.11.11.0)** is a native desktop application (`WIN32_EXECUTABLE`) operating entirely within the local user space of the **Microsoft Windows 10/11 (x64)** operating system. Its threat model (*STRIDE*) is engineered to comply with **Microsoft Store Policies 10.2 and 10.5**, the **Brazilian LGPD (Law No. 13,709/2018)**, and the **EU GDPR (Regulation (EU) 2016/679)**:
 
 | STRIDE Category | Analyzed Potential Vector | Mitigation Implemented in C++20 Code |
 | :--- | :--- | :--- |
@@ -58,14 +59,15 @@ O binário `concrete-mix-designer-cli.exe` é projetado para operação segura e
 
 ### 2. Safe Local Persistence (`QSettings`)
 
-The only data persisted locally across sessions are the language code (`idioma`) and the 6 header preference fields from the **Settings** menu (`usePresetProjectName`, `customProjectName`, `engineerName`, `institution`, `studentId`), stored under the standard per-user Windows Registry key (`HKEY_CURRENT_USER\Software\AppsCpp\ConcreteMixDesign`), requiring zero administrative (UAC) privileges.
+The only data persisted locally across sessions are the language code (`idioma`, selected under **Settings > Language**) and the 6 header preference fields from the **Settings** menu (`usePresetProjectName`, `customProjectName`, `engineerName`, `institution`, `studentId`), stored under the standard per-user Windows Registry key (`HKEY_CURRENT_USER\Software\AppsCpp\ConcreteMixDesign`), requiring zero administrative (UAC) privileges.
 
 ---
 
-### 3. Command Line Interface (CLI) Security Model
+### 3. Command Line Interface (CLI) Security Model and Academic Scope
 
-The `concrete-mix-designer-cli.exe` binary is designed for safe and deterministic execution in corporate and automated environments:
+The `concrete-mix-designer-cli.exe` binary is designed for safe and deterministic execution in study and automated environments:
 - Strict validation of physical and mathematical ranges on all input arguments (`--fck`, `--slump`, `--ac`, etc.);
 - Safe file path canonicalization to prevent directory traversal attacks (*Path Traversal*);
 - Schema and structure integrity validation when loading external JSON project files;
-- Consistent process exit codes for secure integration in automated CI/CD pipelines.
+- Consistent process exit codes for secure integration in automated CI/CD pipelines;
+- **Strictly Academic Scope and Liability Exemption:** The software is intended exclusively for academic study purposes, may contain possible modeling or calculation errors, and does not serve as a definitive tool for decision-making in production or work environments, requiring mandatory manual verification of results and validation through more consolidated market tools, under full legal liability exemption of the author pursuant to Brazilian legislation and international conventions.

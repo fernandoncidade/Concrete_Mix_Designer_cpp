@@ -1,3 +1,34 @@
+RELEASE NOTES: Version 2026.11.11.0
+Date: November 11, 2026
+
+General Summary
+This release brings a simpler and more intuitive organization to the application menu bar, while clearly and transparently reinforcing the strictly academic and educational purpose of the program across all manuals, terms of use, legal notices, and reference guides. The language selector has been integrated directly inside the settings menu, gathering all customization options in a single place. Additionally, all documentation in Portuguese and English has been reviewed and aligned line by line to ensure continuous, standardized, and easy-to-read text, highlighting the mandatory requirement for manual verification of calculations and cross-checking through consolidated market tools.
+
+New Features, Adjustments, and Improvements
+
+1. New Submenu Organization Under Settings > 📂 Spreadsheet Scenario: and Settings > 🌐 Language
+- Cleaner, Standardized, and Centralized Menu Bar: The application language selection option has been moved from the main top bar into the "Settings > 🌐 Language" submenu, and the "Settings > 📂 Spreadsheet Scenario:" selection has been standardized into the same submenu format with a direct checkmark on the active scenario, keeping the top bar cleaner and grouping all user preferences within the same menu.
+- Instant Switching Between Portuguese and English: By accessing "Settings > 🌐 Language", users continue to instantaneously switch all screen texts, scenario names, charts, currency symbols ("R$" and "$"), reports, and information windows between Brazilian Portuguese and US English without restarting the program.
+
+2. Clarification of Academic Purpose, Manual Verification, and Legal Exemption
+- Application Exclusively for Academic Study Purposes: All internal application documents (including the About, Changelog, License, Notices, Copyright, and Privacy Policy tabs) have been updated to clearly state that this tool is intended exclusively for academic study, learning, and educational simulation of concrete mix design.
+- Mandatory Manual Verification and External Validation: It is expressly highlighted that the program may contain possible calculation or modeling errors and does not serve as definitive software for decision-making in real production, construction sites, or work environments, making it indispensable to manually verify all obtained results or validate them through other more consolidated market tools, in addition to performing mandatory physical laboratory tests under the supervision of a licensed civil engineer.
+- Protection and Compliance with Brazilian Legislation and International Conventions: Legal descriptions have been enhanced based on applicable Brazilian laws (Civil Code, Software Law, Copyright Law, Consumer Defense Code, and CONFEA/CREA professional engineering legislation) and international conventions, ensuring full transparency and exemption from legal liability regarding real or definitive use in production environments.
+
+3. Updated User Manual and Reference Guides
+- Updated Step-by-Step Instructions: The built-in User Manual window and help guides have been updated to explain in simple terms how to access the new "Settings > Language" path, how to select reference scenarios, and how to fill in the report header identification.
+- Safety Notices and Study Best Practices: Clear guidelines have been added to the manuals reinforcing manual verification of formulas and the educational nature of the simulations presented by the program.
+
+4. Complete Alignment and Symmetry Between Portuguese and English
+- Faithful Line-by-Line Translation: All plain text files and documentation manuals underwent a comprehensive review to ensure that the Portuguese and English versions have the exact same number of lines and faithfully translated content.
+- Continuous Reading Without Unwanted Line Breaks: Paragraphs across all documents and manuals have been standardized into continuous lines, making reading easier at any window size.
+
+Important Notes:
+- Strictly Academic Purpose: This application serves solely as an academic study tool, contains possible errors, and must not be used as definitive software for decision-making in production or work environments without manual verification and validation in other more consolidated market tools.
+- Data Preservation and 100% Local Privacy: All user-saved preferences remain intact and the program continues to operate completely locally and offline, without collecting or sending information over the internet.
+
+================================================================================
+
 RELEASE NOTES: Version 2026.11.6.0
 Date: November 6, 2026
 

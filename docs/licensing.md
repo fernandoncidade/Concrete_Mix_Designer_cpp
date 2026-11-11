@@ -1,5 +1,5 @@
 # Licenciamento e Propriedade Intelectual / Licensing & Intellectual Property
-## Concrete Mix Designer C++ (v2026.11.6.0)
+## Concrete Mix Designer C++ (v2026.11.11.0)
 
 [Português (Brasil)](#português-brasil) | [English (United States)](#english-united-states)
 
@@ -36,7 +36,7 @@ Todos os textos integrais de licenças de terceiros encontram-se armazenados em 
 | **SQLite Relational Engine** | 3.x | Domínio Público (*Public Domain*) | Embarcado via plugin dinâmico `qsqlite.dll` |
 | **MinGW-w64 / GCC Runtime (`libstdc++-6.dll`, `libgcc_s_seh-1.dll`, `libwinpthread-1.dll`)** | GCC 13+ | GPL v3.0 com *GCC Runtime Library Exception v3.1* + MIT/BSD | Vinculação Dinâmica (`.dll`) |
 
-> **Garantia Estrita de Direitos LGPLv3:** Em estrita observância à Seção 4 da licença **GNU LGPL v3.0**, nenhuma cláusula do EULA ou termos comerciais restringe o direito do usuário final de substituir, atualizar ou relinkar as bibliotecas dinâmicas do Qt 6 presentes no diretório da aplicação por versões compatíveis de sua preferência.
+> **Garantia Estrita de Direitos LGPLv3 e Aviso de Finalidade Acadêmica:** Em estrita observância à Seção 4 da licença **GNU LGPL v3.0**, nenhuma cláusula do EULA ou termos comerciais restringe o direito do usuário final de substituir, atualizar ou relinkar as bibliotecas dinâmicas do Qt 6 presentes no diretório da aplicação por versões compatíveis de sua preferência. O software constitui uma ferramenta voltada exclusivamente para fins de estudo acadêmico, fornecida "NO ESTADO EM QUE SE ENCONTRA" ("AS-IS"), podendo conter possíveis erros e não servindo como software definitivo para tomadas de decisão em produção ou ambientes de trabalho sem conferência manual obrigatória e validação através de outras ferramentas mais consolidadas no mercado, ficando o autor integralmente isento de responsabilidades legais nos termos da legislação brasileira (Código Civil — Lei nº 10.406/2002; Leis nº 9.609/1998, nº 9.610/1998, nº 8.078/1990, nº 5.194/1966 e nº 6.496/1977) e convenções internacionais (UCC § 2-316, Convenção de Berna, OMPI/WIPO, TRIPS e Seções 15 e 16 da GNU AGPLv3).
 
 ---
 
@@ -71,4 +71,4 @@ All full third-party license texts are stored in [`source/assets/LICENSES/`](../
 | **SQLite Relational Engine** | 3.x | Public Domain | Embedded via dynamic plugin `qsqlite.dll` |
 | **MinGW-w64 / GCC Runtime (`libstdc++-6.dll`, `libgcc_s_seh-1.dll`, `libwinpthread-1.dll`)** | GCC 13+ | GPL v3.0 with *GCC Runtime Library Exception v3.1* + MIT/BSD | Dynamic Linking (`.dll`) |
 
-> **Strict LGPLv3 Rights Reservation:** Pursuant to Section 4 of the **GNU LGPL v3.0** license, no EULA or commercial clause restricts the end user's legal right to inspect, replace, update, or relink the Qt 6 dynamic libraries located in the application directory with compatible builds.
+> **Strict LGPLv3 Rights Reservation and Academic Purpose Notice:** Pursuant to Section 4 of the **GNU LGPL v3.0** license, no EULA or commercial clause restricts the end user's legal right to inspect, replace, update, or relink the Qt 6 dynamic libraries located in the application directory with compatible builds. The software constitutes a tool intended exclusively for academic study purposes, provided "AS-IS", may contain possible errors, and does not serve as definitive software for decision-making in production or work environments without mandatory manual verification and validation through other more consolidated market tools, with the author being fully exempt from legal liabilities under Brazilian legislation (Civil Code — Law No. 10,406/2002; Laws No. 9,609/1998, No. 9,610/1998, No. 8,078/1990, No. 5,194/1966, and No. 6,496/1977) and international conventions (UCC § 2-316, Berne Convention, WIPO, TRIPS, and Sections 15 and 16 of the GNU AGPLv3).

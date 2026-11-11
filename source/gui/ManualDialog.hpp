@@ -15,6 +15,12 @@ class QToolButton;
 
 namespace ConcreteMix::Gui {
 
+/**
+ * @brief Diálogo interativo modeless do Manual do Usuário (PT-BR / EN-US).
+ * Documenta a navegação pelos módulos de cálculo, o submenu Configurações > Idioma,
+ * a seleção de Cenários da Planilha e as diretrizes de finalidade estritamente
+ * acadêmica, conferência manual obrigatória e isenção de responsabilidade legal.
+ */
 class ManualDialog : public QDialog {
     Q_OBJECT
 public:

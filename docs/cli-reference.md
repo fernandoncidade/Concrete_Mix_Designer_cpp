@@ -8,10 +8,10 @@
 
 ### 1. Executáveis Gerados pelo Projeto
 
-O sistema de build CMake gera três executáveis nativos de 64 bits (`x64`) para Microsoft Windows:
+O sistema de build CMake gera três executáveis nativos de 64 bits (`x64`) para Microsoft Windows (desenvolvidos exclusivamente para fins de estudo acadêmico, podendo conter possíveis erros e não servindo como software definitivo para tomadas de decisão em produção ou ambientes de trabalho sem conferência manual obrigatória e validação em ferramentas consolidadas no mercado):
 
 1. **`ConcreteMixDesign.exe` (Aplicativo Gráfico Principal — `WIN32_EXECUTABLE`):**
-   Inicializa o banco de dados normativo SQLite em memória (`NormativeDatabase::instance().initialize()`), carrega o idioma e os metadados persistidos do usuário (`QSettings("AppsCpp", "ConcreteMixDesign")`) e abre a interface gráfica completa de 7 abas sem janela de console auxiliar.
+   Inicializa o banco de dados normativo SQLite em memória (`NormativeDatabase::instance().initialize()`), carrega o idioma (`Configurações > Idioma`) e os metadados persistidos do usuário (`QSettings("AppsCpp", "ConcreteMixDesign")`) e abre a interface gráfica completa de 7 abas sem janela de console auxiliar.
 2. **`concrete-mix-designer-cli.exe` (Interface de Linha de Comando Profissional CLI):**
    Utilitário CLI standalone em console nativo que permite automatizar dosagens ABNT NBR 6118 / NBR 8953 / NBR 12655, executar cálculos volumétricos de $1\text{ m}^3$, auditar conformidade normativa, consultar tabelas normativas, rodar predefinições industriais (C20 a C50), emitir relatórios técnicos nos formatos Texto, JSON, Markdown e HTML, e disparar diagnósticos e suítes de testes automatizados com códigos de saída padronizados.
 3. **`verify_calculations.exe` (Suíte de Verificação Analítica e Normativa via Testes Unitários):**
@@ -134,10 +134,10 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File cmake\gerar_distribuicoe
 
 ### 1. Project Generated Executables
 
-The CMake build system produces three native 64-bit (`x64`) executables for Microsoft Windows:
+The CMake build system produces three native 64-bit (`x64`) executables for Microsoft Windows (developed exclusively for academic study purposes, which may contain possible errors and do not serve as definitive software for decision-making in production or work environments without mandatory manual verification and validation in consolidated market tools):
 
 1. **`ConcreteMixDesign.exe` (Main Graphical Application — `WIN32_EXECUTABLE`):**
-   Initializes the in-memory SQLite normative database (`NormativeDatabase::instance().initialize()`), loads the user's persisted language and project metadata (`QSettings("AppsCpp", "ConcreteMixDesign")`), and launches the complete 7-tab graphical interface without an auxiliary console window.
+   Initializes the in-memory SQLite normative database (`NormativeDatabase::instance().initialize()`), loads the user's persisted language (`Settings > Language`) and project metadata (`QSettings("AppsCpp", "ConcreteMixDesign")`), and launches the complete 7-tab graphical interface without an auxiliary console window.
 2. **`concrete-mix-designer-cli.exe` (Professional Command Line Interface CLI):**
    Native standalone console CLI tool that automates concrete mix designs under ABNT NBR 6118 / NBR 8953 / NBR 12655, performs $1\text{ m}^3$ volumetric closures, audits normative durability criteria, queries standards database tables, executes industrial presets (C20 to C50), generates technical engineering reports in Plain Text, JSON, Markdown, and HTML formats, and triggers diagnostic tests with standardized exit codes.
 3. **`verify_calculations.exe` (CLI Analytical and Normative Unit Test Verification Suite):**
@@ -168,16 +168,28 @@ concrete-mix-designer-cli.exe [command] [options...]
 ##### A. `design` — Automated Mix Design Workflow
 Executes full design calculations: determines target compressive strength $f_{cj}$, water-cement ratio $w/c$ (Abrams curve or NBR 6118 durability limits), water demand by slump, sand/gravel proportion, and $1\text{ m}^3$ volumetric closure.
 ```powershell
-# Mix design for fck = 30 MPa, slump = 120 mm, CAA III
+# Basic example: fck 30 MPa, slump 120 mm, CAA III (industrial)
 concrete-mix-designer-cli.exe design --fck 30 --slump 120 --caa III --cond A
 
-# Mix design exporting JSON data to file
+# Example with JSON output and saving to file
 concrete-mix-designer-cli.exe design --fck 35 --slump 100 --caa II --format json --out mix_c35.json
 ```
+Parameters for the `design` command:
+- `--fck <value>`: 28-day characteristic compressive strength in MPa (default: 25.0).
+- `--slump <value>`: Slump cone consistency in mm (default: 100.0).
+- `--caa <I|II|III|IV>`: Environmental Aggressiveness Class per NBR 6118 (default: II).
+- `--cond <A|B|C>`: Preparation condition per NBR 12655 (A: $s_d=4.0$, B: $s_d=5.5$, C: $s_d=7.0$).
+- `--cement-rho <value>`: Specific gravity of cement in $\text{g/cm}^3$ (default: 3.10).
+- `--sand-rho <value>`: Specific gravity of sand in $\text{g/cm}^3$ (default: 2.62).
+- `--gravel-rho <value>`: Specific gravity of gravel in $\text{g/cm}^3$ (default: 2.68).
+- `--price-cement <v>`: Unit cost of cement per kg (default: 0.70).
+- `--price-sand <v>`: Unit cost of sand per kg (default: 0.08).
+- `--price-gravel <v>`: Unit cost of gravel per kg (default: 0.09).
 
 ##### B. `calculate` (or `calc`) — Volumetric Closure for Given Mix
 Calculates unit consumptions per cubic meter ($C$, $W$, Sand, Gravel), mortar ratio ($\alpha$), and total cost per $\text{m}^3$.
 ```powershell
+# Mix 1 : 1.80 : 2.70 with w/c = 0.48
 concrete-mix-designer-cli.exe calc --m 4.5 --ac 0.48 --alpha 52.0
 ```
 
@@ -190,21 +202,30 @@ concrete-mix-designer-cli.exe verify --fck 30 --caa III --ac 0.48 --cement-conte
 ##### D. `report` — Comprehensive Technical Report Generation
 Generates complete engineering documentation in text, Markdown, or HTML formats with dynamic currency support.
 ```powershell
+# Complete HTML report with dark theme in English
 concrete-mix-designer-cli.exe report --project "Main Bridge" --engineer "Dr. Silva" --fck 35 --slump 100 --caa II --format html --dark --out bridge_report.html --lang en
 ```
 
 ##### E. `standards` — Query Normative Database
 Inspects built-in ABNT NBR SQLite database tables:
 ```powershell
+# List environmental aggressiveness classes (NBR 6118 Table 6.1 and 7.1)
 concrete-mix-designer-cli.exe standards caa
+
+# List standardized Portland cement types (NBR 16697)
 concrete-mix-designer-cli.exe standards cements
+
+# List preparation conditions and standard deviations (NBR 12655)
 concrete-mix-designer-cli.exe standards prep
 ```
 
 ##### F. `presets` — Industry Mix Presets
 Lists or executes standardized industrial mix designs:
 ```powershell
+# List all available presets
 concrete-mix-designer-cli.exe presets
+
+# Run simulation for preset 3 (C30 Structural)
 concrete-mix-designer-cli.exe presets --run 3
 ```
 
@@ -212,4 +233,23 @@ concrete-mix-designer-cli.exe presets --run 3
 Runs embedded analytical regression checks:
 ```powershell
 concrete-mix-designer-cli.exe test
+```
+
+---
+
+### 3. Build and Packaging Commands
+
+#### 3.1. Automated Build with MSVC 64-bit
+```powershell
+cmd.exe /c "cmake\build_msvc.bat"
+```
+
+#### 3.2. Automated Build with MinGW 64-bit
+```powershell
+cmd.exe /c "cmake\build_mingw.bat"
+```
+
+#### 3.3. Clean and Portable Distribution Generation
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File cmake\gerar_distribuicoes_limpas.ps1
 ```

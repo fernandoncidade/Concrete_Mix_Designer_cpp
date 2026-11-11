@@ -8,7 +8,7 @@
 
 ### 1. Objetivo deste Documento
 
-Este documento registra as observações técnicas de engenharia civil, o resultado da auditoria completa realizada sobre a planilha experimental de referência da UFPR (`TC031_Atividade09e10.Dosagem2_17.11.2021_Aperfeicoada.xlsx`), as validações frente às normas vigentes da **ABNT**, as melhorias de interface e internacionalização dinâmica implementadas na versão **2026.11.6.0** e o enquadramento jurídico para publicação no **GitHub** e distribuição comercial na **Microsoft Store** (**Microsoft Partner Center**).
+Este documento registra as observações técnicas de engenharia civil, o resultado da auditoria completa realizada sobre a planilha experimental de referência da UFPR (`TC031_Atividade09e10.Dosagem2_17.11.2021_Aperfeicoada.xlsx`), as validações frente às normas vigentes da **ABNT**, as melhorias de interface e internacionalização dinâmica implementadas na versão **2026.11.11.0** e o enquadramento jurídico para publicação no **GitHub** e distribuição comercial na **Microsoft Store** (**Microsoft Partner Center**).
 
 ---
 
@@ -42,28 +42,29 @@ A planilha original estruturada em 7 abas (`Composição de Britas`, `Teor de Ar
 
 ---
 
-### 4. Correções de Interface Gráfica, Menu "Configurações" e Tradução Dinâmica (`v2026.11.6.0`)
+### 4. Correções de Interface Gráfica, Menu "Configurações > Idioma" e Tradução Dinâmica (`v2026.11.11.0`)
 
 1. **Fluidez de Digitação nas `QDoubleSpinBox`:**
    - Foi eliminada a propriedade `setSpecialValueText(tr(" "))` (que causava re-formatação imediata pela classe interna `QAbstractSpinBoxPrivate` ao sair do valor mínimo `0,0`), as atualizações de `setValue()` foram protegidas por verificação de foco (`!spin->hasFocus()`) e a atualização de sufixo monetário do cimento foi transferida para `editingFinished`. Assim, o usuário pode digitar livremente qualquer número sem inserção automática de zeros à direita a cada tecla pressionada.
-2. **Novo Menu `Configurações` (`Ctrl+I`):**
-   - Adicionado na barra de menus principal (`&Configurações` / `&Settings`), permitindo configurar **Projeto:**, **Responsável:**, **Instituição:** e **Matrícula / ID:**, com escolha direta entre reportar automaticamente as informações selecionadas em **Cenário da Planilha** ou editar manualmente o nome do projeto.
+2. **Menu `Configurações` (`Ctrl+I`) e Submenu `Configurações > Idioma`:**
+   - Adicionado na barra de menus principal (`&Configurações` / `&Settings`), centralizando o seletor **Cenário da Planilha:**, a configuração de **Projeto:**, **Responsável:**, **Instituição:** e **Matrícula / ID:** (com escolha direta entre reportar automaticamente as informações selecionadas em **Cenário da Planilha** ou editar manualmente o nome do projeto) e o submenu **`Configurações > Idioma` (`Settings > Language`)** para alternância instantânea entre Português (BR) e Inglês (US).
 3. **Tradução Dinâmica em Tempo de Execução na Aba 7 e no Cenário 5:**
-   - O **Cenário 5** na barra de ferramentas e todo o cabeçalho e conteúdo do relatório gerado na aba **7. Relatório Técnico** (incluindo o campo **Projeto:** quando vinculado ao cenário ativo) traduzem-se instantaneamente em tempo de execução ao alternar entre `pt_BR` e `en_US`, com **309 chaves de tradução 100% finalizadas (0 `unfinished`)** nos arquivos `.ts` e `.qm`.
+   - O **Cenário 5** no menu Configurações e todo o cabeçalho e conteúdo do relatório gerado na aba **7. Relatório Técnico** (incluindo o campo **Projeto:** quando vinculado ao cenário ativo) traduzem-se instantaneamente em tempo de execução ao alternar entre `pt_BR` e `en_US` em `Configurações > Idioma`, com **309 chaves de tradução 100% finalizadas (0 `unfinished`)** nos arquivos `.ts` e `.qm`.
 
 ---
 
-### 5. Adequação à Microsoft Store, Microsoft Partner Center e Legislação
+### 5. Adequação à Microsoft Store, Finalidade Estritamente Acadêmica e Legislação
 
-Para atender integralmente aos requisitos de publicação aberta no **GitHub** e comercialização oficial na **Microsoft Store** (**Microsoft Partner Center — Application Developer Agreement v8.9**):
-- **Modelo de Licenciamento Transparente (`CLC` e `EULA`):** Harmoniza a disponibilidade do código-fonte no GitHub sob a licença GNU AGPLv3 para auditoria acadêmica/científica com o licenciamento comercial dos pacotes binários assinados distribuídos na Microsoft Store.
+Para atender integralmente aos requisitos de publicação aberta no **GitHub** e distribuição na **Microsoft Store** (**Microsoft Partner Center — Application Developer Agreement v8.9**), bem como resguardar a isenção de responsabilidade legal do autor:
+- **Finalidade Estritamente Acadêmica e Conferência Manual Obrigatória:** O software constitui uma aplicação voltada exclusivamente para fins de estudo acadêmico, ensino didático e pesquisa teórica, fornecida "NO ESTADO EM QUE SE ENCONTRA" ("AS-IS" e "WITH ALL FAULTS"), podendo conter possíveis erros algorítmicos, numéricos ou de modelagem e não servindo como software definitivo para tomadas de decisão em produção real ou ambientes de trabalho, sendo obrigatório conferir manualmente os resultados ou validá-los através de outras ferramentas mais consolidadas no mercado.
+- **Modelo de Licenciamento Transparente (`CLC` e `EULA`):** Harmoniza a disponibilidade do código-fonte no GitHub sob a licença GNU AGPLv3 para auditoria acadêmica/científica com o licenciamento dos pacotes binários assinados distribuídos na Microsoft Store.
 - **Conformidade LGPLv3 (Qt 6.11.1) e GPLv3 Runtime Exception (MinGW-w64):** Vinculação 100% dinâmica das DLLs do Qt6 e preservação integral dos textos de licença em `source/assets/LICENSES/`.
 - **Privacidade e Segurança (*Local-First*):** Zero coleta de dados pessoais, zero telemetria e operação 100% offline, em conformidade com a Política 10.5 da Microsoft Store, **LGPD (Lei nº 13.709/2018)** e **GDPR (Regulamento UE 2016/679)**.
-- **Legislação de Propriedade Intelectual e Engenharia:** Conformidade com as Leis Federais Brasileiras nº 9.609/1998, nº 9.610/1998, nº 8.078/1990 (CDC), nº 5.194/1966 e nº 6.496/1977 (CONFEA/CREA — exigência de ART), bem como *U.S. Copyright Act* (17 U.S.C. § 101 et seq.) e Convenção de Berna.
+- **Legislação de Propriedade Intelectual, Engenharia e Isenção Legal:** Conformidade com o Código Civil Brasileiro (Lei nº 10.406/2002, arts. 186, 393, 421 e 927), Leis Federais nº 9.609/1998, nº 9.610/1998, nº 8.078/1990 (CDC), nº 5.194/1966 e nº 6.496/1977 (CONFEA/CREA — exigência de ART), bem como *U.S. Copyright Act* (17 U.S.C. § 101 et seq.), UCC § 2-316, Convenção de Berna e Seções 15 e 16 da GNU AGPLv3, isentando integralmente o autor de responsabilidades legais pelo uso real ou definitivo em produção.
 
 ---
 
-### 6. Inovações e Recursos Adicionados na Versão 2026.11.6.0
+### 6. Inovações e Recursos Adicionados na Versão 2026.11.11.0
 
 1. **5º Gráfico Unificado Abrams/Lyse/Molinari (IPT) e Otimização Visual:**
    - Implementado o painel "5° Abrams/Lyse/Molinari (IPT)" (`IptUnifiedDiagramWidget`) que integra as três curvas experimentais em coordenadas normalizadas com linhas de grade nítidas nos eixos horizontal e vertical, eliminando áreas coloridas sólidas sob a curva Molinari.
@@ -207,8 +208,7 @@ Para atender integralmente aos requisitos de publicação aberta no **GitHub** e
 ├── 📝 compliance.md
 ├── 📝 licensing.md
 ├── 📝 matriz_rastreabilidade_normativa.md
-├── 📝 release-v2026.10.26.0.md
-├── 📝 release-v2026.11.6.0.md
+├── 📝 release-v2026.11.11.0.md
 ├── 📝 security-model.md
 ├── 📝 suggested-issues.md
 └── 📝 user-guide.md
@@ -276,13 +276,14 @@ Para atender integralmente aos requisitos de publicação aberta no **GitHub** e
     └── ⚙️ update-readme-version.yml
 ```
 ```
+
 ---
 
 ## English (United States)
 
 ### 1. Purpose of This Document
 
-This document records the civil engineering technical observations, the results of the comprehensive audit performed on the UFPR reference experimental spreadsheet (`TC031_Atividade09e10.Dosagem2_17.11.2021_Aperfeicoada.xlsx`), validations against current **ABNT** standards, the UI/UX and dynamic internationalization improvements implemented in version **2026.11.6.0**, and the legal framework for publication on **GitHub** and commercial distribution on the **Microsoft Store** (**Microsoft Partner Center**).
+This document records the civil engineering technical observations, the results of the comprehensive audit performed on the UFPR reference experimental spreadsheet (`TC031_Atividade09e10.Dosagem2_17.11.2021_Aperfeicoada.xlsx`), validations against current **ABNT** standards, the UI/UX and dynamic internationalization improvements implemented in version **2026.11.11.0**, and the legal framework for publication on **GitHub** and commercial distribution on the **Microsoft Store** (**Microsoft Partner Center**).
 
 ---
 
@@ -316,28 +317,29 @@ The original 7-sheet workbook (`Composição de Britas`, `Teor de Argamassa`, `T
 
 ---
 
-### 4. Graphical Interface Fixes, "Settings" Menu, and Dynamic Translation (`v2026.11.6.0`)
+### 4. Graphical Interface Fixes, "Settings > Language" Menu, and Dynamic Translation (`v2026.11.11.0`)
 
 1. **Smooth Typing in `QDoubleSpinBox` Controls:**
    - Removed `setSpecialValueText(tr(" "))` (which triggered immediate text reformatting inside `QAbstractSpinBoxPrivate` when leaving the `0.0` minimum value), guarded `setValue()` updates with focus checks (`!spin->hasFocus()`), and moved the cement currency suffix update to `editingFinished`. Users can now type any numeric value smoothly without intrusive trailing zeros being inserted on every keystroke.
-2. **New `Settings` Menu (`Ctrl+I`):**
-   - Added to the main menu bar (`&Configurações` / `&Settings`), allowing users to configure **Project:**, **Engineer:**, **Institution:**, and **Registration / ID:**, with a direct toggle between automatically reporting the selected **Spreadsheet Scenario** or manually editing the project name.
+2. **`Settings` Menu (`Ctrl+I`) and `Settings > Language` Submenu:**
+   - Added to the main menu bar (`&Configurações` / `&Settings`), centralizing the **Spreadsheet Scenario:** selector, the configuration of **Project:**, **Engineer:**, **Institution:**, and **Registration / ID:** (with a direct toggle between automatically reporting the selected **Spreadsheet Scenario** or manually editing the project name), and the **`Settings > Language` (`Configurações > Idioma`)** submenu for instant switching between Brazilian Portuguese and US English.
 3. **Dynamic Runtime Translation in Tab 7 and Scenario 5:**
-   - **Scenario 5** in the main toolbar and the entire header and body of the report generated in **7. Technical Report** (including the **Project:** field when linked to the active scenario) translate instantaneously at runtime when switching between `pt_BR` and `en_US`, backed by **309 fully translated keys (0 `unfinished`)** in the `.ts` and `.qm` files.
+   - **Scenario 5** in the Settings menu and the entire header and body of the report generated in **7. Technical Report** (including the **Project:** field when linked to the active scenario) translate instantaneously at runtime when switching between `pt_BR` and `en_US` under `Settings > Language`, backed by **309 fully translated keys (0 `unfinished`)** in the `.ts` and `.qm` files.
 
 ---
 
-### 5. Microsoft Store, Microsoft Partner Center, and Statutory Compliance
+### 5. Microsoft Store, Strictly Academic Purpose, and Statutory Compliance
 
-To fully comply with open publication requirements on **GitHub** and official commercial distribution on the **Microsoft Store** (**Microsoft Partner Center — Application Developer Agreement v8.9**):
-- **Transparent Licensing Model (`CLC` and `EULA`):** Harmonizes GitHub source code availability under the GNU AGPLv3 license for academic/scientific auditing with commercial licensing of signed binary packages distributed on the Microsoft Store.
+To fully comply with open publication requirements on **GitHub** and distribution on the **Microsoft Store** (**Microsoft Partner Center — Application Developer Agreement v8.9**), as well as safeguard the author's legal liability exemption:
+- **Strictly Academic Purpose and Mandatory Manual Verification:** The software constitutes an application intended exclusively for academic study, didactic instruction, and theoretical research purposes, provided "AS-IS" and "WITH ALL FAULTS", may contain possible algorithmic, numerical, or modeling errors, and does not serve as definitive software for decision-making in real production or work environments, making it mandatory to manually verify all results or validate them through other more consolidated market tools.
+- **Transparent Licensing Model (`CLC` and `EULA`):** Harmonizes GitHub source code availability under the GNU AGPLv3 license for academic/scientific auditing with the licensing of signed binary packages distributed on the Microsoft Store.
 - **LGPLv3 (Qt 6.11.1) and GPLv3 Runtime Exception (MinGW-w64) Compliance:** 100% dynamic linking of Qt6 DLLs and full preservation of license texts in `source/assets/LICENSES/`.
 - **Privacy and Security (*Local-First*):** Zero personal data collection, zero telemetry, and 100% offline operation, complying with Microsoft Store Policy 10.5, **LGPD (Law No. 13,709/2018)**, and **GDPR (EU Regulation 2016/679)**.
-- **Intellectual Property and Engineering Legislation:** Compliance with Brazilian Federal Laws No. 9,609/1998, No. 9,610/1998, No. 8,078/1990 (Consumer Defense Code), No. 5,194/1966, and No. 6,496/1977 (CONFEA/CREA — ART requirement), as well as the *U.S. Copyright Act* (17 U.S.C. § 101 et seq.) and the Berne Convention.
+- **Intellectual Property, Engineering Legislation, and Legal Exemption:** Compliance with the Brazilian Civil Code (Law No. 10,406/2002, Articles 186, 393, 421, and 927), Brazilian Federal Laws No. 9,609/1998, No. 9,610/1998, No. 8,078/1990 (Consumer Defense Code), No. 5,194/1966, and No. 6,496/1977 (CONFEA/CREA — ART requirement), as well as the *U.S. Copyright Act* (17 U.S.C. § 101 et seq.), UCC § 2-316, the Berne Convention, and Sections 15 and 16 of the GNU AGPLv3, fully exempting the author from legal liabilities for real or definitive use in production.
 
 ---
 
-### 6. Innovations and Features Added in Version 2026.11.6.0
+### 6. Innovations and Features Added in Version 2026.11.11.0
 
 1. **5th Unified Abrams/Lyse/Molinari (IPT) Diagram and Visual Optimization:**
    - Implemented the "5° Abrams/Lyse/Molinari (IPT)" view (`IptUnifiedDiagramWidget`) integrating the three experimental regression curves into normalized coordinates with crisp horizontal and vertical grid lines, removing solid color fills under the Molinari curve.
@@ -481,8 +483,7 @@ To fully comply with open publication requirements on **GitHub** and official co
 ├── 📝 compliance.md
 ├── 📝 licensing.md
 ├── 📝 matriz_rastreabilidade_normativa.md
-├── 📝 release-v2026.10.26.0.md
-├── 📝 release-v2026.11.6.0.md
+├── 📝 release-v2026.11.11.0.md
 ├── 📝 security-model.md
 ├── 📝 suggested-issues.md
 └── 📝 user-guide.md

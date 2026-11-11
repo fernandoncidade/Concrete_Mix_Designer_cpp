@@ -8,7 +8,7 @@
 
 ### 1. Visão Geral e Fundamentação Científica
 
-O **Concrete Mix Design C++ (v2026.11.6.0)** é um sistema computacional nativo de alto desempenho desenvolvido em **C++20** e **Qt 6.11.1** para o estudo completo de **Dosagem Experimental e Analítica de Concreto de Cimento Portland** segundo o **Método IPT/EPUSP** (*Instituto de Pesquisas Tecnológicas / Escola Politécnica da USP* — Paulo Roberto do Lago Helene e Paulo Terzian, 1992), integrado às exigências obrigatórias das normas brasileiras vigentes da **ABNT** e aos princípios de ciência dos materiais de **Mehta & Monteiro (2014)**.
+O **Concrete Mix Design C++ (v2026.11.11.0)** é um sistema computacional nativo de alto desempenho desenvolvido em **C++20** e **Qt 6.11.1**, voltado exclusivamente para fins de **estudo acadêmico, ensino universitário e pesquisa teórica** de **Dosagem Experimental e Analítica de Concreto de Cimento Portland** segundo o **Método IPT/EPUSP** (*Instituto de Pesquisas Tecnológicas / Escola Politécnica da USP* — Paulo Roberto do Lago Helene e Paulo Terzian, 1992), integrado às exigências obrigatórias das normas brasileiras vigentes da **ABNT** e aos princípios de ciência dos materiais de **Mehta & Monteiro (2014)**.
 
 O aplicativo substitui o traçado manual sujeito a erros visuais de leitura em ábacos de papel milimetrado por regressões numéricas exatas em ponto flutuante de dupla precisão (`double` IEEE 754), realizando a verificação automática de durabilidade normativa a partir de um banco de dados relacional **SQLite 3 embarcado em memória (`:memory:`)**.
 
@@ -22,17 +22,18 @@ O aplicativo substitui o traçado manual sujeito a erros visuais de leitura em �
   - `Sair (Ctrl+Q)`: Encerra o aplicativo com segurança.
 - **Exibir (`&Exibir`):** Atalhos diretos de navegação para cada uma das 7 abas de trabalho.
 - **Configurações (`&Configurações`):**
+  - **Submenu `Configurações > 📂 Cenário da Planilha:`:** Submenu integrado ao topo do menu Configurações para seleção imediata entre os Cenários 0 a 5 (com marcação visual do cenário ativo e tradução dinâmica em tempo de execução).
   - `📝 Dados do Projeto e Identificação (Projeto, Responsável, Instituição, ID)... (Ctrl+I)`: Abre a janela modal de configuração dos metadados institucionais reportados no cabeçalho do relatório técnico (**Aba 7**).
-  - `📂 Projeto: Reportar 'Cenário da Planilha' Automaticamente`: Quando selecionado (padrão), o campo **Projeto:** do relatório técnico exibe automaticamente o título do cenário selecionado na caixa de combinação **Cenário da Planilha**, traduzindo-o dinamicamente em tempo de execução ao alternar entre Português (`pt_BR`) e Inglês (`en_US`).
+  - `📂 Projeto: Reportar 'Cenário da Planilha' Automaticamente`: Quando selecionado (padrão), o campo **Projeto:** do relatório técnico exibe automaticamente o título do cenário selecionado no submenu **📂 Cenário da Planilha:**, traduzindo-o dinamicamente em tempo de execução ao alternar entre Português (`pt_BR`) e Inglês (`en_US`).
   - `✏️ Projeto: Editar Informações Manualmente...`: Permite definir um nome personalizado para **Projeto:**, além de editar livremente **Responsável:**, **Instituição:** e **Matrícula / ID:**, com persistência automática via `QSettings` e opção **Restaurar Padrão**.
-- **Idioma (`&Idioma`):** Alternância instantânea em tempo de execução entre `Português (Brasil) - pt_BR` e `English (United States) - en_US`.
+  - **Submenu `Configurações > 🌐 Idioma (🌐 &Idioma)`:** Alternância instantânea em tempo de execução entre `🇧🇷 Português (BR) - pt_BR` e `🇺🇸 English (US) - en_US`, atualizando automaticamente toda a interface gráfica, o memorial de cálculo, os símbolos monetários (`R$` / `$`) e os documentos legais sem reiniciar o programa.
 - **Ajuda (`A&juda`):**
   - `📖 Manual do Usuário (F1)`: Abre o manual interativo bilíngue integrado ao aplicativo.
   - `📋 Normas Técnicas (NBR)`: Exibe o quadro resumo das normas ABNT NBR aplicadas.
   - `ℹ️ Sobre o Concrete Mix Design`: Exibe informações institucionais, histórico do aplicativo, licença de uso (EULA), avisos de terceiros (LGPLv3), política de privacidade e notas de lançamento.
 
 #### 2.2. Seletor de Cenários de Engenharia ("Cenário da Planilha")
-A barra de ferramentas principal oferece **6 cenários pré-configurados** com tradução dinâmica em tempo de execução:
+O seletor **Cenário da Planilha:** no menu **Configurações** oferece **6 cenários pré-configurados** com tradução dinâmica em tempo de execução:
 - **Cenário 0:** *Personalizável pelo usuário* (inicia com campos prontos para inserção livre de um novo estudo de laboratório).
 - **Cenário 1:** *Concreto C25 Urbano (CAA II) - CP II-F-32, Slump 100mm, Obra 30 m³*.
 - **Cenário 2:** *Concreto C30 Marinho (CAA III) - CP III-40 RS, Britas 1+2, Obra 50 m³*.
@@ -156,9 +157,9 @@ concrete-mix-designer-cli.exe [comando] [opcoes...]
 
 ---
 
-### 5. Responsabilidade Técnica Profissional e Conformidade Legal
+### 5. Finalidade Estritamente Acadêmica, Conferência Manual Obrigatória e Isenção de Responsabilidade Legal
 
-Em observância à **Lei Federal nº 5.194/1966** e à **Lei nº 6.496/1977** (Sistema CONFEA/CREA), este software atua como ferramenta computacional de apoio à engenharia civil. A adoção de qualquer traço de concreto em obras reais exige a realização prévia de ensaios laboratoriais físicos com os lotes reais de insumos e a validação e emissão de **Anotação de Responsabilidade Técnica (ART)** por Engenheiro Civil legalmente habilitado.
+Este aplicativo constitui uma ferramenta desenvolvida **exclusivamente para fins de estudo acadêmico, instrução didática e pesquisa teórica**, sendo fornecida **"NO ESTADO EM QUE SE ENCONTRA" ("AS-IS" e "WITH ALL FAULTS")**, podendo conter possíveis erros algorítmicos, numéricos, de precisão ou de modelagem, e **não servindo como um software definitivo para tomadas de decisão em produção real, canteiros de obras, centrais dosadoras ou ambientes de trabalho profissionais**. É estritamente obrigatório conferir manualmente todos os cálculos e resultados gerados ou validá-los através de outras ferramentas mais consolidadas no mercado, além de realizar ensaios laboratoriais físicos com os lotes reais de insumos e emitir **Anotação de Responsabilidade Técnica (ART)** por Engenheiro Civil legalmente habilitado (**Sistema CONFEA/CREA — Leis Federais nº 5.194/1966 e nº 6.496/1977**). Em estrita conformidade com a legislação brasileira (**Código Civil — Lei nº 10.406/2002, arts. 186, 393, 421 e 927; Lei do Software — Lei nº 9.609/1998; Lei de Direitos Autorais — Lei nº 9.610/1998; Código de Defesa do Consumidor — Lei nº 8.078/1990**) e com as convenções internacionais aplicáveis (**UCC § 2-316, Convenção de Berna, Tratados da OMPI/WIPO, Acordo TRIPS e Seções 15 e 16 da licença GNU AGPLv3**), o autor fica integralmente isento de quaisquer responsabilidades civis, administrativas, trabalhistas, patrimoniais ou penais quanto ao uso real ou definitivo deste software em produção e ambientes de trabalho.
 
 ---
 
@@ -166,7 +167,7 @@ Em observância à **Lei Federal nº 5.194/1966** e à **Lei nº 6.496/1977** (S
 
 ### 1. Overview and Scientific Foundation
 
-**Concrete Mix Design C++ (v2026.11.6.0)** is a high-performance native computational system built with **C++20** and **Qt 6.11.1** for complete **Experimental and Analytical Portland Cement Concrete Mix Design** studies according to the **IPT/EPUSP Method** (*Technological Research Institute / Polytechnic School of USP* — Paulo Roberto do Lago Helene and Paulo Terzian, 1992), integrated with mandatory requirements from current Brazilian **ABNT** standards and the materials science principles of **Mehta & Monteiro (2014)**.
+**Concrete Mix Design C++ (v2026.11.11.0)** is a high-performance native computational system built with **C++20** and **Qt 6.11.1**, intended exclusively for **academic study, university teaching, and theoretical research** of **Experimental and Analytical Portland Cement Concrete Mix Design** according to the **IPT/EPUSP Method** (*Technological Research Institute / Polytechnic School of USP* — Paulo Roberto do Lago Helene and Paulo Terzian, 1992), integrated with mandatory requirements from current Brazilian **ABNT** standards and the materials science principles of **Mehta & Monteiro (2014)**.
 
 The application replaces manual graphical chart plotting — which is prone to visual reading errors on millimeter-paper nomograms — with exact double-precision (`double` IEEE 754) numerical regressions, performing automatic normative durability verification backed by an **embedded in-memory SQLite 3 relational database (`:memory:`)**.
 
@@ -180,17 +181,18 @@ The application replaces manual graphical chart plotting — which is prone to v
   - `Exit (Ctrl+Q)`: Safely closes the application.
 - **View (`&View`):** Direct navigation shortcuts to each of the 7 workspace tabs.
 - **Settings (`&Settings`):**
+  - **Submenu `Settings > 📂 Spreadsheet Scenario:`:** Submenu integrated at the top of the Settings menu for immediate selection among Scenarios 0 through 5 (with active scenario checkmark and dynamic runtime translation).
   - `📝 Project Data and Identification (Project, Engineer, Institution, ID)... (Ctrl+I)`: Opens the modal configuration dialog for institutional metadata reported in the technical report header (**Tab 7**).
-  - `📂 Project: Automatically Report 'Spreadsheet Scenario'`: When checked (default), the **Project:** field in the technical report automatically displays the title of the scenario selected in the **Spreadsheet Scenario** combo box, dynamically translating it at runtime when switching between Portuguese (`pt_BR`) and English (`en_US`).
+  - `📂 Project: Automatically Report 'Spreadsheet Scenario'`: When checked (default), the **Project:** field in the technical report automatically displays the title of the scenario selected in the **📂 Spreadsheet Scenario:** submenu, dynamically translating it at runtime when switching between Portuguese (`pt_BR`) and English (`en_US`).
   - `✏️ Project: Edit Information Manually...`: Allows defining a custom name for **Project:**, as well as freely editing **Engineer:**, **Institution:**, and **Registration / ID:**, with automatic persistence via `QSettings` and a **Restore Defaults** button.
-- **Language (`&Language`):** Instant runtime language switching between `Português (Brasil) - pt_BR` and `English (United States) - en_US`.
+  - **Submenu `Settings > 🌐 Language (🌐 &Language)`:** Instant runtime language switching between `🇧🇷 Português (BR) - pt_BR` and `🇺🇸 English (US) - en_US`, automatically updating the entire graphical interface, calculation report, currency symbols (`R$` / `$`), and legal documents without restarting the program.
 - **Help (`&Help`):**
   - `📖 User Manual (F1)`: Opens the built-in interactive bilingual user manual.
   - `📋 Technical Standards (NBR)`: Displays the summary dialog of applied ABNT NBR standards.
   - `ℹ️ About Concrete Mix Design`: Displays institutional details, application history, End-User License Agreement (EULA), third-party notices (LGPLv3), privacy policy, and release notes.
 
 #### 2.2. Engineering Scenario Selector ("Spreadsheet Scenario")
-The main toolbar provides **6 pre-configured engineering scenarios** with dynamic runtime translation:
+The **Spreadsheet Scenario:** selector in the **Settings** menu provides **6 pre-configured engineering scenarios** with dynamic runtime translation:
 - **Scenario 0:** *User customizable* (initializes fields ready for free entry of a new laboratory study).
 - **Scenario 1:** *C25 Urban Concrete (CAA II) - CP II-F-32, Slump 100mm, Project 30 m³*.
 - **Scenario 2:** *C30 Marine Concrete (CAA III) - CP III-40 RS, Coarse Agg 1+2, Project 50 m³*.
@@ -314,6 +316,6 @@ concrete-mix-designer-cli.exe [command] [options...]
 
 ---
 
-### 5. Professional Technical Liability and Legal Compliance
+### 5. Strictly Academic Purpose, Mandatory Manual Verification, and Legal Liability Disclaimer
 
-In accordance with **Brazilian Federal Law No. 5,194/1966** and **Law No. 6,496/1977** (CONFEA/CREA System, and equivalent professional engineering statutes internationally), this software serves as a computational decision-support tool for civil engineering. Adopting any concrete mix design in actual construction requires prior physical laboratory testing with the actual material batches and validation and issuance of a **Technical Responsibility Record (ART / Professional Engineer Seal)** by a legally licensed Civil Engineer.
+This application constitutes a tool developed **exclusively for academic study, didactic instruction, and theoretical research purposes**, being provided **"AS-IS" and "WITH ALL FAULTS"**, and may contain possible algorithmic, numerical, precision, or modeling errors, **not serving as definitive software for decision-making in real production, construction sites, batching plants, or professional work environments**. It is strictly mandatory to manually verify all generated calculations and results or validate them through other more consolidated market tools, in addition to performing physical laboratory testing with the actual material batches and issuing a **Technical Responsibility Record (ART / Professional Engineer Seal)** by a legally licensed Civil Engineer (**CONFEA/CREA System — Brazilian Federal Laws No. 5,194/1966 and No. 6,496/1977**). In strict accordance with Brazilian legislation (**Brazilian Civil Code — Law No. 10,406/2002, Articles 186, 393, 421, and 927; Software Law — Law No. 9,609/1998; Copyright Law — Law No. 9,610/1998; Consumer Defense Code — Law No. 8,078/1990**) and applicable international conventions (**UCC § 2-316, Berne Convention, WIPO Treaties, TRIPS Agreement, and Sections 15 and 16 of the GNU AGPLv3 license**), the author is fully exempt from any civil, administrative, labor, property, or criminal liability regarding the real or definitive use of this software in production and work environments.

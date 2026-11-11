@@ -1,6 +1,6 @@
 COPYRIGHT AND TRADEMARK NOTICE - CONCRETE MIX DESIGNER
 Application / Binary Target: ConcreteMixDesign (ConcreteMixDesign.exe)
-Version: 2026.11.6.0
+Version: 2026.11.11.0
 ======================================================================
 Copyright (C) 2025-2026 Fernando Nillsson Cidade. All rights reserved.
 
@@ -23,7 +23,7 @@ c) Qt Trademarks: Qt and the Qt logo are registered trademarks of The Qt Company
 d) Technical Standards and Institutional References (Nominal / Referential Use):
    - "ABNT" and "NBR" (including references to ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, and NBR 8953:2015) refer to Brazilian Technical Standards published by the Associacao Brasileira de Normas Tecnicas (ABNT).
    - "IPT/EPUSP" refers to the classical experimental concrete mix design methodology developed at the Instituto de Pesquisas Tecnologicas (IPT) and the Escola Politecnica da Universidade de Sao Paulo (EPUSP).
-   All technical standards and academic methodologies are cited strictly under fair/referential use principles for civil engineering normative compliance verification and educational/professional calculation purposes. This Software is an independent computational tool and is not affiliated with, sponsored by, or officially endorsed by ABNT, IPT, EPUSP, or Microsoft Corporation. Microsoft's certification of the Software for the Microsoft Store does not constitute an endorsement or representation of normative compliance by Microsoft.
+   All technical standards and academic methodologies are cited strictly under fair/referential use principles for academic study, didactic instruction, and educational normative compliance verification in civil engineering. This Software is an independent computational tool intended exclusively for academic study and is not affiliated with, sponsored by, or officially endorsed by ABNT, IPT, EPUSP, or Microsoft Corporation. Microsoft's certification of the Software for the Microsoft Store does not constitute an endorsement or representation of normative compliance by Microsoft.
 e) Other Marks: All other trademarks, service marks, trade names, and product names referenced in the Software or its documentation are the property of their respective owners.
 
 3. THIRD-PARTY AND FREE AND OPEN-SOURCE SOFTWARE (FOSS) COMPONENTS
@@ -47,6 +47,9 @@ e) Actions expressly permitted by mandatory provisions of applicable copyright l
 
 5. INTELLECTUAL PROPERTY INFRINGEMENT AND NOTICE AND TAKEDOWN
 Unauthorized use, reproduction, or distribution of this Software or its App Assets constitutes copyright and/or trademark infringement and may subject the infringer to civil damages and criminal penalties under Brazilian Federal Laws No. 9,609/1998 and No. 9,610/1998 and international law. Claims regarding intellectual property infringement in connection with the Microsoft Store distribution channel are handled in accordance with Microsoft's Notice and Takedown policies (http://go.microsoft.com/fwlink/p/?LinkID=224390) and may also be reported directly to the Copyright Holder at the contact address below.
+
+6. STRICTLY ACADEMIC PURPOSE, MANDATORY MANUAL VERIFICATION, AND LEGAL LIABILITY DISCLAIMER
+This Software constitutes an application developed exclusively for academic study, didactic instruction, and theoretical research purposes, being provided "AS-IS" and "WITH ALL FAULTS", and may contain algorithmic, numerical, precision, or modeling errors, not serving as a definitive or certified software for decision-making in real production, construction sites, batching plants, or professional work environments. It is strictly mandatory to manually verify all calculations and obtained results and cross-check them through other more consolidated market tools, in addition to experimentally validating any mix proportion via physical laboratory testing under the direct supervision and Technical Responsibility Annotation (ART) of a legally licensed Civil Engineer (CONFEA/CREA System — Brazilian Federal Laws No. 5,194/1966 and No. 6,496/1977; ABNT NBR 12655:2022 and NBR 6118:2023). Pursuant to Brazilian legislation (Brazilian Civil Code — Law No. 10,406/2002, Articles 186, 393, 421, and 927; Software Law — Law No. 9,609/1998; Copyright Law — Law No. 9,610/1998; Consumer Defense Code — Law No. 8,078/1990) and applicable international conventions (Uniform Commercial Code — UCC § 2-316, Berne Convention, WIPO Treaties, TRIPS Agreement, and Sections 15 and 16 of the GNU AGPLv3 license), the Copyright Holder and Author is fully exempt from any civil, administrative, labor, property, or criminal liability regarding the real, commercial, or definitive use of this Software in production and work environments.
 
 COPYRIGHT HOLDER & PUBLISHER CONTACT:
 Fernando Nillsson Cidade

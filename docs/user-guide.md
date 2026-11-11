@@ -10,8 +10,8 @@
 
 Para realizar um estudo completo de dosagem experimental de concreto pelo **Método IPT/EPUSP** no **Concrete Mix Design C++**:
 
-1. **Selecione um Cenário ou Configure a Identificação do Estudo:**
-   - Na barra de ferramentas superior, escolha em **📂 Cenário da Planilha** um dos 6 cenários pré-configurados (`Cenário 0` a `Cenário 5`) ou inicie no **Cenário 0** para inserir seus próprios dados.
+1. **Selecione o Idioma, um Cenário ou Configure a Identificação do Estudo:**
+   - Acesse o menu **Configurações $\to$ Idioma** para alternar instantaneamente o aplicativo entre `Português (BR)` e `English (US)`, ou escolha em **Configurações $\to$ 📂 Cenário da Planilha:** um dos 6 cenários pré-configurados (`Cenário 0` a `Cenário 5`).
    - Acesse o menu **Configurações $\to$ Dados do Projeto e Identificação (`Ctrl+I`)** para definir o **Responsável:**, **Instituição:**, **Matrícula / ID:** e escolher se o campo **Projeto:** deve reportar automaticamente o **Cenário da Planilha** selecionado (com tradução dinâmica PT-BR / EN-US) ou usar um texto editado manualmente.
 2. **Aba 1 (`1. Parâmetros de Projeto`):**
    - Informe o $f_{ck}$ desejado ($\text{MPa}$), a Condição de Preparo (Condição A, B, C, histórico ou personalizado), a Classe de Agressividade Ambiental (CAA I a IV), o Tipo de Estrutura (Concreto Armado CA ou Protendido CP) e o Abatimento (*Slump*, em $\text{mm}$).
@@ -29,7 +29,7 @@ Para realizar um estudo completo de dosagem experimental de concreto pelo **Mét
    - Na **Aba 5**, consulte o traço seco e úmido final, o consumo para $1\text{ m}^3$, a pesagem para o volume da sua betoneira de laboratório e o dimensionamento das padiolas de obra ($35 \times 45\text{ cm}$) para 1 saco de $50\text{ kg}$ de cimento.
    - Na **Aba 6**, avalie o custo por $\text{m}^3$, o custo total para o volume da obra e a comparação com leituras gráficas manuais.
 7. **Aba 7 (`7. Relatório Técnico`):**
-   - Revise o Memorial de Cálculo Técnico completo (que acompanha dinamicamente o idioma selecionado no menu **Idioma** e o símbolo monetário R$ ou $) e exporte-o em **Texto**, **Markdown (`.md`)**, **HTML (`.html`)** ou **PDF Oficial (`.pdf`)**.
+   - Revise o Memorial de Cálculo Técnico completo (que acompanha dinamicamente o idioma selecionado no submenu **Configurações $\to$ Idioma** e o símbolo monetário R$ ou $) e exporte-o em **Texto**, **Markdown (`.md`)**, **HTML (`.html`)** ou **PDF Oficial (`.pdf`)**.
 
 ### 2. Automação e Uso via Linha de Comando (CLI)
 
@@ -52,7 +52,7 @@ concrete-mix-designer-cli.exe report --project "Edifício Central" --fck 30 --ca
 concrete-mix-designer-cli.exe test
 ```
 
-> Para detalhes matemáticos e normativos completos, consulte o [**MANUAL.md**](../MANUAL.md) ou pressione **`F1`** dentro do aplicativo.
+> **Aviso de Finalidade Acadêmica e Isenção Legal:** Este aplicativo destina-se exclusivamente a fins de estudo acadêmico, podendo conter possíveis erros e não servindo como software definitivo para tomadas de decisão em produção ou ambientes de trabalho, sendo obrigatório conferir manualmente os resultados ou validá-los através de outras ferramentas mais consolidadas no mercado, ficando o autor isento de responsabilidades legais nos termos da legislação brasileira e convenções internacionais. Para detalhes matemáticos e normativos completos, consulte o [**MANUAL.md**](../MANUAL.md) ou pressione **`F1`** dentro do aplicativo.
 
 ---
 
@@ -62,8 +62,8 @@ concrete-mix-designer-cli.exe test
 
 To complete a full experimental concrete mix design study using the **IPT/EPUSP Method** in **Concrete Mix Design C++**:
 
-1. **Select a Scenario or Configure Study Identification:**
-   - In the top toolbar, select one of the 6 pre-configured scenarios (`Scenario 0` to `Scenario 5`) under **📂 Spreadsheet Scenario**, or start with **Scenario 0** to enter your own laboratory data.
+1. **Select the Language, a Scenario, or Configure Study Identification:**
+   - Open the **Settings $\to$ Language** menu to instantaneously switch the application between `Português (BR)` and `English (US)`, or select one of the 6 pre-configured scenarios (`Scenario 0` to `Scenario 5`) under **Settings $\to$ 📂 Spreadsheet Scenario:**.
    - Open the **Settings $\to$ Project Data and Identification (`Ctrl+I`)** menu to set **Engineer:**, **Institution:**, **Registration / ID:**, and choose whether the **Project:** field should automatically report the selected **Spreadsheet Scenario** (with dynamic PT-BR / EN-US translation) or use manually edited text.
 2. **Tab 1 (`1. Project Parameters`):**
    - Enter the target $f_{ck}$ ($\text{MPa}$), Batching Condition (Condition A, B, C, historical, or custom), Environmental Aggressiveness Class (CAA I to IV), Structural Type (Reinforced Concrete RC or Prestressed Concrete PC), and target Slump ($\text{mm}$).
@@ -81,7 +81,7 @@ To complete a full experimental concrete mix design study using the **IPT/EPUSP 
    - In **Tab 5**, review the final dry and wet unit mixes, material consumption per $1\text{ m}^3$, batch masses for your laboratory mixer volume, and jobsite volume-box (*padiola*, $35 \times 45\text{ cm}$) dimensions per $50\text{ kg}$ cement bag.
    - In **Tab 6**, evaluate the cost per $\text{m}^3$, total project cost, and comparison against manual graphical chart readings.
 7. **Tab 7 (`7. Technical Report`):**
-   - Review the complete Technical Calculation Report (which dynamically follows the language and currency selected in the **Language** menu: $ in English and R$ in Portuguese) and export it to **Clipboard**, **Markdown (`.md`)**, **HTML (`.html`)**, or **Official PDF (`.pdf`)**.
+   - Review the complete Technical Calculation Report (which dynamically follows the language and currency selected in the **Settings $\to$ Language** submenu: $ in English and R$ in Portuguese) and export it to **Clipboard**, **Markdown (`.md`)**, **HTML (`.html`)**, or **Official PDF (`.pdf`)**.
 
 ### 2. Automation and Command Line Usage (CLI)
 
@@ -104,4 +104,4 @@ concrete-mix-designer-cli.exe report --project "Central Tower" --fck 30 --caa II
 concrete-mix-designer-cli.exe test
 ```
 
-> For complete mathematical and normative details, see [**MANUAL.md**](../MANUAL.md) or press **`F1`** inside the application.
+> **Academic Purpose and Legal Disclaimer Notice:** This application is intended exclusively for academic study purposes, may contain possible errors, and does not serve as definitive software for decision-making in production or work environments, making it mandatory to manually verify all results or validate them through other more consolidated market tools, with the author being exempt from legal liabilities under Brazilian legislation and international conventions. For complete mathematical and normative details, see [**MANUAL.md**](../MANUAL.md) or press **`F1`** inside the application.

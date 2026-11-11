@@ -17,10 +17,10 @@ O **Concrete Mix Design C++** é um software técnico-científico de Engenharia 
 3. **Padrão C++20 Moderno e Desacoplamento Camada Core / GUI / CLI:**
    - A camada `source/core/` não deve depender de widgets visuais (`QtWidgets` / `QtCharts`), mantendo-se testável via linha de comando por meio dos utilitários de console `verify_calculations` e `concrete-mix-designer-cli`.
    - Utilizar gerenciamento seguro de memória (RAII, `std::vector`, `std::optional`, ponteiros inteligentes e hierarquia pai-filho de `QObject`), sem uso de `new`/`delete` manuais desprotegidos.
-4. **Internacionalização Bilíngue Obrigatória (`pt_BR` e `en_US`):**
-   - Toda nova string de interface gráfica (`source/gui/`) deve estar envolvida em `tr("...")` e atualizada no método `retranslateUi()`.
+4. **Internacionalização Bilíngue Obrigatória (`pt_BR` e `en_US` via `Configurações > Idioma`):**
+   - Toda nova string de interface gráfica (`source/gui/`) deve estar envolvida em `tr("...")` e atualizada no método `retranslateUi()`, mantendo o seletor de idioma alocado no submenu `Configurações > Idioma` (`Settings > Language`).
    - Os arquivos de tradução `source/language/locale/concrete_mix_design_pt_BR.ts` e `concrete_mix_design_en_US.ts` devem conter 100% das chaves traduzidas (0 `unfinished`) e ser compilados para `.qm` via `lrelease`.
-   - Toda alteração na documentação (`README.md`, `MANUAL.md`, `OBSERVACAO.md`, `docs/*.md` e `source/assets/`) deve manter simetria e fidelidade absolutas entre o texto em Português (Brasil) e Inglês (Estados Unidos).
+   - Toda alteração na documentação (`README.md`, `MANUAL.md`, `OBSERVACAO.md`, `docs/*.md` e `source/assets/`) deve manter a mesma quantidade exata de linhas entre ambas as traduções, sem quebras de linha no meio dos parágrafos, preservando os avisos de finalidade estritamente acadêmica, conferência manual obrigatória, validação em ferramentas consolidadas no mercado e isenção de responsabilidade legal.
 
 ### 2. Fluxo de Trabalho para Contribuições (*Pull Requests*)
 
@@ -65,10 +65,10 @@ Thank you for your interest in contributing to **Concrete Mix Design C++**! This
 3. **Modern C++20 Standard and Core / GUI / CLI Layer Decoupling:**
    - The `source/core/` layer must not depend on visual widgets (`QtWidgets` / `QtCharts`), remaining fully testable via command line through the `verify_calculations` test runner and `concrete-mix-designer-cli`.
    - Use safe memory management (RAII, `std::vector`, `std::optional`, smart pointers, and `QObject` parent-child ownership), avoiding unprotected manual `new`/`delete` calls.
-4. **Mandatory Bilingual Internationalization (`pt_BR` and `en_US`):**
-   - Every new graphical user interface string (`source/gui/`) must be wrapped in `tr("...")` and updated inside the `retranslateUi()` method.
+4. **Mandatory Bilingual Internationalization (`pt_BR` and `en_US` via `Settings > Language`):**
+   - Every new graphical user interface string (`source/gui/`) must be wrapped in `tr("...")` and updated inside the `retranslateUi()` method, keeping the language selector allocated under the `Settings > Language` (`Configurações > Idioma`) submenu.
    - The translation files `source/language/locale/concrete_mix_design_pt_BR.ts` and `concrete_mix_design_en_US.ts` must contain 100% translated keys (0 `unfinished`) and be compiled into `.qm` binaries via `lrelease`.
-   - Every documentation change (`README.md`, `MANUAL.md`, `OBSERVACAO.md`, `docs/*.md`, and `source/assets/`) must maintain absolute symmetry and fidelity between the Portuguese (Brazil) and English (United States) texts.
+   - Every documentation change (`README.md`, `MANUAL.md`, `OBSERVACAO.md`, `docs/*.md`, and `source/assets/`) must maintain the exact same line count between both translations, with no mid-paragraph line breaks, preserving the notices of strictly academic purpose, mandatory manual verification, validation in consolidated market tools, and legal liability exemption.
 
 ### 2. Contribution Workflow (*Pull Requests*)
 
