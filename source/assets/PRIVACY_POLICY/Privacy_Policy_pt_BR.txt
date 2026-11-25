@@ -1,0 +1,39 @@
+POLÍTICA DE PRIVACIDADE DO CONCRETE MIX DESIGNER
+Última atualização: 22 de novembro de 2026
+Versão: 2026.11.22.0
+
+A sua privacidade, o sigilo acadêmico ou técnico dos seus estudos de engenharia e a soberania irrestrita dos seus dados de dosagem são princípios fundamentais do Concrete Mix Designer ("Software"). Esta Política de Privacidade explica com transparência absoluta como o Software opera e como suas informações permanecem sob seu controle exclusivo.
+
+AVISO DE INDEPENDÊNCIA FRENTE À MICROSOFT:
+A Microsoft NÃO fornece uma política de privacidade padrão para o Concrete Mix Designer, e este Software NÃO é coberto pela Política de Privacidade da Microsoft (https://www.microsoft.com/pt-br/privacy/privacystatement). Os dados coletados separadamente pela própria plataforma Microsoft Store (como pesquisas, downloads, atualizações, desinstalações e avaliações associadas à sua conta Microsoft) ou diagnósticos do Windows são regidos exclusivamente pela Política de Privacidade da Microsoft. Todo processamento ocorrido dentro do Concrete Mix Designer é regido exclusivamente por esta Política de Privacidade do desenvolvedor.
+
+1. Princípio Fundamental: Arquitetura Local-First e Privacidade por Design
+O Concrete Mix Designer foi concebido sob Privacidade por Padrão (Privacy by Default) e Segurança por Design. Toda modelagem de parâmetros estruturais (fck, Sd, CAA, Slump), otimização granular de agregados graúdos, ensaio de teor de argamassa (α), regressões analíticas por mínimos quadrados (Abrams, Lyse e Molinari), consultas ao banco relacional SQLite 3 em memória (:memory:) e renderização de diagramas ocorrem 100% offline e localmente na memória RAM e CPU do seu computador. Nenhuma informação é transmitida, enviada, copiada ou sincronizada com servidores remotos, nuvem ou terceiros.
+
+2. Informações Processadas Localmente pelo Software
+O Software processa exclusivamente os seguintes dados inseridos deliberadamente pelo usuário:
+- Parâmetros Normativos e de Dosagem: Resistência característica (fck), condição de preparo (Sd), Classe de Agressividade Ambiental (CAA I a IV), tipo estrutural (CA ou CP) e abatimento Slump (mm).
+- Materiais, Custos e Ensaios Experimentais: Massas específicas reais, massas unitárias soltas, umidades superficiais (h%), preços unitários de cimento, areia e britas, ensaios de empacotamento binário, passos de teor de argamassa (α) e os 3 pontos experimentais do diagrama IPT.
+- Identificação Opcional de Cabeçalho, Preferências e Logs Locais: Preferências mínimas de idioma ("pt_BR" ou "en_US") e cabeçalho opcional de relatório (Projeto, Responsável, Instituição e Matrícula/ID configurados em Configurações > Dados do Projeto) são gravadas exclusivamente no armazenamento local padrão do usuário via QSettings (HKEY_CURRENT_USER\Software\AppsCpp\ConcreteMixDesign ou contêiner isolado do pacote MSIX), juntamente com logs diagnósticos locais sem telemetria remota (%LOCALAPPDATA%\ConcreteMixDesigner\logs\concrete_mix_designer_*.log).
+
+O Software NÃO coleta, NÃO solicita, NÃO armazena remotamente e NÃO processa dados pessoais identificáveis em nuvem (CPF/CNPJ, endereço físico, telefone, localização geográfica, biometria, saúde, dados bancários ou dados de crianças).
+
+3. Base Legal e Capacidade Declarada (LGPD / GDPR / Microsoft Store)
+O processamento local atende exclusivamente à execução dos cálculos experimentais de dosagem de concreto solicitados pelo usuário, exibição gráfica de diagramas e exportação local de projetos .cmdproj (JSON), relatórios .pdf / .html / .md e gráficos .png (art. 7º, V e IX, da LGPD; interesse legítimo e execução sob o GDPR).
+Em pacotes MSIX da Microsoft Store (AppxManifest.xml), declara-se apenas a capacidade restrita <rescap:Capability Name="runFullTrust" /> (necessária para execução desktop nativa C++23 / Qt 6.12.0 e diálogos padrão do Windows para salvar arquivos escolhidos pelo usuário), sem acesso a câmera, microfone, localização ou contatos.
+
+4. Armazenamento Local, Zero Rede e Ausência de Compartilhamento
+- Armazenamento Estritamente Local: Relatórios técnicos (.pdf, .html, .md), gráficos (.png) e estudos (.cmdproj) são gravados apenas nos caminhos locais selecionados explicitamente por você nos diálogos padrão do Windows ou via CLI.
+- Zero Telemetria e Zero Conexões do Aplicativo: O Concrete Mix Designer não possui contas de usuário, rastreadores, SDKs analíticos, publicidade ou requisições HTTP/HTTPS em segundo plano. As bibliotecas Qt 6 incluídas servem apenas à interface gráfica, gráficos Qt Charts e driver SQLite local (:memory:), sem envio de dados pela rede.
+- Sem Compartilhamento com Terceiros: O Software NÃO vende, transfere ou envia cálculos ou projetos ao autor, à Microsoft ou a terceiros.
+
+5. Controle do Usuário e Desinstalação Limpa
+Você possui soberania integral sobre seus arquivos e sobre o programa, podendo:
+- Salvar, mover, copiar, editar ou excluir arquivos exportados, restaurar os padrões em Configurações (Ctrl+I) e apagar logs locais a qualquer momento;
+- Desinstalar e remover o Concrete Mix Designer de forma limpa a qualquer momento em Configurações do Windows -> Aplicativos -> Aplicativos instalados (ou Menu Iniciar -> Desinstalar), removendo integralmente os binários e o estado do pacote MSIX sem deixar processos, drivers ou serviços em segundo plano (Política 10.2.7 da Microsoft Store).
+
+6. Contato para Privacidade e Suporte (Desenvolvedor Individual)
+Fernando Nillsson Cidade
+E-mail: linceu_lighthouse@outlook.com
+Site Oficial / Repositório: https://github.com/fernandoncidade/Concrete_Mix_Designer_cpp
+Aviso: A Microsoft não oferece suporte ao cliente nem cobertura pela Política de Privacidade da Microsoft para este aplicativo.

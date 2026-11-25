@@ -1,0 +1,31 @@
+THIRD-PARTY NOTICES AND ATTRIBUTIONS — Concrete Mix Designer
+Version 2026.11.22.0, November 22, 2026
+
+Concrete Mix Designer incorporates and utilizes open-source components, libraries, and technical references developed by third parties:
+
+1. CONCRETE MIX DESIGNER (MÓDULO DE DOSAGEM DE CONCRETO)
+   Copyright (C) 2025-2026 Fernando Nillsson Cidade. All rights reserved.
+   Provided under GNU AGPLv3 (open-source repository on GitHub) and Official EULA (official free package on the Microsoft Store).
+   Scope and Disclaimer Notice ("AS IS"): Free application that the user may use as they see fit as an auxiliary tool (educational, academic, teaching, and result comparison), and not as a definitive or final tool; not mature enough for production or professional use due to limitations, human flaws, and possible defects in the source code — encompassing both applied mathematics and underlying materials physics/engineering, due to which its algorithms may produce errors. Always use more established tools in the market or manually verify all results, alongside physical laboratory testing (ABNT NBR 5738 and NBR 5739); should the user decide to rely on it exclusively for production or professional use at batching plants or construction sites, all resulting consequences shall be the user's sole and entire responsibility, in view of these express prior notices and warnings. Provided "AS IS" without warranties and with author exemption under the Official EULA and GNU AGPLv3 Sections 15–16 (exclusive responsibility of a licensed engineer with ART/RRT or equivalent — Brazilian Laws No. 5.194/1966, No. 6.496/1977, and No. 12.378/2010).
+
+2. QT APPLICATION FRAMEWORK
+   Version: 6.12.0
+   Dynamically linked modules (.dll): Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll, Qt6Charts.dll, Qt6Sql.dll, Qt6OpenGL.dll, Qt6OpenGLWidgets.dll, and plugins (platforms/qwindows.dll, styles/qmodernwindowsstyle.dll, sqldrivers/qsqlite.dll, imageformats/qico.dll).
+   Copyright (C) The Qt Company Ltd. and contributors.
+   Licensed under the GNU Lesser General Public License version 3 (LGPLv3).
+   LGPLv3 (Section 4) and Microsoft Store Compliance: 100% dynamic linking with zero modifications to upstream Qt source code; end users preserve the guaranteed LGPLv3 right to replace or relink dynamic Qt 6 libraries with compatible builds and obtain official source code at https://code.qt.io/ and https://www.qt.io/licensing.
+
+3. SQLITE RELATIONAL DATABASE ENGINE
+   Version: 3.x (embedded via dynamic qsqlite.dll plugin in :memory: mode)
+   Dedicated to the Public Domain by its authors.
+   Official information: https://www.sqlite.org/copyright.html
+
+4. C++23 COMPILER RUNTIMES (MinGW-w64 / MSVC / WINDOWS SDK)
+   4.1. MinGW-w64 GCC 15.1.0: libgcc_s_seh-1.dll and libstdc++-6.dll (GNU GPLv3 with GCC Runtime Library Exception v3.1); libwinpthread-1.dll (MIT / 3-Clause BSD License).
+   4.2. MSVC 14.52.37025 (Visual Studio 18) & Microsoft Windows SDK 10.0.28000.0: vcruntime140.dll, vcruntime140_1.dll, msvcp140.dll, msvcp140_1.dll, msvcp140_2.dll, and native Windows system libraries (dwmapi.dll, advapi32.dll). Copyright (C) Microsoft Corporation.
+
+5. SCIENTIFIC, ACADEMIC, AND NORMATIVE REFERENCES
+   Original algorithms written from scratch in this software are grounded in classical Civil Engineering literature and Brazilian Technical Standards (strictly referential usage):
+   - HELENE, Paulo Roberto do Lago; TERZIAN, Paulo. Manual de Dosagem e Controle do Concreto. São Paulo: PINI / SENAI, 1992. (IPT/EPUSP Method).
+   - MEHTA, P. Kumar; MONTEIRO, Paulo J. M. Concrete: Microstructure, Properties, and Materials. 4th ed. McGraw-Hill Education, 2014.
+   - ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, NBR 8953:2015, and NBR 16697:2018.

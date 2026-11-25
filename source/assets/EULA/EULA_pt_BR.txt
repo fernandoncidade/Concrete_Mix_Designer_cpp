@@ -1,0 +1,57 @@
+LICENÇA DE USO DE USUÁRIO FINAL (EULA) — Concrete Mix Designer
+Versão 2026.11.22.0, 22 de novembro de 2026
+
+Copyright (c) 2025-2026 Fernando Nillsson Cidade. Todos os direitos reservados.
+
+AVISO DE DUPLO LICENCIAMENTO E INDEPENDÊNCIA DA MICROSOFT:
+1. Os termos deste Contrato de Licença de Usuário Final (EULA) aplicam-se EXCLUSIVAMENTE ao pacote binário pré-compilado, empacotado e assinado digitalmente distribuído oficialmente pelo autor na Microsoft Store. Estes termos complementam e observam os Termos de Licença Padrão para Aplicativos da Microsoft Store; em caso de conflito quanto ao uso de aplicativos obtidos pela Loja, prevalecem os direitos mínimos garantidos pelas regras da Microsoft Store e pela legislação consumerista aplicável.
+2. O código-fonte completo deste projeto é público no GitHub sob a Licença GNU Affero General Public License v3 (AGPLv3), garantindo liberdade para estudo, compilação, modificação, criação de forks e redistribuição independente nos termos da AGPLv3.
+3. A Microsoft NÃO presta suporte técnico ao cliente por este aplicativo e NÃO cobre o Software sob nenhuma política de privacidade da Microsoft.
+
+Ao instalar ou utilizar o pacote oficial da Microsoft Store do Concrete Mix Designer, você concorda integralmente com este EULA. Caso discorde, não utilize nem instale o pacote e faça sua remoção limpa pelos controles do Windows.
+
+TERMOS E CONDIÇÕES:
+
+1. DEFINIÇÕES
+   "Licenciador": Fernando Nillsson Cidade, detentor exclusivo dos direitos autorais do Software original.
+   "Software": O programa Concrete Mix Designer (executáveis ConcreteMixDesign.exe e concrete-mix-designer-cli.exe) compilado para Windows x64, incluindo interface Qt 6.12.0, banco de dados normativo SQLite em memória, módulo de diagramas IPT/EPUSP, assets de conformidade e documentação.
+   "Licenciado" ou "você": Pessoa física ou jurídica que obteve o pacote oficial na Microsoft Store ou canal autorizado.
+
+2. CONCESSÃO DE LICENÇA E DESINSTALAÇÃO LIMPA
+   O Licenciador concede licença gratuita, pessoal, não exclusiva, intransferível e revogável para instalar e executar o Software em dispositivos Windows compatíveis conforme lhe convir, na qualidade de aplicativo gratuito destinado a servir como ferramenta auxiliar — para fins educacionais, acadêmicos, de estudo, pesquisa, simulação didática e comparação de resultados em dosagem experimental de concreto (Método IPT/EPUSP) — e não como ferramenta definitiva ou final de produção.
+   O Usuário tem o direito garantido de desinstalar e remover o Software de maneira limpa a qualquer momento pelas Configurações do Windows ou Menu Iniciar, sem deixar serviços ou processos ocultos em execução.
+
+3. RESTRIÇÕES SOBRE O PACOTE OFICIAL
+   O Licenciado não poderá:
+   a) Revender comercialmente de forma paga, alugar, arrendar ou sublicenciar o pacote oficial distribuído gratuitamente pelo autor na Microsoft Store sem autorização escrita prévia;
+   b) Remover ou adulterar avisos de copyright, atribuições de terceiros ou marcas deste projeto;
+   c) Utilizar o Software para finalidades ilícitas.
+
+4. PROPRIEDADE INTELECTUAL
+   O pacote oficial é licenciado, não vendido, protegido pela Lei nº 9.609/1998, pela Lei nº 9.610/1998 e por tratados internacionais. Componentes de terceiros (Qt 6.12.0 sob GNU LGPLv3 com direito de substituição de bibliotecas dinâmicas nos termos da Seção 4, SQLite 3 em Domínio Público e runtimes MSVC / MinGW-w64) mantêm suas respectivas licenças em NOTICES/ e LICENSES/.
+
+5. ESCOPO TÉCNICO, USO LIVRE COMO FERRAMENTA AUXILIAR, LIMITAÇÕES DE MATURIDADE E RESPONSABILIDADE PROFISSIONAL
+   a) Liberdade de uso gratuito como ferramenta auxiliar: Por se tratar de um aplicativo gratuito, o usuário pode utilizar o Concrete Mix Designer conforme lhe convir como ferramenta computacional auxiliar de dosagem experimental e analítica de concreto pelo Método IPT/EPUSP (regressões de Abrams, Lyse e Molinari, empacotamento granular de britas, teor de argamassa, correção de umidade e padiolas), especialmente para auxílio educacional, ensino, pesquisa acadêmica e comparação de resultados, mas NÃO como ferramenta definitiva ou final.
+   b) Imaturidade para uso definitivo e conferência obrigatória: Este aplicativo ainda não está maduro o suficiente para ser uma ferramenta definitiva levada para produção ou uso profissional, razão pela qual NUNCA, JAMAIS deve ser utilizado única e exclusivamente como base de dosagem definitiva, produção industrial em central dosadora, execução em canteiro ou obra real. O usuário deve sempre utilizar outras ferramentas mais consolidadas no mercado ou conferir manualmente os resultados obtidos pelo aplicativo.
+   c) Limitações, falhas humanas e risco de erros graves na programação: Devido às limitações do projeto, a falhas humanas e a eventuais erros no desenvolvimento do código-fonte, o Software pode conter erros graves no código, na lógica dos algoritmos, na formulação matemática de mínimos quadrados e na física/tecnologia do concreto aplicadas na programação, além de desconsiderar a variabilidade real em campo de insumos, temperatura, energia de mistura e cura.
+   d) Não substituição de ensaios laboratoriais e de profissional habilitado: Os resultados gerados (relação a/c, traço unitário seco e úmido, consumos por m³, massas de betoneira, padiolas, análise de custos e verificações auxiliares frente às normas ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, NBR 8953:2015 e NBR 16697:2018) NÃO substituem o dosador físico experimental, ensaios laboratoriais de abatimento e resistência à compressão em corpos de prova (ABNT NBR 5738 e NBR 5739), conferência independente nem a supervisão formal de profissional legalmente habilitado.
+   e) Embasamento legal da responsabilidade técnica: No Brasil, a especificação, a dosagem, o controle tecnológico e a responsabilização por projetos e obras de concreto são atribuições privativas de profissionais legalmente habilitados, com emissão obrigatória de ART perante o CREA (Lei nº 5.194/1966 e Lei nº 6.496/1977) ou RRT perante o CAU (Lei nº 12.378/2010), observadas as normas técnicas da ABNT (art. 39, VIII, do Código de Defesa do Consumidor — Lei nº 8.078/1990), recaindo exclusivamente sobre o usuário e o responsável técnico eventual responsabilidade civil por danos e pela solidez e segurança da obra (arts. 186, 618 e 927 do Código Civil — Lei nº 10.406/2002) e eventual responsabilidade penal em caso de perigo ou sinistro estrutural (art. 256 do Código Penal — Decreto-Lei nº 2.848/1940), aplicando-se normas profissionais equivalentes em outras jurisdições.
+   f) Responsabilidade exclusiva do usuário pelas consequências e isenção integral do Licenciador: Caso o usuário decida utilizar exclusivamente este aplicativo como ferramenta definitiva de produção ou para uso profissional, em centrais dosadoras, laboratórios ou canteiros de obras, todas as consequências técnicas, civis, administrativas e penais decorrentes dessa escolha serão de sua inteira e exclusiva responsabilidade, tendo em vista os avisos e alertas expressos acerca de possíveis falhas no código-fonte — abrangendo tanto a matemática aplicada quanto a física envolvida, razão pela qual seus algoritmos podem apresentar erros —, permanecendo o Licenciador integralmente isento, na extensão máxima permitida em lei, por erros de cálculo, lotes de concreto rejeitados, não atendimento ao fck de projeto, patologias, colapsos, prejuízos financeiros, danos materiais ou danos pessoais.
+
+6. PRIVACIDADE E SOBERANIA LOCAL DOS DADOS
+   O Concrete Mix Designer opera 100% offline, sem telemetria e sem nuvem. Relatórios técnicos e projetos locais (PDF, HTML, Markdown, JSON e imagens PNG) são salvos apenas nos diretórios escolhidos pelo usuário, e preferências mínimas ficam no perfil local do usuário, regidos pela Política de Privacidade própria do Software (PRIVACY_POLICY).
+
+7. ATUALIZAÇÕES E SUPORTE TÉCNICO
+   Atualizações podem ser publicadas voluntariamente via Microsoft Store. A Microsoft não fornece suporte ao cliente para este Software. O suporte do autor (pessoa física) é voluntário e em regime de melhores esforços pelo e-mail linceu_lighthouse@outlook.com ou pelo repositório https://github.com/fernandoncidade/Concrete_Mix_Designer_cpp.
+
+8. VIGÊNCIA E RESCISÃO
+   Esta licença vigora até rescisão pelo usuário (mediante desinstalação) ou automática por violação de suas cláusulas.
+
+9. ISENÇÃO DE GARANTIAS ("AS IS")
+   Na extensão máxima permitida em lei (e em harmonia com as Seções 15 e 16 da GNU AGPLv3, a Lei nº 9.609/1998 e UCC § 2-316), o Software é fornecido "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), "COM TODAS AS SUAS FALHAS", sem garantias explícitas ou implícitas de exatidão matemática ou física, maturidade para produção, ausência de falhas humanas ou erros graves no código-fonte ou nos algoritmos, comercialização, operação ininterrupta ou adequação a uso profissional ou em produção.
+
+10. LIMITAÇÃO DE RESPONSABILIDADE
+    Na extensão máxima permitida pela legislação imperativa, o Licenciador não responde por lucros cessantes, colapsos estruturais, lotes de concreto rejeitados, perdas indiretas, danos materiais, pessoais, incidentais ou consequenciais decorrentes do uso, uso como ferramenta definitiva em produção, confiança nos resultados ou impossibilidade de uso do Software.
+
+11. LEGISLAÇÃO APLICÁVEL
+    Este contrato observa as leis da República Federativa do Brasil e normas imperativas de proteção ao consumidor vigentes na jurisdição do usuário.

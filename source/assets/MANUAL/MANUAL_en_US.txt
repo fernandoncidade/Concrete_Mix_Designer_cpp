@@ -1,0 +1,47 @@
+================================================================================
+CONCRETE MIX DESIGNER — COMPLETE OPERATIONS AND ENGINEERING MANUAL (IPT / EPUSP)
+Version: 2026.11.22.0 | Date: November 22, 2026 | Author: Fernando Nillsson Cidade
+Document Language: English (US) — Strict correspondence with pt-BR
+================================================================================
+
+CHAPTER 1 — OVERVIEW, ARCHITECTURE, AND SETTINGS MENU
+
+1.1 Purpose and Scientific Foundation
+Concrete Mix Designer is a free native Windows desktop application developed in C++23, Qt 6.12.0, and an embedded in-memory SQLite 3 relational database (:memory:) that the user may use as they see fit as an auxiliary computational tool — for educational, academic, research, and result-comparison purposes — in experimental and analytical Portland cement concrete mix design under the established IPT/EPUSP Method (Helene & Terzian, 1992), integrated with requirements from ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, NBR 8953:2015, and NBR 16697:2018.
+
+1.2 Technical Scope, Auxiliary Use, Maturity Limitations, and Legal Disclaimer ("AS IS")
+WARNING: Because Concrete Mix Designer is a free application, it is intended exclusively for free use as an auxiliary tool (educational, academic, and comparative), and NOT as a definitive or final production tool. This software is not yet mature enough to be taken to production or definitive professional use because, due to project limitations, human flaws, and possible source-code errors — encompassing both applied mathematics and underlying materials physics/engineering, due to which its algorithms may produce errors — it strictly requires manual verification of all results, cross-checking with more established market tools, and validation via physical laboratory testing (ABNT NBR 5738 and NBR 5739) under the supervision of a legally licensed Civil Engineer issuing ART/RRT before CREA/CAU (Brazilian Laws No. 5.194/1966, No. 6.496/1977, and No. 12.378/2010; CDC Art. 39, VIII; Civil Code Arts. 186, 618, and 927; Penal Code Art. 256; Law No. 9.609/1998; GNU AGPLv3 Sections 15–16; and the Official EULA). Should the user decide to rely exclusively on it in production, all resulting consequences remain the user's sole and entire responsibility.
+
+1.3 Menu Bar, Settings Submenus, and Modeless Windows
+• File: "Recalculate All (F5)" executes the entire regression chain and 1 m³ volumetric closure; "Exit (Ctrl+Q)" safely closes all auxiliary windows.
+• View: direct shortcuts to each of the 7 workspace tabs.
+• Settings: centralizes "📂 Spreadsheet Scenario:" (Scenarios 0 to 5, where Scenario 5 reproduces the audited UFPR TC031 study), "📝 Project Data and Identification... (Ctrl+I)" (Project, Engineer, Institution, ID, choosing automatic dynamic translation of the active scenario or custom manual title), and "🌐 Language" (instant runtime switching between Portuguese pt_BR with "R$" currency and English en_US with "$" currency).
+• Help: "User Manual (F1)", "Technical Standards (NBR)", and "About Concrete Mix Design". All auxiliary windows operate as Modeless Dialogs with independent Z-Order stacking.
+
+CHAPTER 2 — FULL WORKFLOW ACROSS THE 7 WORKSPACE TABS
+
+2.1 Tab 1 (Project Parameters)
+Defines characteristic compressive strength fck (10 to 100 MPa), preparation condition (Condition A: Sd = 4.0 MPa; Condition B: Sd = 5.5 MPa capped at fck <= 20 MPa; Condition C: Sd = 7.0 MPa capped at fck <= 15 MPa; Known Historical Sd >= 2.0 MPa; Arbitrary), dosage strength fcj = fck + 1.65 * Sd, Environmental Aggressiveness Class (CAA I to IV), structural type (RC or PC with +5 mm cover per NBR 6118 Table 7.2), and target slump (S10 to S220 — NBR 8953), including geometric compatibility D_max <= 1.2 * c_nom and NBR 7212:2025 Section 5.5 batching weighing tolerances (Cement ±1%, Aggregates ±3%, Water ±3%, Admixtures ±5%).
+
+2.2 Tab 2 (Materials & Coarse Aggregates)
+Registers specific gravity (kg/dm³), loose bulk unit weight (kg/dm³), field surface moisture (h%), and unit cost ($/50 kg bag, $/t, $/kg, or $/m³) for Cement, Sand, Coarse Aggregate 1, and Coarse Aggregate 2. Includes the binary coarse aggregate packing test table (0% to 100% in 10% increments) to automatically identify maximum compacted bulk unit weight and minimum voids (ABNT NBR 7211:2022 / NBR NM 45).
+
+2.3 Tab 3 (Mortar Content α)
+Sizes the initial pilot batch by the Law of Absolute Volumes and generates the laboratory progression for α = (1 + a)/(1 + m) from 40% to 68% (2% step) keeping coarse aggregate mass fixed inside the mixer. Clicking any table row or updating the numeric box propagates the chosen α immediately.
+
+2.4 Tab 4 (Mixes & IPT Diagram)
+Accepts the 3 experimental mixes tested at the target slump (Mix 1 Rich, Mix 2 Pilot/Middle, Mix 3 Lean) and fits via ordinary least squares (OLS):
+• Abrams' Law (1st Quadrant): fcj = k1 / k2^(w/c) and 2nd-degree polynomial (subject to durability cap max w/c).
+• Lyse's Law (2nd Quadrant): m = k3 + k4 * (w/c).
+• Molinari's Law (3rd Quadrant): C = 1000 / (1/γc + a/γa + p/γb + w/c).
+Provides 6 interactive chart views: Complete 4-Quadrant Diagram (IPT), 4 enlarged individual quadrant tabs, and the 5th Unified Abrams/Lyse/Molinari (IPT) Chart, supporting high-DPI export to PNG and PDF.
+
+2.5 Tab 5 (Final Mix & Batches), Tab 6 (Cost Analysis), and Tab 7 (Technical Report)
+• Tab 5: reports the dry unit mix (1 : a : p : w/c) and field-moisture-corrected proportions (strictly deducting free aggregate moisture from mixing water), material consumptions per 1 m³, laboratory mixer batch masses, and wooden volume-box sizing (padiolas, 35 cm x 45 cm base, ergonomic max height 35 cm) per 50 kg cement bag.
+• Tab 6: compares the exact analytical solution against manual graphical readings (w/c, m, C), quantifying cost per m³, total project cost, and bag count differences.
+• Tab 7: dynamically renders the bilingual Technical Calculation Report (pt_BR / en_US, R$ / $) and exports directly to Clipboard, Markdown (.md), HTML5 (.html), and official A4 PDF (.pdf).
+
+CHAPTER 3 — COMMAND LINE INTERFACE (concrete-mix-designer-cli.exe)
+Supported commands: `design`, `calculate`/`calc`, `verify`/`audit`, `report`, `standards`, `presets`, and `test`, with global options `--lang <pt|en>`, `--format <text|json|markdown|html>`, `--out <file>`, `--dark`, `--no-banner`, `--version`, and `--help`.
+
+Also refer to `MANUAL.md` at the repository root, `docs/cli-reference.md`, and `docs/licensing.md` for full reference and Dual-Licensing terms.

@@ -1,0 +1,26 @@
+História e Justificativa do Desenvolvimento — Concrete Mix Designer
+
+1. Origem e Motivação do Projeto:
+O Concrete Mix Designer (Módulo de Dosagem de Concreto) nasceu da necessidade prática de substituir planilhas eletrônicas acadêmicas e laboratoriais sujeitas a erros de fórmulas, referências circulares e perdas acidentais de células por uma plataforma nativa de Engenharia Civil aberta, transparente, auditável e alinhada às normas técnicas brasileiras vigentes (ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, NBR 8953:2015 e NBR 16697:2018). Enquanto muitas ferramentas comerciais fecham rotinas de cálculo em caixas-pretas inacessíveis ou dependem de nuvem, o Concrete Mix Designer foi concebido sob clareza matemática integral e soberania absoluta dos dados locais (Local-First), inspirado nos estudos experimentais do Método IPT/EPUSP proposto por Paulo Roberto do Lago Helene e Paulo Terzian (1992) e na disciplina TC031 Materiais de Construção Civil II da UFPR.
+
+2. Objetivos de Design e Evolução Tecnológica:
+Fase 1 - Concepção e Auditoria Algorítmica:
+- Mapeamento integral das dependências e fórmulas da planilha experimental de dosagem (UFPR TC031), eliminando arredondamentos prematuros, sobrescritas literais e inversões de preços unitários entre areia e brita.
+- Validação analítica frente à precisão IEEE 754 (double) com fechamento volumétrico exato para 1 m³ de concreto adensado e criação do Cenário 5 de referência.
+
+Fase 2 - Motor Numérico Desacoplado em C++23 e SQLite 3 (:memory:):
+- Desenvolvimento da camada Core (`source/core/`) sem dependência de widgets gráficos (`QtWidgets`), implementando otimização granulométrica binária de britas (`AggregateOptimizer`), variação laboratorial de teor de argamassa seca α de 40% a 68% (`MortarContentOptimizer`), regressões por mínimos quadrados ordinários de Abrams, Lyse e Molinari (`RegressionEngine`) e banco normativo relacional SQLite 3 em memória protegido por `QRecursiveMutex` (`NormativeDatabase`).
+
+Fase 3 - Interface Qt 6.12.0, Diagramas Interativos IPT e Utilitário CLI:
+- Estruturação de 7 abas integradas com suporte nativo aos temas Claro/Escuro do Windows 11, renderização vetorial via Qt Charts do Diagrama de 4 Quadrantes e do 5º Gráfico Unificado Abrams/Lyse/Molinari (IPT) com exportação em alta resolução (PNG/PDF).
+- Tradução dinâmica instantânea em tempo de execução (`pt_BR` e `en_US` via Configurações > Idioma) com adaptação automática do símbolo monetário (`R$` / `$`), Janelas Modeless com Z-Order independente e disponibilização do binário autônomo de terminal `concrete-mix-designer-cli.exe` junto a uma suíte modular abrangente de testes automatizados em `tests/`.
+
+Fase 4 - Maturidade de Empacotamento e Duplo Licenciamento Transparente:
+- Adoção formal de modelo de Duplo Licenciamento: código-fonte aberto completo no GitHub sob GNU AGPLv3 para livre inspeção científica, compilação dual (MSVC 14.52 x64 + Windows SDK 10.0.28000.0 e MinGW-w64 GCC 15.1.0 com Qt 6.12.0) e forks pela comunidade, coexistindo com a edição oficial gratuita assinada distribuída na Microsoft Store sob o EULA Oficial do autor (vedada revenda paga ou apropriação indevida da marca) e com distribuições externas ultralimpas e instaladores Inno Setup sem inclusão redundante de vc_redist.x64.exe.
+- Autorização expressa e liberdade total concedida aos desenvolvedores para adaptar, excluir ou modificar a documentação de conformidade em `source/assets/` em seus próprios forks e plataformas.
+
+3. Caráter Auxiliar Gratuito, Limitações de Maturidade e Isenção Legal ("AS IS"):
+Em todas as fases de sua evolução, o Concrete Mix Designer manteve-se como um aplicativo gratuito que o usuário pode utilizar conforme lhe convir como ferramenta auxiliar (educacional, acadêmica, ensino universitário e comparação de resultados), mas não como ferramenta definitiva ou final. Por ainda não estar maduro o suficiente para produção ou uso profissional definitivo — estando sujeito a limitações, falhas humanas e eventuais erros graves no código-fonte, abrangendo tanto a matemática aplicada quanto a física/tecnologia dos materiais envolvidas, razão pela qual seus algoritmos podem apresentar falhas —, o usuário deve sempre utilizar outras ferramentas mais consolidadas no mercado ou conferir manualmente os resultados obtidos, além de realizar ensaios físicos em laboratório (ABNT NBR 5738 e NBR 5739). Caso decida utilizar exclusivamente este aplicativo como ferramenta definitiva de produção, obra real ou central dosadora, todas as consequências serão de sua inteira e exclusiva responsabilidade, haja vista os avisos e alertas expressos. O software é fornecido "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), sob o EULA Oficial e a GNU AGPLv3 (Seções 15 e 16), cabendo a responsabilidade legal e técnica de qualquer obra real exclusivamente a Engenheiro Civil habilitado com ART/RRT (Leis nº 5.194/1966, nº 6.496/1977 e nº 12.378/2010; Código Civil arts. 186, 618 e 927; Código Penal art. 256; CDC art. 39, VIII).
+
+4. Autor:
+Fernando Nillsson Cidade (`linceu_lighthouse@outlook.com`)

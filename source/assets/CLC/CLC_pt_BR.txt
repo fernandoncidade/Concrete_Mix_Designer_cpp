@@ -1,0 +1,36 @@
+ESCLARECIMENTO DE LICENCIAMENTO COMERCIAL E SUPORTE CORPORATIVO — Concrete Mix Designer
+Versão 2026.11.22.0, 22 de novembro de 2026
+
+Autor e Desenvolvedor: Fernando Nillsson Cidade (Desenvolvedor Individual / Pessoa Física)
+E-mail de Suporte e Contato: linceu_lighthouse@outlook.com
+Site Oficial / Repositório: https://github.com/fernandoncidade/Concrete_Mix_Designer_cpp
+
+--------------------------------------------------------------------------------
+
+1. CÓDIGO-FONTE ABERTO E TRANSPARÊNCIA:
+O código-fonte integral deste projeto é disponibilizado publicamente no GitHub sob a Licença GNU Affero General Public License v3 (AGPLv3). Qualquer pessoa ou organização possui total liberdade para inspecionar, auditar, compilar (MSVC x64 / MinGW-w64), modificar e criar trabalhos derivados a partir do código-fonte, nos termos e condições da GNU AGPLv3.
+
+2. EDIÇÃO OFICIAL DA MICROSOFT STORE E DESINSTALAÇÃO:
+Para conveniência de implantação em ambientes acadêmicos, educacionais, laboratoriais didáticos e de estudo comparativo em estações de trabalho Windows, o autor disponibiliza oficialmente o Concrete Mix Designer como aplicação gratuita na Microsoft Store (Microsoft Partner Center).
+O pacote permite desinstalação limpa a qualquer momento pelas Configurações do Windows ou Menu Iniciar, sem deixar processos ou serviços em segundo plano.
+
+3. POLÍTICA DE SUPORTE TÉCNICO E ISENÇÃO DA MICROSOFT:
+O desenvolvimento e a manutenção deste projeto são realizados pelo autor como iniciativa pessoal e educacional em C++23, Qt 6.12.0, SQLite 3 e engenharia de materiais de construção. Por essa razão:
+a) A Microsoft NÃO presta suporte técnico nem atendimento ao cliente pelo Concrete Mix Designer, e sua Política de Privacidade não cobre este aplicativo (aplica-se exclusivamente a Política de Privacidade do Concrete Mix Designer disponível em PRIVACY_POLICY);
+b) O suporte técnico fornecido pelo autor (desenvolvedor individual) ocorre por correio eletrônico (linceu_lighthouse@outlook.com) e publicamente pelas abas Issues e Discussions do repositório oficial no GitHub;
+c) O atendimento ocorre sob o regime voluntário de melhores esforços (best-effort), conforme a disponibilidade do autor, sem suporte telefônico, SLA comercial ou acesso remoto 24/7.
+
+4. ESCOPO TÉCNICO, USO LIVRE COMO FERRAMENTA AUXILIAR, LIMITAÇÕES DE MATURIDADE E ISENÇÃO ("AS IS"):
+Por ser um aplicativo gratuito, o usuário pode utilizar o Concrete Mix Designer conforme lhe convir como ferramenta computacional auxiliar de dosagem experimental e analítica de concreto (Método IPT/EPUSP — Leis de Abrams, Lyse e Molinari), voltada ao auxílio educacional, ensino universitário, pesquisa acadêmica e comparação de resultados — mas NÃO como ferramenta definitiva ou final:
+a) Este aplicativo ainda não está maduro o suficiente para ser levado para produção ou uso profissional definitivo e NUNCA, JAMAIS deve ser utilizado única e exclusivamente para esse fim, pois, devido às suas limitações, falhas humanas e eventuais erros no desenvolvimento do código-fonte, pode conter erros graves no código, nos algoritmos, na matemática aplicada e na física/tecnologia do concreto aplicadas na programação; o usuário deve sempre utilizar outras ferramentas mais consolidadas no mercado ou conferir manualmente todos os resultados obtidos;
+b) Seus resultados NÃO substituem ensaios físicos de laboratório (abatimento/slump, massas específicas, umidade real dos agregados e resistência à compressão conforme ABNT NBR 5738 e NBR 5739), verificações completas em normas técnicas (ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, NBR 8953:2015 e NBR 16697:2018), validação cruzada independente nem a autoria e supervisão de profissional legalmente habilitado com emissão de ART/RRT perante o CREA/CAU (Leis nº 5.194/1966, nº 6.496/1977 e nº 12.378/2010; art. 39, VIII, do CDC — Lei nº 8.078/1990);
+c) O Software é fornecido "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), com todas as suas falhas e sem garantias (EULA Oficial, Lei nº 9.609/1998 e GNU AGPLv3 Seções 15 e 16). Caso o usuário decida utilizar exclusivamente este aplicativo como ferramenta definitiva de produção ou para uso profissional, em centrais dosadoras ou canteiros de obras, todas as consequências decorrentes dessa escolha serão de sua inteira e exclusiva responsabilidade — inclusive sob os arts. 186, 618 e 927 do Código Civil (Lei nº 10.406/2002) e o art. 256 do Código Penal (Decreto-Lei nº 2.848/1940) —, tendo em vista os avisos e alertas expressos acerca de possíveis erros no código-fonte, abrangendo tanto a matemática aplicada quanto a física envolvida, razão pela qual seus algoritmos podem apresentar falhas, com integral isenção civil, criminal e técnica do autor na extensão máxima permitida em lei.
+
+5. CONTATO PARA INSTITUIÇÕES E LICENCIAMENTO SOB MEDIDA:
+Para instituições acadêmicas, laboratórios de ensino ou organizações que necessitem de:
+- Estudos comparativos sob referências normativas (ABNT NBR 12655, NBR 6118, NBR 7211, NBR 7212 e NBR 8953), sempre sujeitos à validação independente de engenheiro habilitado e ensaios laboratoriais físicos;
+- Integração personalizada com fluxos de pesquisa ou sistemas internos;
+- Isenção de obrigações copyleft da licença AGPLv3 para distribuições proprietárias fechadas (sem implicar certificação de dosagem para produção);
+
+Por favor, entre em contato diretamente pelo e-mail:
+linceu_lighthouse@outlook.com

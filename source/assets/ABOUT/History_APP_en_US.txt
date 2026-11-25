@@ -1,0 +1,26 @@
+Development History and Rationale — Concrete Mix Designer
+
+1. Genesis and Project Motivation:
+Concrete Mix Designer emerged from the practical engineering need to replace academic and laboratory spreadsheets — often prone to formula errors, circular references, and accidental cell overwrites — with an open, transparent, auditable native Civil Engineering platform aligned with current Brazilian technical standards (ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, NBR 8953:2015, and NBR 16697:2018). While many commercial suites lock proportioning routines inside opaque black boxes or rely on cloud connectivity, Concrete Mix Designer was engineered on complete mathematical clarity and absolute local data sovereignty (Local-First), inspired by experimental studies of the IPT/EPUSP Method proposed by Paulo Roberto do Lago Helene and Paulo Terzian (1992) and the UFPR course TC031 Civil Construction Materials II.
+
+2. Design Goals and Technological Evolution:
+Phase 1 - Conception and Algorithmic Audit:
+- Comprehensive dependency mapping across the UFPR experimental dosage spreadsheet (TC031), eliminating premature intermediate rounding, hardcoded cell overwrites, and swapped unit prices between sand and gravel.
+- Analytical verification under IEEE 754 double precision guaranteeing exact 1 m³ compacted concrete volumetric closure and dedicated reference Scenario 5.
+
+Phase 2 - Decoupled Computational Core in C++23 and SQLite 3 (:memory:):
+- Construction of the Core layer (`source/core/`) strictly independent from UI widgets (`QtWidgets`), implementing binary gravel packing optimization (`AggregateOptimizer`), laboratory mortar content α progression from 40% to 68% (`MortarContentOptimizer`), ordinary least-squares regressions for Abrams', Lyse's, and Molinari's Laws (`RegressionEngine`), and an in-memory SQLite 3 normative database protected by `QRecursiveMutex` (`NormativeDatabase`).
+
+Phase 3 - Qt 6.12.0 Interface, Interactive IPT Diagrams & Standalone CLI:
+- Organization into 7 integrated workspace tabs with native Windows 11 Light/Dark theme support, interactive Qt Charts rendering of the 4-Quadrant Dosage Diagram and the 5th Unified Abrams/Lyse/Molinari (IPT) Chart with high-DPI image export (PNG/PDF).
+- Instant runtime localization (`pt_BR` and `en_US` via Settings > Language) with automatic dynamic currency symbol switching (`R$` / `$`), independent Z-Order Modeless Dialogs, standalone terminal binary `concrete-mix-designer-cli.exe`, and a comprehensive modular test suite under `tests/`.
+
+Phase 4 - Packaging Maturity and Transparent Dual Licensing:
+- Formal adoption of a Dual-Licensing architecture: complete open-source repository on GitHub under GNU AGPLv3 allowing free scientific inspection, dual compilation (MSVC 14.52 x64 + Windows SDK 10.0.28000.0 and MinGW-w64 GCC 15.1.0 with Qt 6.12.0), and community forks, coexisting cleanly with the free digitally signed Microsoft Store edition governed by the author's Official EULA (prohibiting paid commercial resale or brand misappropriation) alongside ultra-clean app-local external distributions and Inno Setup installers without redundant vc_redist.x64.exe bundling.
+- Explicit authorization and full freedom granted to developers to adapt, remove, or modify compliance documentation under `source/assets/` in their own forks and platforms.
+
+3. Free Auxiliary Character, Maturity Limitations, and Legal Disclaimer ("AS IS"):
+Across every phase of its development, Concrete Mix Designer has remained a free application that the user may use as they see fit as an auxiliary tool (educational, academic, university teaching, and result comparison), and not as a definitive or final tool. Because it is not mature enough for definitive production or professional use — remaining subject to limitations, human flaws, and possible serious defects in the source code encompassing both applied mathematics and underlying materials physics, due to which its algorithms may produce errors — the user must always rely on more established tools in the market or manually verify all obtained results alongside physical laboratory testing (ABNT NBR 5738 and NBR 5739). Should the user decide to rely exclusively on this application as a definitive tool for production, construction sites, or ready-mix plants, all resulting consequences shall be the user's sole and entire responsibility, in view of these express prior notices and warnings. The software is provided "AS IS" under the Official EULA and GNU AGPLv3 (Sections 15–16), with technical and legal responsibility for any real-world structure resting exclusively on a legally licensed Civil Engineer with ART/RRT or equivalent credentials (Brazilian Laws No. 5.194/1966, No. 6.496/1977, and No. 12.378/2010; Civil Code Arts. 186, 618, and 927; Penal Code Art. 256; Consumer Defense Code Art. 39, VIII).
+
+4. Author:
+Fernando Nillsson Cidade (`linceu_lighthouse@outlook.com`)

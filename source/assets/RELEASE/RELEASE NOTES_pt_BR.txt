@@ -1,0 +1,165 @@
+NOTAS DE LANÇAMENTO: Versão 2026.11.22.0
+Data: 22 de novembro de 2026
+
+Resumo Geral
+Esta versão amplia a transparência informativa e jurídica diretamente dentro do aplicativo ao adicionar novas abas dedicadas na janela "Sobre o Módulo de Dosagem de Concreto" (CLC / Licenciamento, Copyright e Licenças Completas com lista suspensa para leitura individual de cada licença de software livre e de terceiros). Também traz instruções passo a passo no Manual do Usuário integrado, proteção aprimorada ao gerar relatórios contra caracteres especiais nos campos de projeto e funcionamento mais limpo da base normativa em memória, mantendo a troca instantânea de idioma entre Português e Inglês e a preservação integral dos dados do usuário.
+
+Novidades, Ajustes e Melhorias
+
+1. Novas Abas e Consulta Interativa de Licenças na Janela Sobre
+- Aba "CLC / Licenciamento": Passa a exibir integralmente o texto de esclarecimento comercial, canal de suporte oficial do autor e orientações de licenciamento e independência frente à loja de aplicativos, no idioma escolhido pelo usuário.
+- Aba "Copyright": Apresenta de forma clara os avisos de direitos autorais, autoria, marcas nominativas, referências normativas da ABNT/IPT e condições de uso da documentação.
+- Aba "Licenças Completas" com Lista Suspensa: Novo seletor em lista suspensa que permite escolher qualquer uma das licenças completas de software livre e componentes de terceiros que acompanham o programa para leitura imediata, com campo de pesquisa compartilhado e tradução dinâmica sem perder a licença que estava sendo consultada.
+
+2. Manual do Usuário Ampliado com Tradução Completa em Tempo de Execução
+- Novo Capítulo Dedicado: O Manual do Usuário integrado (F1) recebeu um capítulo específico explicando como abrir a janela Sobre, navegar pelas 9 abas, utilizar a lista suspensa de licenças completas, pesquisar termos e alternar o idioma sem reiniciar o aplicativo.
+- Fidelidade na Troca de Idioma: Títulos, botões, barras de pesquisa e índice do manual passaram a acompanhar fielmente e em tempo real a mudança entre Português (BR) e Inglês (US).
+
+3. Proteção nos Relatórios e Banco Normativo Exclusivo em Memória
+- Proteção ao Exportar Relatórios: Os campos preenchidos pelo usuário (como nome do projeto, responsável técnico, instituição e identificação) recebem tratamento seguro para caracteres especiais ao gerar relatórios formatados, evitando interferências na exibição.
+- Catálogo Normativo em Memória: A base interna de normas e materiais passou a operar exclusivamente na memória durante a sessão, evitando arquivos residuais no computador e favorecendo uma desinstalação ainda mais limpa.
+
+4. Correções de Apresentação, Pacotes e Instaladores
+- Exibição do Ícone e Documentos Embutidos: Corrigida a localização padrão do ícone da aplicação e incluídos todos os novos textos de esclarecimento comercial, copyright e licenças completas nos pacotes portáteis e nos instaladores para leitura offline.
+
+Observações Importantes:
+- Preservação de Preferências e Uso Auxiliar: Todas as preferências salvas pelo usuário permanecem preservadas entre as atualizações. Este aplicativo gratuito mantém finalidade de apoio acadêmico, educacional e auxiliar ("no estado em que se encontra"), exigindo conferência manual e validação em laboratório de ensaios físicos.
+
+================================================================================
+
+NOTAS DE LANÇAMENTO: Versão 2026.11.11.0
+Data: 11 de novembro de 2026
+
+Resumo Geral
+Esta versão consolida a migração completa da plataforma para o padrão moderno C++23 e framework Qt 6.12.0 (MSVC 14.52 x64 / Windows SDK 10.0.28000.0 e MinGW-w64 GCC 15.1.0), implementa distribuições externas ultralimpas com implantação local (app-local) sem dependência redundante de vc_redist.x64.exe nos instaladores, aprimora a transparência do modelo de Duplo Licenciamento (GNU AGPLv3 para o código-fonte público no GitHub com total liberdade para desenvolvedores nos textos de source/assets/, coexistindo com o EULA Oficial gratuito na Microsoft Store e independência de privacidade/suporte frente à Microsoft), e entrega uma suíte modular abrangente de testes automatizados de engenharia em tests/. Mantém também a organização intuitiva dos submenus em Configurações > Cenário da Planilha e Configurações > Idioma e a paridade bilíngue em Português e Inglês.
+
+Novidades, Ajustes e Melhorias
+
+1. Migração para C++23, Qt 6.12.0 e Distribuições Externas Ultralimpas (MSVC e MinGW)
+- Cadeia Dual Atualizada e Enxuta: Todo o pipeline de compilação foi atualizado para C++23 com Qt 6.12.0 tanto no MSVC (14.52.37025 + Windows SDK 10.0.28000.0) quanto no MinGW-w64 (GCC 15.1.0), mantendo as pastas de distribuição e os instaladores enxutos com implantação local das bibliotecas essenciais, sem embutir o pacote vc_redist.x64.exe no instalador MSVC.
+- Suíte Modular Integrada de Testes Profissionais (tests/): Adição de bateria automatizada cobrindo núcleo matemático IPT/EPUSP, normas ABNT NBR, banco SQLite em memória, serialização JSON/PDF/HTML/Markdown, internacionalização dinâmica em tempo de execução, interface gráfica/diagramas, CLI e ferramentas de auditoria/versão.
+
+2. Nova Organização dos Submenus em Configurações > 📂 Cenário da Planilha: e Configurações > 🌐 Idioma
+- Menu Mais Limpo, Padronizado e Centralizado: A opção de escolha do idioma do aplicativo foi movida da barra principal para o submenu "Configurações > 🌐 Idioma", e a seleção de "Configurações > 📂 Cenário da Planilha:" foi padronizada no mesmo formato de submenu com marcação direta do cenário ativo, deixando o topo da tela mais organizado e reunindo todas as preferências de uso no mesmo menu.
+- Troca Instantânea entre Português e Inglês: Ao acessar "Configurações > 🌐 Idioma", o usuário alterna imediatamente todos os textos da tela, nomes de cenários, gráficos, símbolos de moeda ("R$" e "$"), relatórios e janelas informativas entre Português do Brasil e Inglês dos Estados Unidos sem precisar reiniciar o programa.
+
+3. Duplo Licenciamento Transparente, Uso Auxiliar Gratuito e Isenção Legal ("AS IS")
+- Fronteira Clara de Licenciamento: Formalização transparente entre o código aberto público no GitHub (GNU AGPLv3), a liberdade concedida aos desenvolvedores sobre os documentos em source/assets/ e o pacote gratuito oficial na Microsoft Store (EULA Oficial + CLC, com Política de Privacidade própria e suporte prestado exclusivamente pelo autor em linceu_lighthouse@outlook.com, sem cobertura da Microsoft e com desinstalação limpa pelas Configurações do Windows).
+- Ferramenta Auxiliar e Obrigatoriedade de Conferência Manual: Reforço expresso em todos os manuais, termos e abas informativas de que este aplicativo gratuito é uma ferramenta auxiliar ainda não madura para produção ou uso profissional definitivo (podendo conter erros no código-fonte, matemática aplicada e física dos materiais), exigindo sempre conferência manual, comparação em ferramentas consolidadas no mercado, ensaios físicos de laboratório (ABNT NBR 5738 e NBR 5739) e responsabilidade técnica de Engenheiro Civil habilitado com ART/RRT.
+
+4. Atualização do Manual do Usuário e Alinhamento Bilíngue
+- Manuais e Documentos Sincronizados: Inclusão de MANUAL_pt_BR.txt / MANUAL_en_US.txt em source/assets/MANUAL/, além de documentação técnica ampliada e alinhada linha a linha entre Português e Inglês.
+
+Observações Importantes:
+- Finalidade Estritamente Acadêmica: Este aplicativo serve apenas como ferramenta de estudo acadêmico, contém possíveis erros e não deve ser utilizado como software definitivo para tomadas de decisão em produção ou ambientes de trabalho sem conferência manual e validação em outras ferramentas mais consolidadas no mercado.
+- Preservação de Dados e Privacidade 100% Local: Todas as preferências salvas pelo usuário permanecem intactas e o programa continua funcionando de maneira totalmente local e offline, sem coleta ou envio de informações pela internet.
+
+================================================================================
+
+NOTAS DE LANÇAMENTO: Versão 2026.11.6.0
+Data: 6 de novembro de 2026
+
+Resumo Geral
+Esta versão consolida aprimoramentos fundamentais na comunicação com os usuários, na transparência dos termos de uso, na segurança jurídica do modelo de distribuição, no compromisso estrito com a privacidade local e na harmonização completa da documentação nos idiomas Português e Inglês. Todos os canais de contato foram unificados em um endereço oficial de atendimento, proporcionando suporte técnico direto e confiável. Além disso, foram aprimorados os guias de ajuda, as referências normativas e a navegação nos manuais informativos, assegurando uma experiência de uso ainda mais fluida, estável e segura para profissionais da engenharia civil, laboratórios tecnológicos, professores e estudantes.
+
+Novidades, Ajustes e Melhorias
+
+1. Canal Oficial Centralizado de Atendimento e Suporte Técnico
+- Suporte Direto e Verificado: Todas as janelas informativas do aplicativo, guias de consulta, manuais de ajuda e termos de uso foram atualizados com o endereço oficial e exclusivo de suporte técnico: linceu_lighthouse@outlook.com.
+- Atendimento Transparente e Confiável: Estabelecido um canal direto por e-mail para esclarecimento de dúvidas sobre dosagens, recebimento de sugestões e assistência individualizada aos usuários, com atendimento transparente e sem a necessidade de chamadas telefônicas ou intervenções remotas no computador do usuário.
+
+2. Transparência no Modelo de Distribuição e Licenciamento
+- Clareza e Liberdade de Escolha: Formalização transparente da convivência entre a edição comunitária em código aberto e a edição comercial oficial disponibilizada na loja de aplicativos Microsoft Store.
+- Praticidade e Segurança para Empresas e Profissionais: Engenheiros, construtoras e laboratórios que adquirem o software pela Microsoft Store contam com instalação facilitada, atualizações automáticas e licença comercial direta sem exigência de compartilhamento de projetos internos. Paralelamente, o meio acadêmico e a comunidade técnica continuam com acesso aberto para auditar, estudar e desenvolver a partir do projeto livre.
+
+3. Compromisso Absoluto com a Privacidade Soberana (100% Local)
+- Seus Cálculos e Dados Permanecem com Você: Reafirmada a filosofia de operação estritamente local e independente. Todos os cálculos de dosagem experimental, curvas de regressão, diagramas de quatro quadrantes e relatórios técnicos são processados 100% offline em seu próprio computador.
+- Zero Nuvem e Sem Telemetria: O aplicativo e suas ferramentas complementares não coletam, não monitoram e não transmitem quaisquer dados de projeto, traço de materiais ou informações do usuário para servidores externos ou serviços em nuvem, em total conformidade com a legislação de proteção de dados (LGPD).
+
+4. Harmonização e Paridade Estrutural Bilíngue (Português e Inglês)
+- Mesma Experiência e Nível de Detalhe: Todos os documentos informativos, termos de licença de uso, políticas de privacidade, avisos de direitos autorais e guias de uso foram integralmente alinhados nos dois idiomas oficiais do software (Português do Brasil e Inglês dos Estados Unidos).
+- Simetria e Rigor Textual: Cada seção foi revisada com precisão para garantir que qualquer usuário compreenda com clareza seus direitos, instruções operacionais e diretrizes técnicas, independentemente do idioma selecionado.
+
+5. Navegação Confiável e Acessível nos Manuais e Guias de Consulta
+- Links Internos Estáveis e Corrigidos: Todas as referências cruzadas e hiperlinks entre seções dos manuais do usuário, guias de arquitetura técnica e referências normativas foram corrigidos, garantindo leitura contínua e sem interrupções.
+- Neutralidade e Adaptabilidade de Projetos: As identificações e modelos de exemplo foram generalizados para que profissionais e instituições de qualquer estado ou país possam personalizar facilmente os cabeçalhos de laudos e relatórios técnicos com seus próprios dados.
+
+6. Estabilidade, Padronização e Consistência Global
+- Atualização Oficial de Versão: A versão 2026.11.6.0 foi aplicada uniformemente em toda a aplicação (janela "Sobre", instaladores do sistema e telas de apresentação).
+- Integridade Contínua dos Cálculos: Garantida a precisão matemática absoluta dos métodos analíticos de dosagem experimental de concreto pelo Método IPT/EPUSP (Leis de Abrams, Lyse e Molinari), o traçado limpo e harmonioso dos diagramas de dosagem e a conformidade com as normas técnicas brasileiras da ABNT.
+
+Observações Importantes:
+- Preservação Estrita de Dados: Todas as preferências de projetos, configurações de cabeçalhos e traços salvos permanecem integralmente preservados entre as atualizações.
+- Funcionamento 100% Offline: Todas as funcionalidades do sistema, geração de memoriais técnicos e exportações de relatórios e imagens continuam operando de forma totalmente independente de conexão com a internet.
+
+================================================================================
+
+NOTAS DE LANÇAMENTO: Versão 2026.10.26.0
+Data: 26 de outubro de 2026
+
+Resumo Geral
+Esta versão apresenta avanços significativos na clareza visual dos gráficos, na qualidade da exportação de imagens, na internacionalização financeira dos relatórios e na disponibilidade de uma nova ferramenta prática de linha de comando para uso direto pelo terminal. Foi aprimorado o gráfico combinado de dosagem, unificando as curvas de resistência, proporção de agregados e consumo de cimento em uma visualização limpa com linhas de grade completas e sem sobreposições de cores que antes prejudicavam a leitura. O sistema de idiomas agora adapta automaticamente o símbolo da moeda em todas as tabelas e no memorial técnico final, exibindo "R$" em Português e "$" em Inglês. Além disso, os usuários agora contam com um programa complementar de terminal para automatizar cálculos, verificar normas e gerar relatórios completos de forma rápida.
+
+Novidades, Ajustes e Melhorias
+
+1. Gráfico Combinado de Dosagem Unificado (Abrams, Lyse e Molinari)
+- Visualização Limpa e Integrada: Na aba de traços e diagramas, o quinto gráfico reúne as três principais curvas de dosagem em um único quadro de consulta harmonioso.
+- Eliminação de Áreas Coloridas Indesejadas: Foi removido o preenchimento colorido que cobria a região sob a curva de consumo de cimento, permitindo enxergar as linhas e pontos de ensaio com total clareza.
+- Linhas de Grade e Escalas Precisas nos Eixos: Foram inseridas linhas de grade e marcações de escala nos eixos horizontal e vertical, tornando a leitura visual direta, fácil e exata.
+- Leitura Aprimorada no Diagrama Completo: Os valores numéricos das quatro réguas verticais do diagrama de quatro quadrantes receberam ajustes de tamanho e espaçamento, garantindo leitura nítida e confortável.
+
+2. Exportação de Imagens dos Gráficos em Alta Resolução
+- Figuras Cristalinas para Laudos e Relatórios: O recurso "Exportar Imagem dos Gráficos..." foi completamente aprimorado para produzir imagens nítidas, com alta definição e proporções idênticas às exibidas na tela, prontas para inserção direta em documentos técnicos, perícias e trabalhos acadêmicos.
+
+3. Ajuste Automático do Símbolo da Moeda nos Relatórios e Custos
+- Formatação Monetária Adaptada ao Idioma: Ao alternar o idioma do aplicativo entre Português e Inglês, todas as planilhas de custo de materiais e o relatório técnico final atualizam instantaneamente o símbolo da moeda ("R$" para Português do Brasil e "$" para Inglês dos Estados Unidos), dispensando reinicializações do programa.
+
+4. Nova Ferramenta de Linha de Comando (Terminal)
+- Cálculos Diretos pelo Terminal: Um programa complementar permite calcular dosagens de concreto completas, prever consumos de materiais por metro cúbico e dimensionar traços diretamente pelo prompt de comando do computador.
+- Auditoria Normativa Rápida: Permite verificar em segundos se um traço de concreto atende aos critérios de resistência, consumo mínimo de cimento e relação água/cimento exigidos pelas normas técnicas brasileiras vigentes.
+- Geração Rápida de Relatórios Técnicos: Emissão imediata de memoriais de cálculo completos em formatos para visualização na web, em editores de texto ou arquivos digitais para arquivamento.
+- Verificação e Diagnóstico Imediatos: Inclui rotinas de testes automatizados para conferir a integridade dos cálculos com diagnósticos claros na tela.
+
+5. Mais Estabilidade, Desempenho e Confiabilidade
+- Cálculos Mais Seguros: O sistema de cálculos recebeu proteções adicionais para garantir respostas rápidas e sem travamentos, mesmo em situações com valores extremos de entrada.
+- Uso Fluido e Estável: A navegação entre as telas, janelas de consulta e visualização de relatórios opera com máxima estabilidade durante todo o tempo de uso do aplicativo.
+
+Observações Importantes:
+- Preservação Estrita de Dados: Todas as preferências de projeto, identificações e configurações salvas permanecem preservadas entre as atualizações.
+- Privacidade Absoluta: Todos os cálculos, diagramas, ferramentas de terminal e relatórios funcionam de maneira 100% local no seu computador, sem necessidade de internet e sem envio de dados.
+
+================================================================================
+
+NOTAS DE LANÇAMENTO: Versão 2026.10.23.0
+Data: 23 de outubro de 2026
+
+Resumo Geral
+Esta versão consolida um marco evolutivo de excelência em engenharia civil, precisão numérica, ergonomia de interface e conformidade com a Microsoft Store no MÓDULO DE DOSAGEM DE CONCRETO. O sistema incorpora a auditoria algorítmica completa da planilha experimental aperfeiçoada do Método IPT/EPUSP (Helene & Terzian, 1992 — UFPR TC031), novo menu de Configurações com seleção integrada do Cenário da Planilha e personalização de metadados do cabeçalho técnico, arquitetura de Janelas Modeless com Ordem no Eixo Z (Z-Order) independente junto à GUI principal, simplificação da barra superior, adaptação visual aprimorada ao Tema Escuro do Windows 11 no Manual do Usuário, implantação completa de DLLs de runtime para os utilitários Mocks (MinGW e MSVC) e padronização integral da documentação institucional e jurídica bilíngue (Português BR e Inglês US).
+
+Novidades, Ajustes e Melhorias
+
+1. Menu Configurações, Cenário da Planilha e Identificação Técnica do Cabeçalho
+- Seleção de "Cenário da Planilha:" no Menu Configurações: O rótulo "Cenário da Planilha:" e sua lista suspensa associada (contendo os Cenários 0 a 5, incluindo o Cenário 5 da planilha original corrigida da UFPR) foram transferidos para o topo do menu "Configurações", proporcionando uma área de trabalho limpa e organizada.
+- Diálogo de Dados do Projeto e Identificação (Ctrl+I): Permite configurar os campos "Projeto:", "Responsável:", "Instituição:" e "Matrícula / ID:" exibidos no cabeçalho do Relatório Técnico (Aba 7), com persistência automática via QSettings.
+- Modo Duplo para o Campo "Projeto:": O usuário pode escolher entre reportar automaticamente as informações selecionadas em "Cenário da Planilha" (com tradução dinâmica instantânea em tempo de execução entre Português e Inglês) ou editar manualmente um título personalizado para a obra.
+
+2. Janelas Modeless e Ordem no Eixo Z (Z-Order) Independente
+- Navegação Livre entre a GUI Principal e Diálogos: Todas as janelas auxiliares de diálogo (Manual do Usuário, Quadro de Normas Técnicas NBR, Sobre o Módulo de Dosagem de Concreto e notificações de exportação), com exceção das janelas modais emitidas do menu "Configurações", operam como Janelas Modeless independentes no eixo Z (Z-Order).
+- Interação Não Bloqueante: Ao clicar na janela principal, ela vem imediatamente para a frente no eixo Z enquanto as janelas de consulta podem permanecer abertas em segundo plano; ao clicar na janela auxiliar ou acioná-la no menu, ela retorna para a frente sem travar a edição dos traços.
+- Encerramento Sincronizado: Ao fechar a janela principal do aplicativo, todas as janelas auxiliares Modeless abertas são encerradas automaticamente com segurança.
+
+3. Simplificação da Interface e Controles de Edição Numérica
+- Remoção de Controles Redundantes da Barra de Ferramentas: Removidos a lista suspensa "Idioma:" e os botões "Recalcular Tudo", "Normas NBR", "Manual" e "Sobre", cujas funcionalidades já estão integralmente disponíveis e organizadas nos menus "Arquivo", "Idioma" e "Ajuda" da barra de menus.
+- Edição Fluida nas SpinBoxes (QDoubleSpinBox): Desativado o preenchimento prematuro com zeros à direita a cada tecla digitada (`SetValueOnawaitsConfirm` / `KeyboardTracking(false)`), permitindo digitar valores decimais livremente e aplicando a formatação apenas ao confirmar (`Enter`) ou mudar de campo.
+- Contraste Perfeito no Manual do Usuário em Tema Escuro: Corrigido o estilo CSS/HTML interno da janela do Manual do Usuário (`ManualDialog`) para eliminar caixas com fundo branco em expressões técnicas (`<code>`) e cabeçalhos de tabela (`<th>`) quando o Windows 11 está no Tema Escuro.
+
+4. Auditoria Matemática da Planilha UFPR e Conformidade Normativa ABNT
+- Fidelidade Matemática com a Planilha Aperfeiçoada (TC031 — UFPR): Sincronização exata de todas as dependências de células e precedências de fórmulas, incluindo regressão polinomial de 2º grau da relação a/c vs. fcj paralelamente à Lei Exponencial de Abrams, Lei Linear de Lyse, Lei Hiperbólica de Molinari, propagação automática da relação água/cimento nos 15 passos da Aba 3 (Teor de Argamassa α) e cálculo de custos em R$/saco, R$/t ou R$/kg.
+- Rigor Normativo Atualizado: Verificação automática segundo a ABNT NBR 12655:2022 (Condições de preparo A, B e C, classes CAA I a IV), ABNT NBR 6118:2023 (cobrimento nominal CA e acréscimo de +5 mm para Concreto Protendido CP conforme Tabela 7.2), ABNT NBR 7211:2022 (mistura binária de britas), ABNT NBR 7212:2025 (tolerâncias de pesagem em central dosadora — item 5.5) e ABNT NBR 8953:2015.
+
+5. Implantação Completa de Runtimes nos Binários Mocks (MinGW e MSVC)
+- Correção Definitiva de DLLs Ausentes nos Mocks: O sistema de build (`mocks/CMakeLists.txt`) agora implanta automaticamente `libgcc_s_seh-1.dll`, `libstdc++-6.dll`, `libwinpthread-1.dll`, `Qt6Charts.dll`, `Qt6OpenGL.dll`, `Qt6OpenGLWidgets.dll` e `Qt6Sql.dll` junto aos executáveis `find_VersionEditor.exe`, `CompileTranslationsGUI.exe` e `CompileTranslationsTerminal.exe` tanto no diretório principal de build quanto na pasta `export/`.
+
+Observações Importantes:
+- Preservação Estrita de Dados: Todas as preferências de cabeçalho e cenários configurados pelo usuário permanecem intactos entre execuções e atualizações.
+- Total Privacidade: Todos os cálculos reológicos, gráficos de 4 quadrantes e exportações em PDF, HTML, Markdown e PNG ocorrem 100% localmente no computador do usuário, sem qualquer telemetria.

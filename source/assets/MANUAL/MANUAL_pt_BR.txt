@@ -1,0 +1,47 @@
+================================================================================
+CONCRETE MIX DESIGNER — MANUAL COMPLETO DE OPERAÇÃO E ENGENHARIA (IPT / EPUSP)
+Versão: 2026.11.22.0 | Data: 22 de novembro de 2026 | Autor: Fernando Nillsson Cidade
+Idioma do Documento: Português (Brasil) — Correspondência com en-US
+================================================================================
+
+CAPÍTULO 1 — VISÃO GERAL, ARQUITETURA E MENU CONFIGURAÇÕES
+
+1.1 Finalidade e Fundamentação Científica
+O Concrete Mix Designer (Módulo de Dosagem de Concreto) é um aplicativo desktop gratuito e nativo para Windows desenvolvido em C++23, Qt 6.12.0 e banco de dados relacional SQLite 3 em memória (:memory:), que o usuário pode utilizar conforme lhe convir como ferramenta computacional auxiliar — para fins educacionais, acadêmicos, de pesquisa e de comparação de resultados — na dosagem experimental e analítica de concreto de cimento Portland segundo o consagrado Método IPT/EPUSP (Helene & Terzian, 1992), integrado às prescrições das normas ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, NBR 8953:2015 e NBR 16697:2018.
+
+1.2 Escopo Técnico, Uso Auxiliar, Limitações de Maturidade e Isenção Legal ("AS IS")
+ATENÇÃO: Por ser um aplicativo gratuito, o Concrete Mix Designer destina-se exclusivamente ao uso livre como ferramenta auxiliar (educacional, acadêmica e comparativa), e NÃO como ferramenta definitiva ou final de produção. Este software ainda não está maduro o suficiente para ser levado para produção ou uso profissional definitivo, pois, devido a limitações, falhas humanas e eventuais erros no código-fonte — abrangendo tanto a matemática aplicada quanto a física/tecnologia dos materiais envolvidas, razão pela qual seus algoritmos podem apresentar falhas —, exige sempre a conferência manual de todos os resultados, a comparação em ferramentas consolidadas no mercado e a comprovação por ensaios físicos de laboratório (ABNT NBR 5738 e NBR 5739) sob supervisão de Engenheiro Civil habilitado com emissão de ART/RRT perante o CREA/CAU (Leis nº 5.194/1966, nº 6.496/1977 e nº 12.378/2010; CDC art. 39, VIII; Código Civil arts. 186, 618 e 927; Código Penal art. 256; Lei nº 9.609/1998; GNU AGPLv3 Seções 15–16 e EULA Oficial). Caso o usuário decida utilizá-lo exclusivamente em produção, todas as consequências serão de sua inteira e exclusiva responsabilidade.
+
+1.3 Barra de Menus, Submenus de Configurações e Janelas Modeless
+• Arquivo: "Recalcular Tudo (F5)" executa toda a cadeia de regressões e fechamento volumétrico em 1 m³; "Sair (Ctrl+Q)" encerra com segurança todas as janelas auxiliares.
+• Exibir: atalhos diretos para cada uma das 7 abas de trabalho.
+• Configurações: concentra "📂 Cenário da Planilha:" (Cenários 0 a 5, sendo o Cenário 5 a planilha auditada UFPR TC031), "📝 Dados do Projeto e Identificação... (Ctrl+I)" (Projeto, Responsável, Instituição, ID, com opção de reportar o cenário ativo automaticamente traduzido ou editar manualmente) e "🌐 Idioma" (alternância dinâmica instantânea entre Português pt_BR com moeda "R$" e Inglês en_US com moeda "$").
+• Ajuda: "Manual do Usuário (F1)", "Normas Técnicas (NBR)" e "Sobre o Módulo de Dosagem de Concreto". Todas as janelas auxiliares operam como Janelas Modeless com ordem no eixo Z (Z-Order) independente.
+
+CAPÍTULO 2 — FLUXO COMPLETO NAS 7 ABAS DE TRABALHO
+
+2.1 Aba 1 (Parâmetros de Projeto)
+Define resistência característica fck (10 a 100 MPa), condição de preparo (Condição A: Sd = 4,0 MPa; Condição B: Sd = 5,5 MPa limitada a fck <= 20 MPa; Condição C: Sd = 7,0 MPa limitada a fck <= 15 MPa; Desvio Conhecido >= 2,0 MPa; Arbitrário), resistência de dosagem fcj = fck + 1,65 * Sd, Classe de Agressividade Ambiental (CAA I a IV), tipo estrutural (CA ou CP com +5 mm no cobrimento pela NBR 6118 Tabela 7.2) e abatimento alvo (S10 a S220 — NBR 8953), com verificação geométrica D_max <= 1,2 * c_nom e quadro de tolerâncias da NBR 7212:2025 item 5.5 (Cimento ±1%, Agregados ±3%, Água ±3%, Aditivos ±5%).
+
+2.2 Aba 2 (Materiais & Britas)
+Registra massa específica real (kg/dm³), massa unitária solta (kg/dm³), umidade superficial de campo (h%) e custo unitário (R$/saco 50 kg, R$/t, R$/kg ou R$/m³) para Cimento, Areia, Brita 1 e Brita 2. Inclui a tabela experimental de mistura binária de britas (0% a 100% em passos de 10%) para identificar automaticamente o ponto de máxima massa unitária compactada e mínimo índice de vazios (ABNT NBR 7211:2022 / NBR NM 45).
+
+2.3 Aba 3 (Teor de Argamassa α)
+Calcula a amassada piloto pela Lei dos Volumes Absolutos e gera a progressão laboratorial de α = (1 + a)/(1 + m) de 40% a 68% (passo de 2%) com massa de brita constante na betoneira. Clicar em qualquer linha ou ajustar o campo numérico propaga imediatamente o α adotado.
+
+2.4 Aba 4 (Traços & Diagrama IPT)
+Recebe os 3 pontos experimentais no abatimento alvo (Traço 1 Rico, Traço 2 Piloto/Médio, Traço 3 Pobre) e ajusta por mínimos quadrados ordinários (OLS):
+• Lei de Abrams (1º Quadrante): fcj = k1 / k2^(a/c) e polinômio de 2º grau (com teto normativo a/c_max).
+• Lei de Lyse (2º Quadrante): m = k3 + k4 * (a/c).
+• Lei de Molinari (3º Quadrante): C = 1000 / (1/γc + a/γa + p/γb + a/c).
+Disponibiliza 6 visões gráficas interativas: Diagrama Completo de 4 Quadrantes (IPT), os 4 quadrantes individuais ampliados e o 5º Gráfico Unificado Abrams/Lyse/Molinari (IPT), com exportação para PNG e PDF em alta resolução.
+
+2.5 Aba 5 (Traço Final & Amassadas), Aba 6 (Análise de Custos) e Aba 7 (Relatório Técnico)
+• Aba 5: apresenta traço seco (1 : a : p : a/c) e corrigido pela umidade superficial (com desconto rigoroso da água livre dos agregados), consumos para 1 m³, pesagem da betoneira de laboratório e dimensionamento de padiolas (base 35 cm x 45 cm, altura máxima ergonômica 35 cm) para 1 saco de 50 kg de cimento.
+• Aba 6: confronta a solução analítica exata frente a qualquer leitura gráfica manual (a/c, m, C), calculando diferença financeira por m³, custo global da obra e diferença em sacos de 50 kg.
+• Aba 7: gera em tempo real o Memorial de Cálculo Técnico bilíngue (pt_BR / en_US, R$ / $) e exporta para Área de Transferência, Markdown (.md), HTML5 (.html) e PDF oficial A4 (.pdf).
+
+CAPÍTULO 3 — UTILITÁRIO DE LINHA DE COMANDO (concrete-mix-designer-cli.exe)
+Comandos suportados: `design`, `calculate`/`calc`, `verify`/`audit`, `report`, `standards`, `presets` e `test`, com opções globais `--lang <pt|en>`, `--format <text|json|markdown|html>`, `--out <arquivo>`, `--dark`, `--no-banner`, `--version` e `--help`.
+
+Consulte também `MANUAL.md` na raiz do projeto, `docs/cli-reference.md` e `docs/licensing.md` para referência integral e modelo de duplo licenciamento.

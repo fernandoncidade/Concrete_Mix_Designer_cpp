@@ -1,0 +1,36 @@
+COMMERCIAL LICENSING CLARIFICATION AND ENTERPRISE SUPPORT — Concrete Mix Designer
+Version 2026.11.22.0, November 22, 2026
+
+Author and Developer: Fernando Nillsson Cidade (Individual Developer)
+Support & Contact Email: linceu_lighthouse@outlook.com
+Official Website / Repository: https://github.com/fernandoncidade/Concrete_Mix_Designer_cpp
+
+--------------------------------------------------------------------------------
+
+1. OPEN SOURCE AND TRANSPARENCY:
+The complete source code of this project is published publicly on GitHub under the GNU Affero General Public License v3 (AGPLv3). Any individual or organization is granted full freedom to inspect, audit, compile (MSVC x64 / MinGW-w64), modify, and build derivative works from the source code under GNU AGPLv3 terms.
+
+2. OFFICIAL MICROSOFT STORE EDITION AND CLEAN UNINSTALL:
+For convenient deployment across academic, educational, teaching laboratory, and comparative-study workstations on Windows, the author officially distributes Concrete Mix Designer as a free application on the Microsoft Store (Microsoft Partner Center).
+Users may cleanly uninstall and remove the package at any time through Windows Settings or the Start Menu without leaving background services running.
+
+3. TECHNICAL SUPPORT POLICY AND MICROSOFT NON-COVERAGE:
+Development and maintenance are carried out by the author as a personal and educational initiative in C++23, Qt 6.12.0, SQLite 3, and construction materials engineering. Therefore:
+a) Microsoft does NOT provide customer or technical support for Concrete Mix Designer, and the Microsoft Privacy Statement does not cover this application (Concrete Mix Designer's own Privacy Policy available in PRIVACY_POLICY applies exclusively);
+b) Technical support provided by the author (individual developer) takes place via email (linceu_lighthouse@outlook.com) and publicly through the Issues and Discussions tabs of the official GitHub repository;
+c) Support is provided on a strictly voluntary best-effort basis according to author availability, with no phone support, commercial SLA, or 24/7 remote access.
+
+4. TECHNICAL SCOPE, FREE AUXILIARY USE, MATURITY LIMITATIONS, AND DISCLAIMER ("AS IS"):
+Because Concrete Mix Designer is a free application, the user may use it as they see fit as an auxiliary computational tool for experimental and analytical concrete mix design (IPT/EPUSP Method — Abrams', Lyse's, and Molinari's Laws), intended for educational assistance, university teaching, academic research, and result comparison — but NOT as a definitive or final tool:
+a) This application is not mature enough to be taken to production or definitive professional use and MUST NEVER, UNDER ANY CIRCUMSTANCES, be used solely and exclusively for that purpose because, due to its limitations, human flaws, and possible errors during source-code development, it may contain serious errors in its code, algorithms, applied mathematics, and materials physics implemented in programming; the user must always use other, more established tools in the market or manually verify all obtained results;
+b) Its outputs DO NOT replace physical laboratory testing (slump, specific gravities, field surface moisture, and compressive strength testing per ABNT NBR 5738 and NBR 5739), full technical-standard verifications (ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, NBR 8953:2015, and NBR 16697:2018), independent cross-validation, or formal oversight by a legally licensed engineer issuing ART/RRT before CREA/CAU (Brazilian Laws No. 5.194/1966, No. 6.496/1977, and No. 12.378/2010; Art. 39, VIII, Brazilian Consumer Defense Code — Law No. 8.078/1990; or equivalent PE/CEng licensure in other jurisdictions);
+c) The Software is supplied "AS IS", with all faults and without warranties (Official EULA, Law No. 9.609/1998, and GNU AGPLv3 Sections 15–16). Should the user decide to rely exclusively on this application as a definitive tool for production or professional use at batching plants or construction sites, all resulting consequences shall be the sole and entire responsibility of the user and responsible licensed engineer — including under Arts. 186, 618, and 927 of the Brazilian Civil Code (Law No. 10.406/2002) and Art. 256 of the Brazilian Penal Code (Decree-Law No. 2.848/1940) — in view of the express prior notices and warnings regarding possible defects in the source code encompassing both the applied mathematics and the underlying physics, due to which its algorithms may produce errors, with complete civil, criminal, and technical exemption of the author to the maximum extent permitted by applicable law.
+
+5. INSTITUTIONAL INQUIRIES AND CUSTOM LICENSING:
+For academic institutions, teaching laboratories, or organizations requiring:
+- Comparative studies under engineering standards (ABNT NBR 12655, NBR 6118, NBR 7211, NBR 7212, and NBR 8953), always subject to independent validation by a licensed engineer and physical trial batches;
+- Custom integration with research workflows or internal systems;
+- Exemption from GNU AGPLv3 copyleft obligations for closed-source proprietary distributions (without implying production proportioning certification);
+
+Please contact the author directly by email at:
+linceu_lighthouse@outlook.com

@@ -1,0 +1,57 @@
+END USER LICENSE AGREEMENT (EULA) — Concrete Mix Designer
+Version 2026.11.22.0, November 22, 2026
+
+Copyright (c) 2025-2026 Fernando Nillsson Cidade. All rights reserved.
+
+DUAL-LICENSING AND MICROSOFT INDEPENDENCE NOTICE:
+1. This End User License Agreement (EULA) governs EXCLUSIVELY the precompiled, packaged, and digitally signed binary package officially published by the author on the Microsoft Store. These terms operate in harmony with the Microsoft Store Standard Application License Terms; to the extent any mandatory term of the Microsoft Store Standard Application License Terms or applicable consumer law conflicts with this EULA for Store acquisitions, those mandatory Store/statutory terms prevail.
+2. The complete source code of Concrete Mix Designer is publicly licensed on GitHub under the GNU Affero General Public License v3 (AGPLv3), granting full rights to inspect, compile, modify, fork, and distribute independent builds under AGPLv3.
+3. Microsoft does NOT provide customer or technical support for this application and does NOT cover this Software under any Microsoft privacy policy.
+
+By installing or using the official Microsoft Store package of Concrete Mix Designer, you agree to this EULA in full. If you disagree, do not install or use the package, and cleanly remove it through Windows controls.
+
+TERMS AND CONDITIONS:
+
+1. DEFINITIONS
+   "Licensor": Fernando Nillsson Cidade, exclusive copyright holder of the original Software.
+   "Software": The Concrete Mix Designer program (executables ConcreteMixDesign.exe and concrete-mix-designer-cli.exe) compiled for Windows x64, including the Qt 6.12.0 interface, in-memory SQLite normative database, IPT/EPUSP diagram module, compliance assets, and documentation.
+   "Licensee" or "you": Individual or entity that obtained the official package from the Microsoft Store or an authorized channel.
+
+2. LICENSE GRANT AND CLEAN UNINSTALLATION
+   Licensor grants a free, personal, non-exclusive, non-transferable, revocable license to install and run the Software on compatible Windows devices as you see fit, as a free application intended to serve as an auxiliary tool — for educational, academic, study, research, didactic simulation, and result-comparison purposes in experimental concrete mix design (IPT/EPUSP Method) — and not as a definitive or final production tool.
+   The User has the guaranteed right to cleanly uninstall and remove the Software at any time through Windows Settings or the Start Menu without leaving hidden background services or processes running.
+
+3. RESTRICTIONS ON THE OFFICIAL PACKAGE
+   Licensee may not:
+   a) Commercially resell for a fee, rent, lease, or sublicense the author's official free Microsoft Store package without prior written authorization;
+   b) Remove, conceal, or alter copyright notices, third-party attributions, or project marks;
+   c) Use the Software for unlawful purposes.
+
+4. INTELLECTUAL PROPERTY
+   The official package is licensed, not sold, and is protected under Brazilian Law No. 9.609/1998, Law No. 9.610/1998, and international copyright treaties. Third-party open-source components (Qt 6.12.0 under GNU LGPLv3 preserving end-user rights under Section 4 to replace dynamic libraries, SQLite 3 in Public Domain, and MSVC / MinGW-w64 runtimes) remain governed by their respective licenses in NOTICES/ and LICENSES/.
+
+5. TECHNICAL SCOPE, FREE AUXILIARY USE, MATURITY LIMITATIONS & PROFESSIONAL RESPONSIBILITY
+   a) Freedom of free use as an auxiliary tool: Because Concrete Mix Designer is a free application, the user may use it as they see fit as an auxiliary computational tool for experimental and analytical concrete proportioning via the IPT/EPUSP Method (Abrams, Lyse, and Molinari regressions, binary aggregate packing, mortar content, moisture correction, and volume-box sizing), especially for educational assistance, teaching, academic research, and result comparison, but NOT as a definitive or final tool.
+   b) Immaturity for definitive production use and mandatory verification: This application is not mature enough to serve as a definitive tool taken to production or professional use, and therefore MUST NEVER, UNDER ANY CIRCUMSTANCES, be used solely and exclusively as the basis for final concrete batching, ready-mix plant production, construction site execution, or real-world works. The user must always use other, more established tools in the market or manually verify all results obtained from the application.
+   c) Limitations, human flaws, and risk of serious errors in development: Due to project limitations, human flaws, and possible errors during source-code development, the Software may contain serious errors in its source code, algorithm logic, least-squares mathematical formulations, and applied concrete physics/technology implemented in programming, as well as neglecting real field variations in constituent materials, ambient temperature, mixing energy, and curing conditions.
+   d) Non-replacement of laboratory trials and licensed oversight: Generated outputs (w/c ratio, dry and wet unit mixes, consumptions per m³, mixer batch weights, volume boxes/padiolas, cost analysis, and auxiliary checks against ABNT NBR 12655:2022, NBR 6118:2023, NBR 7211:2022, NBR 7212:2025, NBR 8953:2015, and NBR 16697:2018) DO NOT replace physical trial batching, laboratory slump and molded-cylinder compressive strength tests (ABNT NBR 5738 and NBR 5739), independent cross-checking, and formal oversight by a legally licensed engineer.
+   e) Legal basis of professional responsibility: Under Brazilian law, specification, proportioning, technological control, and technical responsibility for concrete designs and works are exclusive duties of legally licensed professionals requiring mandatory ART filing with CREA (Federal Law No. 5.194/1966 and Law No. 6.496/1977) or RRT filing with CAU (Law No. 12.378/2010) in compliance with ABNT technical standards (Art. 39, VIII, Brazilian Consumer Defense Code — Law No. 8.078/1990), with exclusive civil liability for unlawful acts and structural solidity/safety resting on the user and engineer of record (Arts. 186, 618, and 927, Brazilian Civil Code — Law No. 10.406/2002) and potential criminal liability for structural collapse hazards (Art. 256, Brazilian Penal Code — Decree-Law No. 2.848/1940), with equivalent licensed-engineer regulations (such as PE or CEng) applying in other jurisdictions.
+   f) User's sole responsibility for consequences and complete exemption of Licensor: Should the user decide to rely exclusively on this application as a definitive tool for production or professional use at batching plants, laboratories, or construction sites, all resulting technical, civil, administrative, and criminal consequences shall be the sole and entire responsibility of the user, in view of the express prior notices and warnings regarding possible defects in the source code — encompassing both the applied mathematics and the underlying physics, as a result of which its algorithms may produce errors — with the Licensor remaining completely exempt, to the maximum extent permitted by applicable law, from liability for calculation errors, rejected concrete batches, failure to attain design fck, pathologies, structural failures, financial losses, property damage, or personal injury.
+
+6. DATA SOVEREIGNTY AND LOCAL-FIRST PRIVACY
+   Concrete Mix Designer operates 100% offline with zero telemetry and zero cloud storage. Technical reports and local study files (PDF, HTML, Markdown, JSON, and PNG images) are saved solely to directories selected by the user, and minimal preferences remain under the user's local profile, governed exclusively by the Software's own Privacy Policy (PRIVACY_POLICY).
+
+7. UPDATES AND TECHNICAL SUPPORT
+   Updates may be published voluntarily via the Microsoft Store. Microsoft provides NO customer support for this Software. Author support (individual developer) is voluntary on a best-effort basis via email (linceu_lighthouse@outlook.com) or through the repository https://github.com/fernandoncidade/Concrete_Mix_Designer_cpp.
+
+8. TERM AND TERMINATION
+   This EULA remains effective until terminated by Licensee through clean uninstallation or automatically upon breach of its terms.
+
+9. DISCLAIMER OF WARRANTIES ("AS IS")
+   To the maximum extent permitted by applicable law (and in harmony with GNU AGPLv3 Sections 15–16, Brazilian Law No. 9.609/1998, and UCC § 2-316), the Software is provided "AS IS", "WITH ALL FAULTS", and "AS AVAILABLE", without express or implied warranties of mathematical or physical accuracy, production maturity, freedom from human flaws or serious errors in source code or algorithms, merchantability, uninterrupted operation, or fitness for professional or production use.
+
+10. LIMITATION OF LIABILITY
+    To the maximum extent not prohibited by mandatory law, Licensor shall not be liable for lost profits, structural failures, rejected concrete batches, or indirect, property, personal, incidental, special, punitive, or consequential damages arising from the use of the Software, its use as a definitive production tool, reliance on its outputs, or inability to use the Software.
+
+11. GOVERNING LAW
+    This Agreement is governed by the laws of the Federative Republic of Brazil and any non-waivable consumer protection laws of Licensee's jurisdiction.
